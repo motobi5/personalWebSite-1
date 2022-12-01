@@ -58,10 +58,7 @@ img {
     
     /* 공통 */
 
-    /* 섹션 상하 정중앙 해제 */
-.fp-tableCell {
-  vertical-align: baseline;
-}
+
 
 /* 커스텀 */
 
@@ -71,7 +68,8 @@ img {
 .top-bar  {
   position: fixed;
   width:100%;
-  background-color: var(--sub2-color);
+  /* background-color: var(--sub2-color);
+  opacity: 90%; */
   z-index: 99999;
 }
 .top-bar .inner {
@@ -133,6 +131,11 @@ img {
     /* 개별 */
 
     /* 01 HOME */
+
+    /* 상하 정중앙 해제 */
+    .aboutme-1 .fp-tableCell {
+      vertical-align: baseline;
+    }
 
 /* 배경이미지 최종적으로 넣지 고민중 */
 .main-page {
@@ -294,7 +297,7 @@ line-height: 1.2;
   
 /* ABOUT ME > about me */
 
-.section-1 {
+.aboutme-1 {
   position: relative;
 }
 .my_top {
@@ -333,14 +336,15 @@ color: var(--main-color);
 .my_center > .inner > .img-box {
   position: absolute;
   top:70%;
-  right:-1.8%;
+  right:0;
   width: 500px;
+
+  object-fit: contain;
   transform: translatey(-56%);
   z-index: 100;
 }
 
 .my_center > .inner > .cen-text {
-  font-family: 'Noto Sans KR';
   font-size: 18px;
   font-weight: 400;
   letter-spacing: -2%;
@@ -353,7 +357,7 @@ color: var(--main-color);
 }
 
 .my_center > .inner> .cen-text > div:nth-child(2) {
-  padding: 12px 0;
+  padding: 16px 0;
 }
 
 .my_bottom {
@@ -375,3 +379,45 @@ padding-left: 4px;
 
 /* ABOUT ME > its me */
 
+.aboutme-2 {
+  background-color: var(--main-color);
+}
+/* 이너의 커스텀이 적용 안되는거 같음... */
+.aboutme-2 > .inner {
+  border:3px solid red;
+  width: 1200px;
+  position: relative;
+}
+
+/* 오브젝트핏 콘테인으로 사이즈 조정 */
+.aboutme-2 .left-box img {
+width: 500px;
+padding-left: 14px;
+object-fit: contain;
+object-position: bottom right;
+}
+.aboutme-2 .right-box .sec-2_text {
+      font-weight: 300;
+      color:var(--sub3-color);
+padding-left: 4px;
+}
+.aboutme-2 .right-box .title-text {
+  font-size: 24px;
+  padding:24px 0 8px 0;
+}
+.aboutme-2 .right-box .sub-text {
+  font-size: 18px;
+  letter-spacing: -5%;
+}
+.aboutme-2 .right-box div:first-child img {
+  width: 380px;
+  object-fit: contain;
+  object-position: bottom left;
+  }
+.aboutme-2 .right-box div:last-child img {
+    right:-1.8%;
+    width: 650px;
+    object-fit: contain;
+    object-position: 0 0;
+    }
+    
