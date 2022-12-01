@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SBAggroM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SBAggroL';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 노멀라이즈 */
+html {
+  font-family: "Noto Sans KR", "Roboto";
+}
+a {
+  text-decoration: none;
+  color: #303030;
+  vertical-align: middle;
+}
+body,
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html > * {
+  box-sizing: border-box;
+}
+
+/* 라이브러리 */
+:root {
+  --main-color: #5C89A1;
+  --sub1-color: #303030;
+  --sub2-color: #FFFFFF;
+  --sub3-color: #E9E9E9;
+}
+a {
+  vertical-align: middle;
+}
+img {
+  vertical-align: middle;
+  border: 0 none;
+}
+.con {
+  margin: 0 auto;
+}
+/* 풀페이지 관련 */
+    
+    /* 공통 */
+
+    /* 섹션 상하 정중앙 해제 */
+.fp-tableCell {
+  vertical-align: baseline;
+}
+
+/* 커스텀 */
+
+    /* 공통 */
+
+    /* 탑바 */
+.top-bar  {
+  position: fixed;
+  width:100%;
+  background-color: var(--sub2-color);
+  z-index: 99999;
+}
+.top-bar .inner {
+  display:flex;
+  max-width:1200px;
+  margin:0 auto;
+}
+    /* 로고 */
+.logo {
+  display:flex;
+  align-items:center;
+}
+.logo a {
+/*   border:1px solid; */
+}
+    /* 메뉴 */
+.menu-box {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.menu-box > ul > li {
+  height:50px;
+  padding: 0 24px;
+  /* border:3px solid blue; */
+}
+.menu-box > ul > li > a {
+  position: relative;
+  height:100%;
+}
+    /* 메뉴아이템 밑줄 애니메이션 */
+.menu-box  >ul > li > a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  background-color: var(--sub1-color);
+  transition: 0.3s;
+  transform:translatex(-50%);
+}
+.menu-box > ul > li:hover>a::after {
+  width: 100%;
+}
+    /* 메뉴아이템 텍스트 */
+.menu-box > ul > li  span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  font-family: 'SBAggroL';
+  line-height: 5;
+   /* border:3px solid red; */
+}
+
+    /* 개별 */
+
+    /* 01 HOME */
+
+/* 배경이미지 최종적으로 넣지 고민중 */
+.main-page {
+  height:100vh;
+  /* 
+  position: relative;
+  background-image: url("https://i.postimg.cc/tTGP23XD/00-main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  */
+}
+
+/* 메인탑 */
+.main-page_top {
+  position: relative;
+  height: calc(100% / 5);
+  width: 100%;
+  max-width:1200px;
+  margin:0 auto;
+  z-index: 15;
+}
+.main-page_top div {
+width: calc(100% / 4);
+height: 100%;
+background-color: var(--main-color);
+}
+/* 메인센터 */
+.main-page_center {
+  width: 100%;
+  height: 476px;
+}
+.main-page_center .inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 10;
+}
+/* 메인텍스트 */
+.main-page_center .inner > .text-box {
+  height: 100%;
+  padding-left: 20px;
+}
+/* 반응형 폰트로 적용 */
+.main-page_center .text-box .title-text {
+font-family:  'SBAggroM';
+font-size: 7vw;
+line-height: 0.8;
+padding-top:120px;
+}
+.main-page_center .text-box .sub-text {
+  font-family: 'SBAggroL';
+  font-size: 6vw;
+line-height: 1.2;
+  }
+
+  /* 메인바텀 */
+  .main-page_bottom {
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--sub1-color);
+    /* opacity: 60%; */
+  }
+  .main-page_bottom > .inner {
+    position: relative;
+    max-width:1200px; 
+    margin: 0 auto;
+  }
+  .main-page_bottom > .inner > span {
+    position: absolute;
+    font-family: 'SBAggroL';
+    font-size: 1.3vw;
+    padding: 12px 24px;
+    color: var(--sub3-color);
+  }
+  .main-page_bottom > div:last-child {
+    float: right;
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: var(--main-color);
+  }
