@@ -17,6 +17,12 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+:root {
+  --swiper-theme-color: #343434 !important;
+}
+
 /* 노멀라이즈 */
 html {
   font-family: "Noto Sans KR", "Roboto";
@@ -338,7 +344,6 @@ color: var(--main-color);
   top:70%;
   right:0;
   width: 500px;
-
   object-fit: contain;
   transform: translatey(-56%);
   z-index: 100;
@@ -382,11 +387,12 @@ padding-left: 4px;
 .aboutme-2 {
   background-color: var(--main-color);
 }
-/* 이너의 커스텀이 적용 안되는거 같음... */
-.aboutme-2 > .inner {
-  border:3px solid red;
+/* 이너의 커스텀이 적용 안되는거 같음... -> 어바웃미와 이너사이에 div가 또 있음 */
+.aboutme-2  > div >.inner {
   width: 1200px;
   position: relative;
+  margin:0 auto;
+  /* border:3px solid red; */
 }
 
 /* 오브젝트핏 콘테인으로 사이즈 조정 */
@@ -402,15 +408,17 @@ object-position: bottom right;
 padding-left: 4px;
 }
 .aboutme-2 .right-box .title-text {
+  font-family:'SBAggroL';
   font-size: 24px;
   padding:24px 0 8px 0;
 }
 .aboutme-2 .right-box .sub-text {
   font-size: 18px;
   letter-spacing: -5%;
+
 }
 .aboutme-2 .right-box div:first-child img {
-  width: 380px;
+  width: 376px;
   object-fit: contain;
   object-position: bottom left;
   }
@@ -421,3 +429,176 @@ padding-left: 4px;
     object-position: 0 0;
     }
     
+
+
+
+    /* 개별 */
+
+    /* 03 WEB RENEWAL */
+
+.web_top > div {
+  height: 10vh;
+  width: 100%;
+}
+
+/* 전체 위치 */
+.web_inner {
+      /* border:3px solid red; */
+      width:1200px;
+      height:90vh;
+      margin:0 auto;
+    }
+
+    .slider-box-1 .swiper {
+      width: 60%;
+      height: 70vh;
+      /* border:3px solid green; */
+      margin-right: 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+    }
+   
+
+    /* 커스텀 */
+    
+    .slider-box-1 {
+      display: flex;
+      position:relative;
+      /* border:3px solid gold; */
+      height: 90vh;
+    }
+    
+    .slider-box-1__content-box {
+      display:flex;
+      flex-grow:1;
+      position:relative;
+    /*   border:3px solid red; */
+    }
+    
+    .slider-box-1 .content-box {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      /* justify-content: space-between; */
+      position:absolute;
+      top:0;
+      left:0;
+      visibility:hidden;
+      /* border:3px solid blue; */
+      padding:10vh 0;
+    }
+    
+    .slider-box-1 .content-box.active {
+      visibility:visible;
+    }
+    
+    .slider-box-1 .txt-box {
+      transition:1s;
+      transform:translateY(-100px);
+      opacity:0;
+      /* border:3px solid pink; */
+    }
+    
+    .slider-box-1 .content-box.active .txt-box {
+      transform:translateX(0);
+      opacity:1;
+    }
+    
+    .slider-box-1 .content-box .badge {
+      background-color:#CF112B;
+      display:inline-block;
+      color:white;
+      padding:4px 24px;
+      border-radius:8px;
+      margin-bottom:12px;
+    }
+    
+    .slider-box-1 .content-box .en-title {
+      font-family: 'Roboto';
+      font-size:36px;
+    }
+    .slider-box-1 .content-box .en-title >span {
+      font-weight: bold;
+    }
+    .slider-box-1 .content-box .en-title >span:first-child {
+      font-weight: 200;
+    }
+    
+    .slider-box-1 .content-box .ko-title {
+      font-size:20px;
+      color: #9F9F9F;
+      letter-spacing: -0.02em;
+    }
+    
+    .slider-box-1 .link-box {
+      font-size:18px;
+      /* border:3px solid pink; */
+      height: 35%;
+      font-family: 'Roboto';
+      font-weight: 400;
+      color:var(--sub2-color);
+      padding-top: 18px;
+       
+    }
+    .slider-box-1 .link-box a {
+      margin-right: 16px;
+      display: inline-block;
+    }
+    .slider-box-1 .link-box a span {
+      line-height: 1.6;
+    }
+    .slider-box-1 .link-box img {
+      padding-right: 2px;
+    }
+    .slider-box-1 .link-box a:hover {
+      border-bottom: 1px solid white;
+    }
+
+
+    .slider-box-1 .swiper-button-box {
+      position:absolute;
+      width:100px;
+      height:100px;
+      bottom:35vh;
+    }
+    .slider-box-1 .swiper-button-box .swiper-button-prev,
+    .slider-box-1 .swiper-button-box .swiper-button-next
+     {
+      width: 50px;
+      height: 50px;
+      border-radius: 555px;
+      transition: 0.3s;
+      box-shadow:  1px 1px 3px #E9E9E9,
+      -1px -1px 3px #E9E9E9;
+    }
+    .slider-box-1 .swiper-button-box .swiper-button-next::after,
+    .slider-box-1 .swiper-button-box .swiper-button-prev::after {
+      font-size:20px;
+    }
+    .slider-box-1 .swiper-button-box .swiper-button-prev {
+      top:58%;
+      left:0;
+    }
+    .slider-box-1 .swiper-button-box .swiper-button-next {
+      top:58%;
+      left:58px;
+    }
+    .slider-box-1 .swiper-button-box .swiper-button-prev:hover,
+    .slider-box-1 .swiper-button-box .swiper-button-next:hover {
+      background-color: #CF112B;
+      color: var(--sub2-color);
+    }
+
+    .web_bottom  {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      width: 100%;
+      height: 35%;
+      bottom: 0;
+      background-color: #CF112B;
+    padding-bottom: 24px;
+    z-index: -1;
+    }
