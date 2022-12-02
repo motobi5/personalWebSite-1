@@ -58,9 +58,9 @@ function SliderBox2__init() {
   
   swiper.on("slideChange", function () {
     
-    console.log(swiper.activeIndex);
-    $(".content-box").removeClass("active");
-    $(".content-box").eq(swiper.activeIndex).addClass("active");
+    // console.log(swiper.activeIndex);
+    $(".slider-box-2 .content-box").removeClass("active");
+    $(".slider-box-2 .content-box").eq(swiper.activeIndex).addClass("active");
     
   });
   
@@ -73,13 +73,14 @@ SliderBox2__init();
 function SliderBox3__init() {
   const swiper = new Swiper(".slider-box-3 .swiper", {
     // Optional parameters
-    loop: true,
+    // loop: true,
     
     // 한 화면에 보일 슬라이드 개수
     slidesPerView: 3,
     
     // 활성화된 슬라이드 가운데 정렬 여부
     centeredSlides: true,
+    spaceBetween:-200,
 
     // If we need pagination
     pagination: {
@@ -96,8 +97,8 @@ function SliderBox3__init() {
   swiper.on("slideChange", function () {
     
     console.log(swiper.activeIndex);
-    $(".content-box").removeClass("active");
-    $(".content-box").eq(swiper.activeIndex).addClass("active");
+    $(".slider-box-3 .content-box").removeClass("active");
+    $(".slider-box-3 .content-box").eq(swiper.activeIndex).addClass("active");
     
   });
 }
