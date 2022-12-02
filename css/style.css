@@ -18,6 +18,15 @@
   font-weight: normal;
   font-style: normal;
 }
+/* 버거킹 폰트 */
+@font-face {
+  font-family: 'Insaniburger';
+  src: url('Insaniburger.woff2') format('woff2'),
+      url('Insaniburger.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
@@ -474,19 +483,37 @@ img {
 /* 03 WEB RENEWAL */
 
 /* 화면 위쪽 빈공간 */
-.web_top>div {
+.page_top>div {
   height: 10vh;
   width: 100%;
 }
 
 /* 전체 위치 */
-.web_inner {
+/* 공통 */
+.page_inner {
   /* border:3px solid red; */
-  width: 1152px;
+  width: 1200px;
   height: 90vh;
   margin: 0 auto;
 }
 
+/* 좁은 화면일 때 화면 좌우 여백 */
+.slider-box-1,
+.slider-box-2 {
+  padding: 0 24px;
+}
+
+/* 커스텀 */
+
+.slider-box-1,
+.slider-box-2 { 
+  display: flex;
+  position: relative;
+  /* border:3px solid gold; */
+  height: 90vh;
+}
+
+/* 웹 리뉴얼 개별 커스텀 */
 .slider-box-1 .swiper {
   width: 60%;
   height: 70vh;
@@ -497,24 +524,33 @@ img {
   border-radius: 16px;
 }
 
-
-/* 커스텀 */
-
-.slider-box-1 { 
-  display: flex;
-  position: relative;
-  /* border:3px solid gold; */
-  height: 90vh;
+/* 앱 리디자인 개별 커스텀 */
+.slider-box-2 .swiper {
+  width: 47%;
+  height: 72vh;
+  /* border:3px solid green; */
 }
 
-.slider-box-1__content-box {
+
+
+/* 앱 리디자인 이미지 위치 */
+.slider-box-2 .swiper .swiper-slide img {
+  position: absolute;
+  right:0;
+  /* border:3px solid red; */
+  height: 100%;
+}
+
+.slider-box-1__content-box,
+.slider-box-2__content-box {
   display: flex;
   flex-grow: 1;
   position: relative;
   /*   border:3px solid red; */
 }
 
-.slider-box-1 .content-box {
+.slider-box-1 .content-box,
+.slider-box-2 .content-box{
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -527,53 +563,73 @@ img {
   padding: 10vh 0;
 }
 
-.slider-box-1 .content-box.active {
+.slider-box-1 .content-box.active,
+.slider-box-2 .content-box.active{
   visibility: visible;
 }
 
-.slider-box-1 .txt-box {
+.slider-box-1 .txt-box,
+.slider-box-2 .txt-box {
   transition: 1s;
   transform: translateY(-100px);
   opacity: 0;
   /* border:3px solid pink; */
 }
 
-.slider-box-1 .content-box.active .txt-box {
+.slider-box-1 .content-box.active .txt-box,
+.slider-box-2 .content-box.active .txt-box {
   transform: translateX(0);
   opacity: 1;
 }
 
-.slider-box-1 .content-box .badge {
+.slider-box-1 .content-box .badge,
+.slider-box-2 .content-box .badge {
   background-color: #CF112B;
   display: inline-block;
   color: white;
-  padding: 4px 24px;
+  padding: 4px 16px;
   border-radius: 8px;
   margin-bottom: 12px;
 }
 
-.slider-box-1 .content-box .en-title {
+/* 앱리디자인 개별 색상 */
+.slider-box-2 .content-box .badge.app {
+  background-color: #EF8D47;
+} 
+
+.slider-box-1 .content-box .en-title{
   font-family: 'Roboto';
   font-size: 36px;
   line-height: 1;
   padding-top: 10px;
 }
 
-.slider-box-1 .content-box .en-title>span {
+.slider-box-1 .content-box .en-title>span{
   font-weight: bold;
 }
 
-.slider-box-1 .content-box .en-title>span:first-child {
+.slider-box-2 .content-box .en-title {
+  font-family: 'Insaniburger';
+    font-size: 44px;
+    line-height: 1;
+    padding-top: 2px;
+    color: #EF8D47;
+  }
+
+.slider-box-1 .content-box .en-title>span:first-child,
+.slider-box-2 .content-box .en-title>span:first-child {
   font-weight: 200;
 }
 
-.slider-box-1 .content-box .ko-title {
+.slider-box-1 .content-box .ko-title,
+.slider-box-2 .content-box .ko-title {
   font-size: 20px;
   color: #9F9F9F;
   letter-spacing: -0.02em;
 }
 
-.slider-box-1 .link-box {
+.slider-box-1 .link-box,
+.slider-box-2 .link-box{
   font-size: 18px;
   /* border:3px solid pink; */
   height: 35%;
@@ -581,29 +637,34 @@ img {
   font-weight: 400;
   color: var(--sub2-color);
   padding-top: 18px;
-
+  padding-left: 2px;
 }
 
-.slider-box-1 .link-box a {
+.slider-box-1 .link-box a,
+.slider-box-2 .link-box a {
   margin-right: 16px;
   display: inline-block;
 }
 
-.slider-box-1 .link-box a span {
+.slider-box-1 .link-box a span,
+.slider-box-2 .link-box a span {
   line-height: 1.6;
 
 }
 
-.slider-box-1 .link-box img {
+.slider-box-1 .link-box img,
+.slider-box-2 .link-box img {
   padding-right: 2px;
 }
 
-.slider-box-1 .link-box a:hover {
+.slider-box-1 .link-box a:hover,
+.slider-box-2 .link-box a:hover {
   border-bottom: 1px solid white;
 }
 
 
-.slider-box-1 .swiper-button-box {
+.slider-box-1 .swiper-button-box,
+.slider-box-2 .swiper-button-box {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -611,7 +672,9 @@ img {
 }
 
 .slider-box-1 .swiper-button-box .swiper-button-prev,
-.slider-box-1 .swiper-button-box .swiper-button-next {
+.slider-box-1 .swiper-button-box .swiper-button-next,
+.slider-box-2 .swiper-button-box .swiper-button-prev,
+.slider-box-2 .swiper-button-box .swiper-button-next {
   width: 50px;
   height: 50px;
   border-radius: 555px;
@@ -621,27 +684,39 @@ img {
 }
 
 .slider-box-1 .swiper-button-box .swiper-button-next::after,
-.slider-box-1 .swiper-button-box .swiper-button-prev::after {
+.slider-box-1 .swiper-button-box .swiper-button-prev::after,
+.slider-box-2 .swiper-button-box .swiper-button-next::after,
+.slider-box-2 .swiper-button-box .swiper-button-prev::after {
   font-size: 20px;
 }
 
-.slider-box-1 .swiper-button-box .swiper-button-prev {
+.slider-box-1 .swiper-button-box .swiper-button-prev,
+.slider-box-2 .swiper-button-box .swiper-button-prev {
   top: 58%;
   left: 0;
 }
 
-.slider-box-1 .swiper-button-box .swiper-button-next {
+.slider-box-1 .swiper-button-box .swiper-button-next,
+.slider-box-2 .swiper-button-box .swiper-button-next {
   top: 58%;
   left: 58px;
 }
 
 .slider-box-1 .swiper-button-box .swiper-button-prev:hover,
-.slider-box-1 .swiper-button-box .swiper-button-next:hover {
+.slider-box-1 .swiper-button-box .swiper-button-next:hover,
+.slider-box-2 .swiper-button-box .swiper-button-prev:hover,
+.slider-box-2 .swiper-button-box .swiper-button-next:hover {
   background-color: #CF112B;
   color: var(--sub2-color);
 }
 
-.web_bottom {
+/* 앱리디자인 개별 색상 */
+.slider-box-2 .swiper-button-box .swiper-button-prev.app:hover,
+.slider-box-2 .swiper-button-box .swiper-button-next.app:hover {
+  background-color: #EF8D47;
+}
+
+.page_bottom {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -652,4 +727,9 @@ img {
   background-color: #CF112B;
   padding-bottom: 24px;
   z-index: -1;
+}
+
+/* 앱리디자인 개별 색상 */
+.page_bottom.app {
+  background-color: #EF8D47;
 }
