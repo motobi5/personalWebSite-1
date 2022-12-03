@@ -389,19 +389,22 @@ img {
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  /* border:3px solid red; */
+  /* border:3px solid red;  */
 }
 
 .my_center>.inner>.img-box {
   position: absolute;
-  top: 70%;
-  right: 0;
-  width: 500px;
+  top: 60%;
+  right: 12px;
+  width: 480px;
   object-fit: contain;
   transform: translatey(-56%);
   z-index: 100;
+  /* border:3px solid red; */
 }
-
+.my_center>.inner>.img-box img {
+  /* border:3px solid red; */
+}
 .my_center>.inner>.cen-text {
   font-size: 18px;
   font-weight: 400;
@@ -452,9 +455,10 @@ img {
 
 /* 오브젝트핏 콘테인으로 사이즈 조정 */
 .aboutme-2 .left-box img {
-  width: 500px;
+  width: 540px;
+  height: 674px;
   padding-left: 14px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: bottom right;
 }
 
@@ -477,7 +481,7 @@ img {
 }
 
 .aboutme-2 .right-box div:first-child img {
-  width: 376px;
+  width: 400px;
   object-fit: contain;
   object-position: bottom left;
 }
@@ -497,14 +501,14 @@ img {
 /* 공통 */
 /* 화면 위쪽 빈공간 */
 .page_top>div {
-  height: 10vh;
+  height: 12vh;
   width: 100%;
 }
 /* 전체 위치 */
 .page_inner {
   /* border:3px solid red; */
   width: 1200px;
-  height: 90vh;
+  height: 88vh;
   margin: 0 auto;
 }
 /* 좁은 화면일 때 화면 좌우 여백 */
@@ -521,8 +525,8 @@ img {
 .slider-box-3 { 
   display: flex;
   position: relative;
-  /* border:3px solid gold; */
-  height: 90vh;
+  border:3px solid gold;
+  height: 88vh;
 }
 
 /* 웹 리뉴얼 개별 커스텀 */
@@ -844,6 +848,53 @@ width: 120px;
 }
 
 .slider-box-3 .swiper .swiper-slide.swiper-slide-active {
+  transform:scale(1.3);
+  
+  /* 다음 슬라이드에 가려지지 않도록 유령의 우열을 높임 */
+  z-index:10;
+}
+
+
+
+
+
+/* 클론코딩 선생님 소스 버전: 적용시 선택자명 4 -> 3 으로 변경*/
+
+/* 스와이퍼 메인 컨테이너는 반!드!시! 높이가 지정되어 있어야 한다. */
+.slider-box-4 .swiper {
+  border:3px solid green;
+  width: 70%;
+  height: 70vh;
+  /*  swiper 슬라이드의 넓이가 동일하도록 inline-block의 원리를 이용(넓이를 주지 않을 경우 최소한으로 줄어듦)  */
+  /* display:inline-block; */
+  /* swiper의 overflow 속성을 visible로 할 경우 끝없이 뻗어나가는 오류를 막음 */
+  overflow:hidden;
+  margin-top: 20px;
+}
+
+.slider-box-4 .swiper .swiper-wrapper {
+  /* 넘쳐난 사이즈가 잘리지 않도록 위 아래에 여백을 줌 */
+  margin:80px 0;
+  height:500px;
+  
+  /* 스와이퍼의 기존 속성 hidden을 visible로 변경하여 파란 테두리 바깥 넘쳐난 슬라이드를 보이게 함 */
+  overflow:visible;
+  /* border:3px solid blue; */
+}
+
+.slider-box-4 .swiper .swiper-slide {
+  /* border:3px solid red; */
+  background-color:gray;
+  transition:0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.slider-box-4 .swiper .swiper-slide .a {
+  border-radius: 555px;
+}
+
+.slider-box-4 .swiper .swiper-slide.swiper-slide-active {
   transform:scale(1.3);
   
   /* 다음 슬라이드에 가려지지 않도록 유령의 우열을 높임 */
