@@ -525,7 +525,7 @@ img {
 .slider-box-3 { 
   display: flex;
   position: relative;
-  border:3px solid gold;
+  /* border:3px solid gold; */
   height: 88vh;
 }
 
@@ -676,21 +676,21 @@ img {
   letter-spacing: -0.02em;
 }
 
-/*  센터 내용 */
+/*  클론코딩 센터 내용 */
 .slider-box-3 .content-box .cen-text {
-  margin-top: 36px;
+  margin-top: 24px;
   font-family: noto sans KR;
   font-size: 14px;
 }
 .slider-box-3 .content-box .cen-text-1 >div > span {
-  padding: 2px 0;
-  font-weight: 600;
+  /* padding: 2px 0; */
+  font-weight: 500;
 }
 .slider-box-3 .content-box .cen-text-1 >div > span:first-child {
-width: 120px;
+width: 70px;
 }
 .slider-box-3 .content-box .cen-text-2 {
-  padding: 16px 0;
+  padding: 12px 0;
 }
 .slider-box-3 .content-box .cen-text-3 {
   color: red;
@@ -738,7 +738,8 @@ width: 120px;
 
 
 .slider-box-1 .swiper-button-box,
-.slider-box-2 .swiper-button-box {
+.slider-box-2 .swiper-button-box,
+.slider-box-3 .swiper-button-box {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -748,7 +749,9 @@ width: 120px;
 .slider-box-1 .swiper-button-box .swiper-button-prev,
 .slider-box-1 .swiper-button-box .swiper-button-next,
 .slider-box-2 .swiper-button-box .swiper-button-prev,
-.slider-box-2 .swiper-button-box .swiper-button-next {
+.slider-box-2 .swiper-button-box .swiper-button-next,
+.slider-box-3 .swiper-button-box .swiper-button-prev,
+.slider-box-3 .swiper-button-box .swiper-button-next {
   width: 50px;
   height: 50px;
   border-radius: 555px;
@@ -760,18 +763,22 @@ width: 120px;
 .slider-box-1 .swiper-button-box .swiper-button-next::after,
 .slider-box-1 .swiper-button-box .swiper-button-prev::after,
 .slider-box-2 .swiper-button-box .swiper-button-next::after,
-.slider-box-2 .swiper-button-box .swiper-button-prev::after {
+.slider-box-2 .swiper-button-box .swiper-button-prev::after,
+.slider-box-3 .swiper-button-box .swiper-button-next::after,
+.slider-box-3 .swiper-button-box .swiper-button-prev::after {
   font-size: 20px;
 }
 
 .slider-box-1 .swiper-button-box .swiper-button-prev,
-.slider-box-2 .swiper-button-box .swiper-button-prev {
+.slider-box-2 .swiper-button-box .swiper-button-prev,
+.slider-box-3 .swiper-button-box .swiper-button-prev  {
   top: 58%;
   left: 0;
 }
 
 .slider-box-1 .swiper-button-box .swiper-button-next,
-.slider-box-2 .swiper-button-box .swiper-button-next {
+.slider-box-2 .swiper-button-box .swiper-button-next,
+.slider-box-3 .swiper-button-box .swiper-button-next {
   top: 58%;
   left: 58px;
 }
@@ -779,7 +786,9 @@ width: 120px;
 .slider-box-1 .swiper-button-box .swiper-button-prev:hover,
 .slider-box-1 .swiper-button-box .swiper-button-next:hover,
 .slider-box-2 .swiper-button-box .swiper-button-prev:hover,
-.slider-box-2 .swiper-button-box .swiper-button-next:hover {
+.slider-box-2 .swiper-button-box .swiper-button-next:hover,
+.slider-box-3 .swiper-button-box .swiper-button-prev:hover,
+.slider-box-3 .swiper-button-box .swiper-button-next:hover {
   background-color: #CF112B;
   color: var(--sub2-color);
 }
@@ -788,6 +797,12 @@ width: 120px;
 .slider-box-2 .swiper-button-box .swiper-button-prev.app:hover,
 .slider-box-2 .swiper-button-box .swiper-button-next.app:hover {
   background-color: #EF8D47;
+}
+
+/* 클론코딩 개별 색상 */
+.slider-box-3 .swiper-button-box .swiper-button-prev.app:hover,
+.slider-box-3 .swiper-button-box .swiper-button-next.app:hover {
+  background-color: #3660EA;;
 }
 
 .page_bottom {
@@ -815,7 +830,7 @@ width: 120px;
 
 /* 스와이퍼 메인 컨테이너는 반!드!시! 높이가 지정되어 있어야 한다. */
 .slider-box-3 .swiper {
-  border:3px solid green;
+  /* border:3px solid green; */
   width: 70%;
   height: 70vh;
   /*  swiper 슬라이드의 넓이가 동일하도록 inline-block의 원리를 이용(넓이를 주지 않을 경우 최소한으로 줄어듦)  */
@@ -823,32 +838,46 @@ width: 120px;
   /* swiper의 overflow 속성을 visible로 할 경우 끝없이 뻗어나가는 오류를 막음 */
   overflow:hidden;
   margin-top: 20px;
+ 
+  
 }
 
 .slider-box-3 .swiper .swiper-wrapper {
   /* 넘쳐난 사이즈가 잘리지 않도록 위 아래에 여백을 줌 */
-  margin:80px 0;
-  height:500px;
+  margin:60px 0;
+  /* margin-top: 60px; */
   
   /* 스와이퍼의 기존 속성 hidden을 visible로 변경하여 파란 테두리 바깥 넘쳐난 슬라이드를 보이게 함 */
   overflow:visible;
   /* border:3px solid blue; */
+  
 }
 
 .slider-box-3 .swiper .swiper-slide {
   /* border:3px solid red; */
-  background-color:gray;
+  /* background-color:gray; */
   transition:0.3s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   overflow: hidden;
+
+  height: 520px;
+  
 }
 .slider-box-3 .swiper .swiper-slide .a {
-  border-radius: 555px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.slider-box-3 .swiper .swiper-slide img {
+  width: 100%;
+  /* overflow: hidden; */
+  object-fit:cover;
+  object-position:top;
+   /* border:3px solid red; */
 }
 
 .slider-box-3 .swiper .swiper-slide.swiper-slide-active {
-  transform:scale(1.3);
+  transform:scale(1.2);
   
   /* 다음 슬라이드에 가려지지 않도록 유령의 우열을 높임 */
   z-index:10;
@@ -858,11 +887,20 @@ width: 120px;
 
 
 
+
+
+
+
+
+
+
+
+
 /* 클론코딩 선생님 소스 버전: 적용시 선택자명 4 -> 3 으로 변경*/
 
 /* 스와이퍼 메인 컨테이너는 반!드!시! 높이가 지정되어 있어야 한다. */
 .slider-box-4 .swiper {
-  border:3px solid green;
+  /* border:3px solid green; */
   width: 70%;
   height: 70vh;
   /*  swiper 슬라이드의 넓이가 동일하도록 inline-block의 원리를 이용(넓이를 주지 않을 경우 최소한으로 줄어듦)  */

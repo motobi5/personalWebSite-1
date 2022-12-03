@@ -13,9 +13,9 @@ function SliderBox1__init() {
     loop: false,
 
     // If we need pagination
-    pagination: {
-      el: ".slider-box-1 .swiper-pagination"
-    },
+    // pagination: {
+    //   el: ".slider-box-1 .swiper-pagination"
+    // },
 
     // Navigation arrows
     navigation: {
@@ -45,9 +45,9 @@ function SliderBox2__init() {
     loop: false,
 
     // If we need pagination
-    pagination: {
-      el: ".slider-box-2 .swiper-pagination"
-    },
+    // pagination: {
+    //   el: ".slider-box-2 .swiper-pagination"
+    // },
 
     // Navigation arrows
     navigation: {
@@ -73,18 +73,24 @@ SliderBox2__init();
 function SliderBox3__init() {
   const swiper = new Swiper(".slider-box-3 .swiper", {
     // Optional parameters
-    // loop: true,
+    loop: true,
     
-    // 한 화면에 보일 슬라이드 개수
-    slidesPerView: 3,
+
     
     // 활성화된 슬라이드 가운데 정렬 여부
     centeredSlides: true,
-    spaceBetween:-200,
 
+    spaceBetween:0,
+    slidesPerView: 1.4, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
     // If we need pagination
-    pagination: {
-      el: ".slider-box-3 .swiper-pagination"
+    // pagination: {
+    //   el: ".slider-box-3 .swiper-pagination"
+    // },
+  
+    // effect: 'fade', // 지울 시 일반 슬라이드, `fade`, `flip`, `coverflow`, `cube`, `cards`, `creative`
+    autoplay: {
+      delay: 7000, // 7초마다 슬라이드 넘김
+      disableOnInteraction : false, // 자동 재생 중 건드려도 비활성화되지 않음
     },
 
     // Navigation arrows
@@ -98,9 +104,15 @@ function SliderBox3__init() {
     
     console.log(swiper.activeIndex);
     $(".slider-box-3 .content-box").removeClass("active");
-    $(".slider-box-3 .content-box").eq(swiper.activeIndex).addClass("active");
+
+    // 선생님 인덱스 함수 (슬라이드 자동 루프로 할 경우 콘텐츠 박스가 불어와 지질 않는다.)
+    // $(".slider-box-3 .content-box").eq(swiper.activeIndex).addClass("active");
     
+    // 좀 다른 형태의 인덱스(?) 함수 (겉보기에는 잘 불러와 진다)
+    $('.slider-box-3 .content-box').eq(this.realIndex).addClass('active');
   });
+
+  
 }
 
 SliderBox3__init();
