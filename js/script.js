@@ -13,9 +13,9 @@ function SliderBox1__init() {
     loop: false,
 
     // If we need pagination
-    // pagination: {
-    //   el: ".slider-box-1 .swiper-pagination"
-    // },
+    pagination: {
+      el: ".slider-box-1 .swiper-pagination"
+    },
 
     // Navigation arrows
     navigation: {
@@ -45,9 +45,9 @@ function SliderBox2__init() {
     loop: false,
 
     // If we need pagination
-    // pagination: {
-    //   el: ".slider-box-2 .swiper-pagination"
-    // },
+    pagination: {
+      el: ".slider-box-2 .swiper-pagination"
+    },
 
     // Navigation arrows
     navigation: {
@@ -83,9 +83,9 @@ function SliderBox3__init() {
     spaceBetween:0,
     slidesPerView: 1.4, // 한 화면에 보일 슬라이드 개수, 소수 가능, effect 설정 시 적용 안 됨(coverflow는 가능)
     // If we need pagination
-    // pagination: {
-    //   el: ".slider-box-3 .swiper-pagination"
-    // },
+    pagination: {
+      el: ".slider-box-3 .swiper-pagination"
+    },
   
     // effect: 'fade', // 지울 시 일반 슬라이드, `fade`, `flip`, `coverflow`, `cube`, `cards`, `creative`
     autoplay: {

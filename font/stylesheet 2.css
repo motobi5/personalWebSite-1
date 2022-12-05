@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Godo B';
+    src: url('GodoB.woff2') format('woff2'),
+        url('GodoB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

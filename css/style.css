@@ -187,13 +187,12 @@ img {
 /* 배경이미지 최종적으로 넣지 고민중 */
 .main-page {
   height: 100vh;
-  /* 
+  
   position: relative;
-  background-image: url("https://i.postimg.cc/tTGP23XD/00-main.png");
+  background-image: url("/image/home/00_main.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  */
 }
 
 /* 메인탑 */
@@ -253,7 +252,7 @@ img {
   bottom: 0;
   left: 0;
   background-color: var(--sub1-color);
-  /* opacity: 60%; */
+  opacity: 60%;
 }
 
 .main-page_bottom>.inner {
@@ -514,7 +513,8 @@ img {
 /* 좁은 화면일 때 화면 좌우 여백 */
 .slider-box-1,
 .slider-box-2,
-.slider-box-3 {
+.slider-box-3,
+.other-work {
   padding: 0 24px;
 }
 
@@ -522,12 +522,17 @@ img {
 
 .slider-box-1,
 .slider-box-2,
-.slider-box-3 { 
+.slider-box-3,
+.other-work { 
   display: flex;
   position: relative;
   /* border:3px solid gold; */
   height: 88vh;
 }
+
+/* 개별 커스텀 */
+
+
 
 /* 웹 리뉴얼 개별 커스텀 */
 .slider-box-1 .swiper {
@@ -551,7 +556,7 @@ img {
 
 /* 앱 리디자인 이미지 위치 */
 .slider-box-2 .swiper .swiper-slide img,
-.slider-box-3 .swiper .swiper-slide img {
+.slider-box-3 .swiper .swiper-slide img{
   position: absolute;
   right:0;
   /* border:3px solid red; */
@@ -560,18 +565,25 @@ img {
 
 .slider-box-1__content-box,
 .slider-box-2__content-box,
-.slider-box-3__content-box {
+.slider-box-3__content-box,
+.other-work__content-box {
   display: flex;
   flex-grow: 1;
   position: relative;
     /* border:3px solid red; */
 }
-.slider-box-3__content-box {
+.slider-box-3__content-box,
+.other-work__content-box {
   margin-right: 36px;
 }
+.other-work__content-box {
+  padding-top: 10vh;
+}
+
 .slider-box-1 .content-box,
 .slider-box-2 .content-box,
-.slider-box-3 .content-box {
+.slider-box-3 .content-box,
+.other-work .contnet-box {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -584,9 +596,11 @@ img {
   padding: 10vh 0;
 }
 
+
 .slider-box-1 .content-box.active,
 .slider-box-2 .content-box.active,
-.slider-box-3 .content-box.active{
+.slider-box-3 .content-box.active,
+.other-work .contnet-box.active {
   visibility: visible;
 }
 
@@ -598,7 +612,13 @@ img {
   opacity: 0;
   /* border:3px solid pink; */
 }
-
+,
+.other-work .txt-box {
+  transition: 1s;
+  transform: translateY(-100px);
+  opacity: 0;
+  border:3px solid pink;
+}
 .slider-box-3 .cen-text {
   /* background-color: var(--sub2-color); */
   transition: 1s;
@@ -606,7 +626,8 @@ img {
 }
 .slider-box-1 .content-box.active .txt-box,
 .slider-box-2 .content-box.active .txt-box,
-.slider-box-3 .content-box.active .txt-box{
+.slider-box-3 .content-box.active .txt-box,
+.other-work .content-box.active .txt-box{
   transform: translateY(0);
   opacity: 1;
 }
@@ -617,7 +638,8 @@ img {
 
 .slider-box-1 .content-box .badge,
 .slider-box-2 .content-box .badge,
-.slider-box-3 .content-box .badge{
+.slider-box-3 .content-box .badge,
+.other-work .content-box .badge{
   background-color: #CF112B;
   display: inline-block;
   color: white;
@@ -633,6 +655,10 @@ img {
 /* 앱리디자인 개별 색상 */
 .slider-box-3 .content-box .badge.app {
   background-color: #3660EA;
+} 
+/* 그외 작업 개별 색상*/
+.other-work .content-box .badge.app {
+  background-color: #9449DF;
 } 
 
 .slider-box-1 .content-box .en-title{
@@ -653,12 +679,13 @@ img {
     padding-top: 2px;
     color: #EF8D47;
   }
-  .slider-box-3 .content-box .en-title {
-    font-family: 'Godo B';
+  .slider-box-3 .content-box .en-title,
+  .other-work .content-box .en-title {
+    font-family: 'Roboto';
       font-size: 36px;
-      line-height: 1.1;
+      line-height: 1.2;
       padding-top: 2px;
-      font-weight: bold;
+      font-weight: 900;
       color: var(--sub1-color);
       /* border:3px solid gold; */
     }
@@ -670,7 +697,8 @@ img {
 
 .slider-box-1 .content-box .ko-title,
 .slider-box-2 .content-box .ko-title,
-.slider-box-3 .content-box .ko-title {
+.slider-box-3 .content-box .ko-title,
+.other-work .content-box .ko-title {
   font-size: 20px;
   color: #9F9F9F;
   letter-spacing: -0.02em;
@@ -805,6 +833,7 @@ width: 70px;
   background-color: #3660EA;;
 }
 
+
 .page_bottom {
   display: flex;
   justify-content: center;
@@ -824,6 +853,9 @@ width: 70px;
 }
 .page_bottom.clone {
   background-color: #3660EA;
+}
+.page_bottom.other {
+  background-color: #9449DF;
 }
 
 /* 클론코딩 개별 커스텀 */
