@@ -1,158 +1,11 @@
 console.clear();
 
-// 눈 내리는 효과
-// (function () {
 
-//   var COUNT = 300;
-//   var masthead = document.querySelector('.sky');
-//   var canvas = document.createElement('canvas');
-//   var ctx = canvas.getContext('2d');
-//   var width = masthead.clientWidth;
-//   var height = masthead.clientHeight;
-//   var i = 0;
-//   var active = false;
-
-//   function onResize() {
-//     width = masthead.clientWidth;
-//     height = masthead.clientHeight;
-//     canvas.width = width;
-//     canvas.height = height;
-//     ctx.fillStyle = '#FFF';
-
-//     var wasActive = active;
-//     active = width > 600;
-
-//     if (!wasActive && active)
-//       requestAnimFrame(update);
-//   }
-
-//   var Snowflake = function () {
-//     this.x = 0;
-//     this.y = 0;
-//     this.vy = 0;
-//     this.vx = 0;
-//     this.r = 0;
-
-//     this.reset();
-//   }
-
-//   Snowflake.prototype.reset = function() {
-//     this.x = Math.random() * width;
-//     this.y = Math.random() * -height;
-//     this.vy = 1 + Math.random() * 3;
-//     this.vx = 0.5 - Math.random();
-//     this.r = 1 + Math.random() * 2;
-//     this.o = 0.5 + Math.random() * 0.5;
-//   }
-
-//   canvas.style.position = 'absolute';
-//   canvas.style.left = canvas.style.top = '0';
-
-//   var snowflakes = [], snowflake;
-//   for (i = 0; i < COUNT; i++) {
-//     snowflake = new Snowflake();
-//     snowflake.reset();
-//     snowflakes.push(snowflake);
-//   }
-  
-//   function update() {
-
-//     ctx.clearRect(0, 0, width, height);
-
-//     if (!active)
-//       return;
-
-//     for (i = 0; i < COUNT; i++) {
-//       snowflake = snowflakes[i];
-//       snowflake.y += snowflake.vy;
-//       snowflake.x += snowflake.vx;
-
-//       ctx.globalAlpha = snowflake.o;
-//       ctx.beginPath();
-//       ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false);
-//       ctx.closePath();
-//       ctx.fill();
-
-//       if (snowflake.y > height) {
-//         snowflake.reset();
-//       }
-//     }
-
-//     requestAnimFrame(update);
-//   }
-
-//   // shim layer with setTimeout fallback
-//   window.requestAnimFrame = (function(){
-//     return  window.requestAnimationFrame       ||
-//             window.webkitRequestAnimationFrame ||
-//             window.mozRequestAnimationFrame    ||
-//             function( callback ){
-//               window.setTimeout(callback, 1000 / 60);
-//             };
-//   })();
-
-//   onResize();
-//   window.addEventListener('resize', onResize, false);
-
-//   masthead.appendChild(canvas);
-// })();
-
-// 홈 로딩페이지
-// 페이지 열릴때 반응하라
+// 홈 (리턴)
 window.onload = function () {
-$(".intro_bottom div").addClass("active");
-}
-setTimeout(function() {
-  $('.loading-page').addClass('hide');
-}, 14000);
-
-// 홈 인트로 글자 타이핑
-$(document).ready(function () {
-  var typingBool = false;
-  var typingIdx = 0;
-  var liIndex = 0;
-  var liLength = $(".typing-txt>ul>li").length;
-
-  // 타이핑될 텍스트를 가져온다
-  var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-  typingTxt = typingTxt.split(""); // 한글자씩 자른다.
-  if (typingBool == false) {
-    // 타이핑이 진행되지 않았다면
-    typingBool = true;
-    var tyInt = setInterval(typing, 100); // 반복동작
+  $('.home_top div').addClass('active');
   }
 
-  function typing() {
-    $(".typing ul li").removeClass("on");
-    $(".typing ul li").eq(liIndex).addClass("on");
-    if (typingIdx < typingTxt.length) {
-      // 타이핑될 텍스트 길이만큼 반복
-      $(".typing ul li").eq(liIndex).append(typingTxt[typingIdx]); // 한글자씩 이어준다.
-      typingIdx++;
-    } else {
-      if (liIndex < liLength - 1) {
-        //다음문장으로  가기위해 인덱스를 1증가
-        liIndex++;
-        //다음문장을 타이핑하기위한 셋팅
-        typingIdx = 0;
-        typingBool = false;
-        typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
-
-        //다음문장 타이핑전 1초 쉰다
-        clearInterval(tyInt);
-        //타이핑종료
-
-        setTimeout(function () {
-          //1초후에 다시 타이핑 반복 시작
-          tyInt = setInterval(typing, 100);
-        }, 1000);
-      } else if (liIndex == liLength - 1) {
-        //마지막 문장까지 써지면 반복종료
-        clearInterval(tyInt);
-      }
-    }
-  }
-});
 
 // 어바웃미
 $("#fullpage").fullpage({
@@ -272,4 +125,104 @@ function SliderBox3__init() {
 }
 
 SliderBox3__init();
+
+
+// 눈 내리는 효과
+// (function () {
+
+//   var COUNT = 300;
+//   var masthead = document.querySelector('.sky');
+//   var canvas = document.createElement('canvas');
+//   var ctx = canvas.getContext('2d');
+//   var width = masthead.clientWidth;
+//   var height = masthead.clientHeight;
+//   var i = 0;
+//   var active = false;
+
+//   function onResize() {
+//     width = masthead.clientWidth;
+//     height = masthead.clientHeight;
+//     canvas.width = width;
+//     canvas.height = height;
+//     ctx.fillStyle = '#FFF';
+
+//     var wasActive = active;
+//     active = width > 600;
+
+//     if (!wasActive && active)
+//       requestAnimFrame(update);
+//   }
+
+//   var Snowflake = function () {
+//     this.x = 0;
+//     this.y = 0;
+//     this.vy = 0;
+//     this.vx = 0;
+//     this.r = 0;
+
+//     this.reset();
+//   }
+
+//   Snowflake.prototype.reset = function() {
+//     this.x = Math.random() * width;
+//     this.y = Math.random() * -height;
+//     this.vy = 1 + Math.random() * 3;
+//     this.vx = 0.5 - Math.random();
+//     this.r = 1 + Math.random() * 2;
+//     this.o = 0.5 + Math.random() * 0.5;
+//   }
+
+//   canvas.style.position = 'absolute';
+//   canvas.style.left = canvas.style.top = '0';
+
+//   var snowflakes = [], snowflake;
+//   for (i = 0; i < COUNT; i++) {
+//     snowflake = new Snowflake();
+//     snowflake.reset();
+//     snowflakes.push(snowflake);
+//   }
+  
+//   function update() {
+
+//     ctx.clearRect(0, 0, width, height);
+
+//     if (!active)
+//       return;
+
+//     for (i = 0; i < COUNT; i++) {
+//       snowflake = snowflakes[i];
+//       snowflake.y += snowflake.vy;
+//       snowflake.x += snowflake.vx;
+
+//       ctx.globalAlpha = snowflake.o;
+//       ctx.beginPath();
+//       ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false);
+//       ctx.closePath();
+//       ctx.fill();
+
+//       if (snowflake.y > height) {
+//         snowflake.reset();
+//       }
+//     }
+
+//     requestAnimFrame(update);
+//   }
+
+//   // shim layer with setTimeout fallback
+//   window.requestAnimFrame = (function(){
+//     return  window.requestAnimationFrame       ||
+//             window.webkitRequestAnimationFrame ||
+//             window.mozRequestAnimationFrame    ||
+//             function( callback ){
+//               window.setTimeout(callback, 1000 / 60);
+//             };
+//   })();
+
+//   onResize();
+//   window.addEventListener('resize', onResize, false);
+
+//   masthead.appendChild(canvas);
+// })();
+
+
 

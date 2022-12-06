@@ -18,6 +18,20 @@
   font-weight: normal;
   font-style: normal;
 }
+/* 인트로 폰트 */
+@font-face {
+  font-family: 'IBMPlexSansKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* 버거킹 폰트 */
 @font-face {
   font-family: 'Insaniburger';
@@ -179,6 +193,9 @@ img {
 
 /* 01 HOME */
 
+#tsparticles {
+  /* height:500px; */
+}
 
 /* 로딩페이지 */
 .loading-page {
@@ -187,7 +204,8 @@ img {
   display:flex;
   justify-content:center;
   align-items:center;
-  background-image: url("/image/intro/00_intro2.png");
+  /* background-image: url("/image/intro/00_intro2.png"); */
+    background-image: url("/image/intro/00_intro2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -210,13 +228,16 @@ img {
   top:38%;
 }
 
+
 /*  타이핑 커스텀 */
 .typing-txt{display: none;}
 ul{list-style:none;}
 .typing ul li{
   display:block;
   color: var(--sub1-color); 
-  font-family: 'noto Sans KR';
+  /* font-family: 'noto Sans KR'; */
+  /* font-family: 'IBMPlexSansKR-Regular'; */
+  font-family: 'SUIT-Regular';
 }
 .typing ul li:last-child {
   color: #717171;
@@ -246,7 +267,8 @@ ul{list-style:none;}
   width: 0;
   left: 0;
   background-color: var(--sub1-color);
-  transition: 8s;
+  transition: 1.6s 11s;
+  transition-timing-function:linear;
 }
 
 .intro_bottom div:nth-child(1).active  {
@@ -258,7 +280,8 @@ ul{list-style:none;}
   width: 0;
   left:66.666%;
   background-color:var(--main-color);
-  transition:  7s 8s;
+  transition:  0.8s 12.6s;
+  transition-timing-function:linear;
 }
 .intro_bottom div:nth-child(2).active  {
   width: calc(100% / 3);
@@ -290,7 +313,8 @@ ul{list-style:none;}
 }
 
 /* 메인탑 */
-.main-page_top {
+.main-page_top,
+.home_top {
   position: relative;
   height: calc(100% / 5);
   width: 100%;
@@ -300,9 +324,29 @@ ul{list-style:none;}
 }
 
 .main-page_top div {
+  position: absolute;
   width: calc(100% / 4);
-  height: 100%;
+  height: 0%;
   background-color: var(--main-color);
+  opacity: 0;
+  transition: 2s 13.8s;
+
+}
+.main-page_top div.active {
+  opacity: 1;
+  height: 100%;
+}
+.home_top div {
+  position: absolute;
+  width: calc(100% / 4);
+  height: 0%;
+  background-color: var(--main-color);
+  opacity: 0;
+  transition: 2s;
+}
+.home_top div.active {
+  opacity: 1;
+  height: 100%;
 }
 
 /* 메인센터 */
