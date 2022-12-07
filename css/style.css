@@ -213,7 +213,7 @@ img {
   top:0;
   left:0;
   z-index:9999;
-  transition:opacity 1s, visibility 1s;
+  transition:opacity 2s, visibility 2s;
 }
 .loading-page.hide {
   opacity:0;
@@ -630,7 +630,66 @@ ul{list-style:none;}
   object-position: 0 0;
 }
 
+/* ABOUT ME > special */
 
+.aboutme-3 {
+  background-attachment: fixed;
+  background-position: 0px 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../image/aboutMe/sec-3.png);
+  word-break: break-word;
+}
+
+/* 이너의 커스텀이 적용 안되는거 같음... -> 어바웃미와 이너사이에 div가 또 있었음. 라이브러리를 활용할때는 기존 html코드도 확인해보자! */
+.aboutme-3 > div > .inner {
+  height: 100vh;
+  position: relative;
+  /* border:3px solid red; */
+  
+}
+.aboutme-3 .inner .spe-box,
+.aboutme-3 .inner .spe-bottom {
+  background-color: var(--sub3-color);
+}
+.aboutme-3 .inner .spe-box {
+  height: 72vh;
+  border-bottom: 1px solid gray;
+  box-shadow: 0px 6px 4px -4px  gray; 
+  /* border:3px solid blue; */
+}
+.aboutme-3 .inner .spe-bottom {
+  height: 14px;
+}
+
+/* 스페셜 단락 위쪽 빈공산 */
+.aboutme-3 .spe-box > .spe-top {
+  height:12%;
+}
+/* 스페셜 텍스트 부분 */
+.aboutme-3 .spe-box > .spe-txt {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  /* border:3px solid red; */
+  font-size: 18px;
+  color: var(--main-color);
+} 
+
+.aboutme-3 .spe-box > .spe-txt .title-txt {
+  gap: 4px;
+  font-family: 'noto sans KR';
+  font-weight: bold;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.aboutme-3 .spe-box > .spe-txt .title-txt img {
+  height: 22px;
+}
+/* 스페셜 텍스트박스 간의 간격 */
+.aboutme-3 .spe-box > .spe-txt > div:nth-child(2) {
+  margin: 40px 0;
+}
 
 /* 03 WEB RENEWAL */
 /* 04 APP REDESIGN */
