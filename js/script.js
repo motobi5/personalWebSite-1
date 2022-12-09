@@ -7,10 +7,9 @@ window.onload = function () {
   }
 
 
-// 어바웃미
-$("#fullpage").fullpage({
-  menu: ".line"
-});
+
+
+
 
 // 웹리뉴얼
 

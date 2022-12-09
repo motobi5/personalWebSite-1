@@ -6,13 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- 제이쿼리 불러오기 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!-- 풀페이지 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+
+<!-- circle-progress 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+<!-- tsparticles 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <script src="js/script aboutme.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- 테일윈드 -->
@@ -189,7 +195,71 @@
         <div class="spe-bottom"></div>
       </div>
     </section>
-    <section class="section aboutme-4" data-anchor="section-4">섹션 4</section>
+    <section class="section aboutme-4" data-anchor="section-4">
+      <div class="inner">
+        <div class="work-box">
+          <div class="work-inner">
+            <div class="top-box">
+              <div class="skill skill-1 flex">
+                <div class="circle">
+                  <div class="percent"></div>
+                </div>
+                <div class="txt-box flex flex-col justify-center">
+                  <div class="title-txt">Photoshop</div>
+                  <div class="sub-txt">펜툴을 활용한 이미지 리터칭과 합성 및 편집이 가능하며 <br>
+                    필터 및 효과를 응용하여 원하는 결과물을 도출할 수 있습니다.</div>
+                </div>
+              </div>
+              <div class="skill-2-box flex">
+                <div class="skill skill-2 flex">
+                  <div class="circle">
+                    <div class="percent"></div>
+                  </div>
+                  <div class="txt-box flex flex-col justify-center">
+                    <div class="title-txt">Figma</div>
+                    <div class="sub-txt">
+                      컴포넌트와 베리언트를 적용시켜서 디자인이 가능하며<br>
+                      피그마내에서의 프로토타입 구현도 가능합니다.</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="skill-3-box flex">
+                <div class="skill skill-3 flex">
+                  <div class="circle">
+                    <div class="percent"></div>
+                  </div>
+                  <div class="txt-box flex flex-col justify-center">
+                    <div class="title-txt">Illustrator</div>
+                    <div class="sub-txt">간단한 아이콘 제작이 가능하며 <br>
+                      레이어를 활용한 홍보물 디자인 작업을 할 수 있습니다.</div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="skill-4-box flex">
+                <div class="skill skill-4 flex">
+                  <div class="circle">
+                    <div class="percent"></div>
+                  </div>
+                  <div class="txt-box flex flex-col justify-center">
+                    <div class="title-txt">Visual Studio Code</div>
+                    <div class="sub-txt">HTML와 CSS의 구조를 이해하고  있으며<br>
+                      jQuery를 통해 동적구현 효과를 적용시킬 수 있습니다.</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+        <div id="tsparticles"></div>
+      </div>
+    </section>
     <section class="section aboutme-5" data-anchor="section-5">섹션 5</section>
     <section class="section" data-anchor="section-6">섹션 6</section>
   </div>
