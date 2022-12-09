@@ -14,6 +14,9 @@ let chart1Rendered = false;
 
 $("#fullpage").fullpage({
   menu: ".line",
+  controlArrows: true, // 슬라이드 컨트롤 애로우 생성
+  slidesNavigation: true, // 슬라이드 컨트롤 네비게이션 생성
+  slidesNavPosition: "bottom", // 슬라이드 컨트롤 네비게이션 위치 top / bottom
   afterLoad: function(ignored, destination){
     // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
     if ( destination.anchor == 'section-4' ) {
@@ -45,9 +48,9 @@ $("#fullpage").fullpage({
       }
     }
   }
- 
 });
 
+// 스페셜 도넛차트
 // circle 커스텀 value를 0으로 설정해야 합니다!
 $(".circle")
   .circleProgress({
@@ -77,7 +80,7 @@ $(".circle")
       .text(parseInt(stepValue * 100) + "%");
   });
 
-// 파티클
+// 워크스킬 파티클
   tsParticles.load("tsparticles", {
     // 전체 화면 여부
     fullScreen: {
@@ -178,79 +181,6 @@ $(".circle")
         }
       }
     },
-    
-    
-      // 동글 네모
-      // particles: {
-      //   number: {
-      //     value: 30,
-      //     density: {
-      //       enable: true,
-      //       area: 800
-      //     }
-      //   },
-      //   links: {
-      //     enable: true,
-      //     color: "#0077ff"
-      //   },
-      //   shape: {
-      //     type: ["circle", "square"]
-      //   },
-      //   opacity: {
-      //     value: 1
-      //   },
-      //   size: {
-      //     value: 30,
-      //     random: {
-      //       enable: true,
-      //       minimumValue: 15
-      //     }
-      //   },
-      //   rotate: {
-      //     value: 0,
-      //     direction: "random",
-      //     animation: {
-      //       speed: 5,
-      //       enable: true
-      //     }
-      //   },
-      //   move: {
-      //     enable: true,
-      //     speed: 6,
-      //     direction: "none",
-      //     out_mode: "out"
-      //   }
-      // },
-    
-      // 짱 큰 똥글뱅이
-      // particles: {
-      //   number: {
-      //     value: 10
-      //   },
-      //   shape: {
-      //     type: "circle"
-      //   },
-      //   opacity: {
-      //     value: 0.2
-      //   },
-      //   size: {
-      //     value: 400,
-      //     random: {
-      //       enable: true,
-      //       minimumValue: 200
-      //     }
-      //   },
-      //   move: {
-      //     enable: true,
-      //     speed: 1,
-      //     direction: "top-right",
-      //     // outModes: {
-      //     //   default: "out",
-      //     //   top: "destroy",
-      //     //   bottom: "none"
-      //     // }
-      //   }
-      // },
-    
+      
   });
   
