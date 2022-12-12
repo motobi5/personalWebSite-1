@@ -14,9 +14,12 @@ let chart1Rendered = false;
 
 $("#fullpage").fullpage({
   menu: ".line",
+  
   controlArrows: true, // 슬라이드 컨트롤 애로우 생성
   slidesNavigation: true, // 슬라이드 컨트롤 네비게이션 생성
   slidesNavPosition: "bottom", // 슬라이드 컨트롤 네비게이션 위치 top / bottom
+  
+  
   afterLoad: function(ignored, destination){
     // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
     if ( destination.anchor == 'section-4' ) {
@@ -24,16 +27,16 @@ $("#fullpage").fullpage({
         // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
         $(".skill-1 .circle").circleProgress({value: 0.9});
         $(".skill-2 .circle").circleProgress({value: 0.8});
-        $(".skill-3 .circle").circleProgress({value: 0.7});
-        $(".skill-4 .circle").circleProgress({value: 0.7});
+        $(".skill-3 .circle").circleProgress({value: 0.75});
+        $(".skill-4 .circle").circleProgress({value: 0.75});
       }
       else {
         if ( chart1Rendered == false ) {
           // circle 차트 클래스명 확인 및 변경을 원하는 수치 입력
           $(".skill-1 .circle").circleProgress({value: 0.9});
           $(".skill-2 .circle").circleProgress({value: 0.8});
-          $(".skill-3 .circle").circleProgress({value: 0.7});
-          $(".skill-4 .circle").circleProgress({value: 0.7});
+          $(".skill-3 .circle").circleProgress({value: 0.75});
+          $(".skill-4 .circle").circleProgress({value: 0.75});
           chart1Rendered = true;
         }
       }
@@ -47,7 +50,51 @@ $("#fullpage").fullpage({
         $(".skill-4 .circle").circleProgress({value: 0});
       }
     }
-  }
+
+  },
+ //onleave
+ //온리브 어바웃미-1 동작하지 않는다. 왜일까?
+
+    onLeave: function (origin, destination, direction, trigger) {
+      if (destination.index == 0) {
+        $(".aboutme-1.txt-box").addClass("active");
+        $(".aboutme-2 .txt-box").removeClass("active");
+        $(".aboutme-3 .txt-box").removeClass("active");
+        $(".aboutme-4 .txt-box").removeClass("active");
+        $(".aboutme-5 .txt-box").removeClass("active");
+      }  else if (destination.index == 1) {
+        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-2 .txt-box").addClass("active");
+        $(".aboutme-3 .txt-box").removeClass("active");
+        $(".aboutme-4 .txt-box").removeClass("active");
+        $(".aboutme-5 .txt-box").removeClass("active");
+      } else if (destination.index == 2) {
+        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-2 .txt-box").removeClass("active");
+        $(".aboutme-3 .txt-box").addClass("active");
+        $(".aboutme-4 .txt-box").removeClass("active");
+        $(".aboutme-5 .txt-box").removeClass("active");
+      }else if (destination.index == 3) {
+        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-2 .txt-box").removeClass("active");
+        $(".aboutme-3 .txt-box").removeClass("active");
+        $(".aboutme-4 .txt-box").addClass("active");
+        $(".aboutme-5 .txt-box").removeClass("active");
+      }else if (destination.index == 4) {
+        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-2 .txt-box").removeClass("active");
+        $(".aboutme-3 .txt-box").removeClass("active");
+        $(".aboutme-4 .txt-box").removeClass("active");
+        $(".aboutme-5 .txt-box").addClass("active");
+      } else {
+        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-2 .txt-box").removeClass("active");
+        $(".aboutme-3 .txt-box").removeClass("active");
+        $(".aboutme-4 .txt-box").removeClass("active");
+        $(".aboutme-5 .txt-box").removeClass("active");
+      }
+    }
+  
 });
 
 // 스페셜 도넛차트
@@ -184,3 +231,14 @@ $(".circle")
       
   });
   
+
+  $(document).ready(function () {
+  
+  
+    //메뉴이동
+    $(".aboutme-6 .top").click(function () {
+      let IndexNum = $(this).index() + 1;
+      // console.log(IndexNum);
+      fullpage_api.moveTo(IndexNum);
+    },12000);
+  });

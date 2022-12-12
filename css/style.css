@@ -504,7 +504,7 @@ ul{list-style:none;}
   position: relative;
 }
 
-.my_top {
+.aboutme-1 .title-txt {
   position: relative;
   height: 30%;
   max-width: 1200px;
@@ -512,7 +512,7 @@ ul{list-style:none;}
   /* border:3px solid red; */
 }
 
-.my_top>span {
+.aboutme-1 .title-txt>span {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -524,13 +524,13 @@ ul{list-style:none;}
   color: var(--main-color);
 }
 
-.my_center {
+.aboutme-1 .sub-txt {
   height: 35%;
   margin: 0 auto;
   background-color: var(--sub3-color);
 }
 
-.my_center>.inner {
+.aboutme-1 .sub-txt>.inner {
   position: relative;
   height: 100%;
   max-width: 1200px;
@@ -538,7 +538,7 @@ ul{list-style:none;}
   /* border:3px solid red;  */
 }
 
-.my_center>.inner>.img-box {
+.aboutme-1 .sub-txt>.inner>.img-box {
   position: absolute;
   top: 60%;
   right: 12px;
@@ -548,10 +548,10 @@ ul{list-style:none;}
   z-index: 100;
   /* border:3px solid red; */
 }
-.my_center>.inner>.img-box img {
+.aboutme-1 .sub-txt>.inner>.img-box img {
   /* border:3px solid red; */
 }
-.my_center>.inner>.cen-text {
+.aboutme-1 .sub-txt>.inner>.cen-text {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
@@ -563,8 +563,33 @@ ul{list-style:none;}
   color: var(--main-color);
 }
 
-.my_center>.inner>.cen-text>div:nth-child(2) {
+.aboutme-1 .sub-txt>.inner>.cen-text>div:nth-child(2) {
   padding: 16px 0;
+}
+
+/* 어바웃미1 이벤트가 동작하지 않는다. 왜일까?
+마크업을 좀 다르게 해야하나?? */
+/* 이벤트 */
+.aboutme-1.txt-box{
+  overflow:hidden;
+}
+.aboutme-1.txt-box > .title-txt {
+  transform: translatey(100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-1.txt-box.active > .title-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.aboutme-1.txt-box > .sub-txt {
+  transform: translatey(160px);
+  opacity: 0;
+  transition: 1s 0.3s;
+}
+.aboutme-1.txt-box.active > .sub-txt {
+  transform: translatex(0px);
+  opacity: 1;
 }
 
 .my_bottom {
@@ -614,13 +639,13 @@ ul{list-style:none;}
   padding-left: 4px;
 }
 
-.aboutme-2 .right-box .title-text {
+.aboutme-2 .right-box .title-txt {
   font-family: 'SBAggroL';
   font-size: 24px;
   padding: 24px 0 8px 0;
 }
 
-.aboutme-2 .right-box .sub-text {
+.aboutme-2 .right-box .sub-txt {
   font-size: 18px;
   letter-spacing: -5%;
 
@@ -638,6 +663,31 @@ ul{list-style:none;}
   object-fit: contain;
   object-position: 0 0;
 }
+
+/* 이벤트 */
+.aboutme-2 .txt-box{
+  overflow:hidden;
+}
+.aboutme-2 .txt-box > .title-txt {
+  transform: translatey(100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-2 .txt-box.active > .title-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.aboutme-2 .txt-box > .sub-txt {
+  transform: translatey(160px);
+  opacity: 0;
+  transition: 1s 0.3s;
+}
+.aboutme-2 .txt-box.active > .sub-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
+
+
 
 /* ABOUT ME > special */
 
@@ -703,6 +753,30 @@ ul{list-style:none;}
   margin: 40px 0;
 }
 
+/* 이벤트 */
+.aboutme-3 .txt-box{
+  overflow:hidden;
+}
+.aboutme-3 .txt-box > .title-txt {
+  transform: translatex(-100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-3 .txt-box.active > .title-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.aboutme-3 .txt-box > .sub-txt {
+  transform: translatex(-100px);
+  opacity: 0;
+  transition: 1s 0.3s;
+}
+.aboutme-3 .txt-box.active > .sub-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
+
+
 /* ABOUT ME > worl skill */
 
 .aboutme-4 > div > .inner {
@@ -766,10 +840,36 @@ background-color: transparent;
   font-size:20px;
 }
 
-/* ABOUT ME > spesial */
+/* 이벤트 */
+.aboutme-4 .txt-box{
+  overflow:hidden;
+}
+.aboutme-4 .txt-box > .title-txt {
+  transform: translatey(100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-4 .txt-box.active > .title-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.aboutme-4 .txt-box > .sub-txt {
+  transform: translatey(100px);
+  opacity: 0;
+  transition: 1s 0.3s;
+}
+.aboutme-4 .txt-box.active > .sub-txt {
+  transform: translatex(0px);
+  opacity: 1;
+}
 
 
-.aboutme-5 .text-box {
+
+
+/* ABOUT ME > promise */
+
+
+.aboutme-5 .txt-box {
   text-align: center;
 }
 .aboutme-5 div.fp-controlArrow {
@@ -837,13 +937,12 @@ background-color: transparent;
   height: 360px;
   margin: 0 auto;
 }
-.aboutme-5 .slide .inner .text-box {
+.aboutme-5 .slide .inner .txt-box {
   /* border:3px solid red ; */
   height: 100%;
-
   color: var(--sub1-color);
 }
-.aboutme-5 .slide .inner .title-text {
+.aboutme-5 .slide .inner .title-txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -852,24 +951,142 @@ background-color: transparent;
   font-size: 4vh;
   font-weight: 400;
 }
-.aboutme-5 .slide .inner .title-text h3 {
+.aboutme-5 .slide .inner .title-txt h3 {
   font-family: 'SBAggroL';
   font-size: 2vh;
   color: var(--main-color);
 }
-.aboutme-5 .slide .inner .sub-text {
+.aboutme-5 .slide .inner .sub-txt {
   font-size: 2.6vh;
   font-weight: 300;
   line-height: 1.4;
   margin-top: 20px;
+  color: var(--sub1-color);
+}
+
+/* 이벤트 */
+.aboutme-5 .txt-box{
+  overflow:hidden;
+}
+.aboutme-5 .txt-box > .title-txt {
+  transform: translatey(100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-5 .txt-box.active > .title-txt {
+  transform: translatey(0px);
+  opacity: 1;
+}
+.aboutme-5 .txt-box > .sub-txt {
+  transform: translatey(100px);
+  opacity: 0;
+  transition: 1s 0.3s;
+}
+.aboutme-5 .txt-box.active > .sub-txt {
+  transform: translatey(0px);
+  opacity: 1;
+}
+
+/* 푸터 */
+.aboutme-6 {
+  background-color:#143142;
+  height: 300px;
+}
+.aboutme-6 > div > .inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  justify-content: space-between;
+}
+/* 퀵메뉴 */
+.aboutme-6 .left-box {
+  height: 300px;
+  margin-left: 16px;
+}
+.aboutme-6 .left-box div {
+
+}
+.aboutme-6 .top {
+  position: fixed;
+
+  height: 60px;
+  width: 36px;
+  bottom:80px;
+  opacity: 0;
+  transition: bottom .3s, visibility .3s, opacity .3s;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  /* border: 3px solid red; */
+}
+
+.right-box .top__icon{
+  font-size: 38px;
+  color: var(--sub2-color);
+  opacity: 0.7;
+  transition: 0.3s;
+  position: absolute;
+  bottom:6px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.right-box .top__icon:hover {
+  opacity: 1;
+  bottom: 12px;
+}
+.right-box {
+padding-right: 32px;
+}
+
+
+.aboutme-6 .top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.right-box .top {
+  transition: bottom .3s, visibility .3s, opacity .3s;
+  z-index: 1550;
+}
+
+
+.aboutme-6 .color-box {
+  background-color: var(--main-color);
+  width: 300px;
+  height: 4px;
+  margin-bottom: 4px;
+}
+.aboutme-6 .color-box-2 {
+  height: 6px;
+}
+.aboutme-6 .color-box-3 {
+  height: 8px;
+}
+.aboutme-6 .color-box-4 {
+  background-color: var(--main-color);
+  width: 300px;
+  height: 200px;
 }
 .aboutme-6 .text-box {
-  height: 300px;
-  background-color:#143142;
+  color: var(--sub2-color);
+  font-family: 'SBAggroL';
+  font-size: 36px;
+  letter-spacing: -5%;
+  position: absolute;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
+  padding: 48px 16px;
 }
+.aboutme-6 .text-box .full-name {
+  font-family: 'SBAggroM';
+  line-height: 0.6;
+  font-size: 40px;
+}
+.aboutme-6 .text-box .full-name span:first-child {
+  font-size: 48px;
+}
+
+
 
 /* 03 WEB RENEWAL */
 /* 04 APP REDESIGN */
