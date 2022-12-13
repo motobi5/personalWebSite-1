@@ -3,8 +3,6 @@ console.clear();
 
 // 홈 로딩페이지
 
-// 홈 로딩페이지
-
 // 페이지 열릴때 반응하라
 // 인트로 바텀 애니메이션?
 window.onload = function () {

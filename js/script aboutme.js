@@ -1,16 +1,12 @@
 console.clear();
 
-
-
-
 // 어바웃미
 
 // 만약 페이지를 다시 활성화했을 때 애니메이션이 다시 재생되길 원할 경우 true로 변경
 let chart1AllowRerender = false;
 
-// 건들지 마세요
+// 건들지 말기
 let chart1Rendered = false;
-
 
 $("#fullpage").fullpage({
   menu: ".line",
@@ -18,7 +14,6 @@ $("#fullpage").fullpage({
   controlArrows: true, // 슬라이드 컨트롤 애로우 생성
   slidesNavigation: true, // 슬라이드 컨트롤 네비게이션 생성
   slidesNavPosition: "bottom", // 슬라이드 컨트롤 네비게이션 위치 top / bottom
-  
   
   afterLoad: function(ignored, destination){
     // 애니메이션이 재생되길 원하는 data anchor의 위치 입력
@@ -52,6 +47,7 @@ $("#fullpage").fullpage({
     }
 
   },
+
  //onleave
  //온리브 어바웃미-1을 다른 형태의 이벤트로 분리시켜야 하나?? 흠... 
     onLeave: function (origin, destination, direction, trigger) {
@@ -124,7 +120,7 @@ $("#fullpage").fullpage({
 });
 
 // 스페셜 도넛차트
-// circle 커스텀 value를 0으로 설정해야 합니다!
+// circle 커스텀 value를 0으로 설정해야 한다!
 $(".circle")
   .circleProgress({
     // 그래프 시작 위치
@@ -253,18 +249,7 @@ $(".circle")
           opacity: 0.1
         }
       }
-    },
+    }
       
   });
   
-
-  $(document).ready(function () {
-  
-  
-    //메뉴이동
-    $(".aboutme-6 .top").click(function () {
-      let IndexNum = $(this).index() + 1;
-      // console.log(IndexNum);
-      fullpage_api.moveTo(IndexNum);
-    },12000);
-  });
