@@ -1,4 +1,4 @@
-/* 메인폰트 */
+/* 메인폰트 샌드박스폰트 */
 @font-face {
   font-family: 'SBAggroB';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -107,9 +107,9 @@ img {
 
 /* 커스텀 */
 
-/* 공통 */
+  /* 공통 */
 
-/* 탑바 */
+  /* 탑바 */
 .top-bar {
   position: fixed;
   width: 100%;
@@ -120,7 +120,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+  /* 탑바 */
   /* 로고 */
 .logo {
   display: flex;
@@ -129,7 +129,7 @@ img {
 .logo a {
   /*   border:1px solid; */
 }
-
+  /* 탑바 */
   /* 메뉴박스 */
 .menu-box {
   display: flex;
@@ -147,7 +147,7 @@ img {
   position: relative;
   height: 100%;
 }
-
+  /* 탑바 */
   /* 메뉴아이템 밑줄 애니메이션 */
 .menu-box>ul>li>a::after {
   content: "";
@@ -162,13 +162,14 @@ img {
 }
 .menu-box > ul > li:hover > a::after {
   width: 100%;
-}
+}  
+  /* 탑바 */
   /* 메뉴아이템 밑줄 애니메이션 */
     /* 활성화된 페이지에서의 밑줄 */
 .menu-box > ul > li.active > a::after {
   width: 100%;
 }
-
+  /* 탑바 */
   /* 메뉴아이템 텍스트 */
 .menu-box>ul>li span {
   display: flex;
@@ -180,15 +181,19 @@ img {
   /* border:3px solid red; */
 }
 
+
 /* 개별 */
 
   /* 홈 */
 
   /* 인트로 파티클 효과 */
-#tsparticles {
-  /* height:500px; */
-  height: 100vh;
+  .loading-page  #tsparticles {
+    height: 100vh;
   width: 100vw;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  z-index: -1;
 }
   /* 인트로 */
 .loading-page {
@@ -207,6 +212,7 @@ img {
   background-position: 50% 50%;
   transition:opacity 2s, visibility 2s;
   z-index:9999;
+  /* border:3px solid red; */
 }
 .loading-page.hide {
   opacity:0;
@@ -557,6 +563,7 @@ ul{
 }
 .aboutme-1 .sub-txt>.inner>.img-box img {
   /* border:3px solid red; */
+  
 }
 
 /* 어바웃미1 이벤트가 다른페이지에서 올때는 동작하지 않는다. 왜일까?
@@ -605,6 +612,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   align-items: center;
   padding-left: 4px;
 }
+
 
   /* 어바웃미 */
   /* 섹션2 - 잇츠미 */
@@ -776,7 +784,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
   /* 섹션4 - 워크스킬 */
   /* 파티클 - 눈 내리는 효과 */
-#tsparticles {
+.aboutme-4 #tsparticles {
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -1201,16 +1209,20 @@ padding-right: 32px;
   visibility: visible;
 }
 
-.slider-box-1 .txt-box,
-.slider-box-2 .txt-box,
-.slider-box-3 .txt-box {
+.slider-box-1 .title,
+.slider-box-2 .title{
   transition: 1s;
-  transform: translateY(-100px);
+  transform: translatey(100px);
   opacity: 0;
   /* border:3px solid pink; */
 }
-
-.other-work .txt-box {
+.slider-box-3 .title {
+  transition: 0.6s;
+  opacity: 0;
+  transform: translatey(-80px);
+  /* border:3px solid pink; */
+}
+.other-work .title {
   transition: 1s;
   transform: translateY(-100px);
   opacity: 0;
@@ -1223,10 +1235,10 @@ padding-right: 32px;
   opacity: 0;
 }
 
-.slider-box-1 .content-box.active .txt-box,
-.slider-box-2 .content-box.active .txt-box,
-.slider-box-3 .content-box.active .txt-box,
-.other-work .content-box.active .txt-box{
+.slider-box-1 .content-box.active .title,
+.slider-box-2 .content-box.active .title,
+.slider-box-3 .content-box.active .title,
+.other-work .content-box.active .title{
   transform: translateY(0);
   opacity: 1;
 }
@@ -1343,6 +1355,8 @@ width: 70px;
 .slider-box-3 .link-box a {
   margin-right: 16px;
   display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
 }
 
 .slider-box-1 .link-box a span,
@@ -1355,6 +1369,7 @@ width: 70px;
 .slider-box-2 .link-box img,
 .slider-box-3 .link-box img {
   padding-right: 2px;
+  padding-bottom: 4px;
 }
 
 .slider-box-1 .link-box a:hover,
