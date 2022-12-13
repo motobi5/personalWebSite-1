@@ -53,45 +53,71 @@ $("#fullpage").fullpage({
 
   },
  //onleave
- //온리브 어바웃미-1 동작하지 않는다. 왜일까?
-
+ //온리브 어바웃미-1을 다른 형태의 이벤트로 분리시켜야 하나?? 흠... 
     onLeave: function (origin, destination, direction, trigger) {
       if (destination.index == 0) {
-        $(".aboutme-1.txt-box").addClass("active");
+        $(".aboutme-1 .title-txt").addClass("active");
+        $(".aboutme-1 .cen-text").addClass("active");
         $(".aboutme-2 .txt-box").removeClass("active");
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").removeClass("active");
+        $(".aboutme-6 .top").removeClass("show");
       }  else if (destination.index == 1) {
-        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-1 .title-txt").removeClass("active");
+        $(".aboutme-1 .cen-text").removeClass("active");
         $(".aboutme-2 .txt-box").addClass("active");
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").removeClass("active");
+        $(".aboutme-6 .top").removeClass("show");
       } else if (destination.index == 2) {
-        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-1 .title-txt").removeClass("active");
+        $(".aboutme-1 .cen-text").removeClass("active");
         $(".aboutme-2 .txt-box").removeClass("active");
         $(".aboutme-3 .txt-box").addClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").removeClass("active");
+        $(".aboutme-6 .top").removeClass("show");
       }else if (destination.index == 3) {
-        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-1 .title-txt").removeClass("active");
+        $(".aboutme-1 .cen-text").removeClass("active");
         $(".aboutme-2 .txt-box").removeClass("active");
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").addClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").removeClass("active");
+        $(".aboutme-6 .top").removeClass("show");
       }else if (destination.index == 4) {
-        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-1 .title-txt").removeClass("active");
+        $(".aboutme-1 .cen-text").removeClass("active");
         $(".aboutme-2 .txt-box").removeClass("active");
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").addClass("active");
-      } else {
-        $(".aboutme-1.txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").removeClass("active");
+        $(".aboutme-6 .top").removeClass("show");
+      }else if (destination.index == 5) {
+        $(".aboutme-1 .title-txt").removeClass("active");
+        $(".aboutme-1 .cen-text").removeClass("active");
         $(".aboutme-2 .txt-box").removeClass("active");
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").addClass("active");
+        $(".aboutme-6 .top").addClass("show");
+      } else {
+        $(".aboutme-1 .title-txt").removeClass("active");
+        $(".aboutme-1 .cen-text").removeClass("active");
+        $(".aboutme-2 .txt-box").removeClass("active");
+        $(".aboutme-3 .txt-box").removeClass("active");
+        $(".aboutme-4 .txt-box").removeClass("active");
+        $(".aboutme-5 .txt-box").removeClass("active");
+        $(".aboutme-6 .txt-box").removeClass("active");
+        $(".aboutme-6 .top").removeClass("show");
       }
     }
   

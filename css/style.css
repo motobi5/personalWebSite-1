@@ -512,7 +512,7 @@ ul{list-style:none;}
   /* border:3px solid red; */
 }
 
-.aboutme-1 .title-txt>span {
+.aboutme-1 .title-txt>div{
   position: absolute;
   left: 0;
   bottom: 0;
@@ -522,6 +522,7 @@ ul{list-style:none;}
   padding-left: 24px;
   padding-bottom: 16px;
   color: var(--main-color);
+  transition: 2s 0.6s;
 }
 
 .aboutme-1 .sub-txt {
@@ -567,30 +568,31 @@ ul{list-style:none;}
   padding: 16px 0;
 }
 
-/* 어바웃미1 이벤트가 동작하지 않는다. 왜일까?
-마크업을 좀 다르게 해야하나?? */
+/* 어바웃미1 이벤트가 다른페이지에서 올때는 동작하지 않는다. 왜일까?
+js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 이벤트 */
-.aboutme-1.txt-box{
+/* 
+.aboutme-1{
   overflow:hidden;
 }
-.aboutme-1.txt-box > .title-txt {
-  transform: translatey(100px);
+.aboutme-1 .title-txt div {
+  transform: translatey(120px);
   opacity: 0;
   transition: 1s;
 }
-.aboutme-1.txt-box.active > .title-txt {
+.aboutme-1 .title-txt.active > div {
   transform: translatex(0px);
   opacity: 1;
 }
-.aboutme-1.txt-box > .sub-txt {
-  transform: translatey(160px);
+.aboutme-1 .cen-text > div {
+  transform: translatey(180px);
   opacity: 0;
-  transition: 1s 0.3s;
+  transition: 1s;
 }
-.aboutme-1.txt-box.active > .sub-txt {
+.aboutme-1 .cen-text.active > div {
   transform: translatex(0px);
   opacity: 1;
-}
+} */
 
 .my_bottom {
   display: flex;
@@ -1003,12 +1005,9 @@ background-color: transparent;
   height: 300px;
   margin-left: 16px;
 }
-.aboutme-6 .left-box div {
 
-}
 .aboutme-6 .top {
   position: fixed;
-
   height: 60px;
   width: 36px;
   bottom:80px;
@@ -1042,8 +1041,9 @@ padding-right: 32px;
   opacity: 1;
 }
 
-.right-box .top {
-  transition: bottom .3s, visibility .3s, opacity .3s;
+.aboutme-6 .top {
+  transition: 2s;
+  opacity: 0;
   z-index: 1550;
 }
 
@@ -1065,7 +1065,7 @@ padding-right: 32px;
   width: 300px;
   height: 200px;
 }
-.aboutme-6 .text-box {
+.aboutme-6 .txt-box {
   color: var(--sub2-color);
   font-family: 'SBAggroL';
   font-size: 36px;
@@ -1076,17 +1076,40 @@ padding-right: 32px;
   flex-direction: column;
   justify-content: end;
   padding: 48px 16px;
+  color:transparent;
+  transition: 2s
 }
-.aboutme-6 .text-box .full-name {
+.aboutme-6 .txt-box .full-name {
   font-family: 'SBAggroM';
   line-height: 0.6;
   font-size: 40px;
 }
-.aboutme-6 .text-box .full-name span:first-child {
+.aboutme-6 .txt-box .full-name span:first-child {
   font-size: 48px;
 }
 
-
+/* 이벤트 */
+.aboutme-6 .txt-box.active  {
+  color: white;
+}
+.aboutme-6 .txt-box div:first-child {
+  transform: translatex(-100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-6 .txt-box.active div:first-child  {
+  transform: translatex(0px);
+  opacity: 1;
+}
+.aboutme-6 .txt-box div:last-child {
+  transform: translatex(100px);
+  opacity: 0;
+  transition: 1s;
+}
+.aboutme-6 .txt-box.active div:last-child  {
+  transform: translatex(0px);
+  opacity: 1;
+}
 
 /* 03 WEB RENEWAL */
 /* 04 APP REDESIGN */
