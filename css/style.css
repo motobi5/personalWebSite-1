@@ -1658,3 +1658,62 @@ width: 70px;
     opacity: 0;
     transition: 0.1s;
   }
+
+  /* 프로세스 페이지 */
+    /* 버거킹 프로세스 페이지 */
+
+    .prosess-1 {
+      width: 100%;
+    
+      background-color: #EF8D47;
+    }
+    .prosess-1 .inner {
+      margin: 0 auto;
+      width: 1200px;
+      height: 940px;
+      padding-top: 120px;
+      padding-left:16px;
+      /* border:3px solid blue; */
+    }
+    
+    .prosess-1 .txt-box .badge{
+      background-color: #F5EBDC;
+      display: inline-block;
+      color: #EF8D47;
+      padding: 4px 16px;
+      border-radius: 8px;
+      margin-left: 4px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .prosess-1 .txt-box .en-title{
+      font-size: 100px;
+      font-family: 'Insaniburger';
+      color: #F5EBDC;
+      line-height: 70px;
+    }   
+    .prosess-1 .txt-box .ko-title{
+      font-size: 36px;
+      color: #F5EBDC;
+      line-height: 70px;
+      margin-left: 4px;
+    }   
+
+    .prosess-1 .bottom-box {
+      justify-content: space-between;
+      padding-bottom: 50px;
+      /* border:3px solid red; */
+    }
+
+    .prosess-1 .bottom-box .date-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      color: #F5EBDC;
+      padding-left: 16px;
+      padding-bottom: 70px;
+      /* border:3px solid red; */
+    }
+    .prosess-1 .bottom-box .date-txt > div > div:first-child {
+      width: 70px;
+    }
