@@ -1763,7 +1763,10 @@ width: 70px;
     /* 버거킹 프로세스 페이지 */
     /* 아웃풋 타이틀 + 섹션 단락 나누는 용 */
     .prosess-1 > .section-3 .inner,
-    .prosess-1 > .section-5 .inner {
+    .prosess-1 > .section-5 .inner,
+    .prosess-1 > .section-7 .inner,
+    .prosess-1 > .section-9 .inner,
+    .prosess-1 > .section-11 .inner{
       margin: 0 auto;
       width: 1200px;
       padding-top:200px;
@@ -1771,19 +1774,28 @@ width: 70px;
       /* border:3px solid blue; */
     }
     .prosess-1 > .section-3 .txt-box,
-    .prosess-1 > .section-5 .txt-box {
+    .prosess-1 > .section-5 .txt-box,
+    .prosess-1 > .section-7 .txt-box,
+    .prosess-1 > .section-9 .txt-box,
+    .prosess-1 > .section-11 .txt-box {
       text-align: center;
        /* border:3px solid blue; */
     }
     .prosess-1 > .section-3 .title-txt div:first-child,
-    .prosess-1 > .section-5 .title-txt div:first-child {
+    .prosess-1 > .section-5 .title-txt div:first-child,
+    .prosess-1 > .section-7 .title-txt div:first-child,
+    .prosess-1 > .section-9 .title-txt div:first-child,
+    .prosess-1 > .section-11 .title-txt div:first-child {
       width: 34px;
       height: 6px;
       margin: 8px auto;
       border-radius: 6px;
       background-color: #DC2400;
     } 
-    .prosess-1 > .section-5 .title-txt div:first-child {
+    .prosess-1 > .section-5 .title-txt div:first-child,
+    .prosess-1 > .section-7 .title-txt div:first-child,
+    .prosess-1 > .section-9 .title-txt div:first-child,
+    .prosess-1 > .section-11 .title-txt div:first-child {
       background-color: #4B2618;
     }
 
@@ -1831,10 +1843,6 @@ width: 70px;
   /* border:3px solid blue; */
   }
 
-.prosess-1 > .section-4  .apphome .img-box {
-  position:absolute;
-  top:100px;
-}
 .prosess-1 > .section-4  .right-txt {
   position: absolute;
   top:256px;
@@ -1843,4 +1851,148 @@ width: 70px;
 .prosess-1 > .section-4  .bottom-txt {
   position:absolute;
   bottom: 0;
+}
+
+
+.prosess-1 > .section-6 {
+  position: relative;
+}
+.prosess-1 > .section-6 .color-box {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 50%;
+  height: 500px;
+  background-color: #F17821;
+  border-radius:  36px 0 0 36px ;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .prosess-1 > .section-6 .inner {
+    position: relative;
+    width: 1200px;
+    height: 1400px;
+    margin: 0 auto;
+    padding-left: 20px;
+    /* border:3px solid blue; */
+    }
+  .prosess-1 > .section-6 .appsearch .title-txt {
+    margin: 0 auto;
+    width: 340px;
+    font-size: 32px;
+    font-weight: 600;
+    color:var(--sub2-color);
+  padding-top: 36px;
+  padding-bottom: 12px;
+  /* padding-left: 24px; */
+  text-align: end;
+  /* border:3px solid blue; */
+  }
+
+.prosess-1 > .section-6  .inner > .img-box {
+  position:absolute;
+  top:7%;
+  left:50%;
+  transform: translatex(-50%);
+    /* border:3px solid red; */
+}
+.prosess-1 > .section-6  .left-txt {
+  position: absolute;
+  top:212px;
+  left:0;
+  /* border:3px solid red; */
+}
+.prosess-1 > .section-6  .right-txt {
+  position:absolute;
+  right:0;
+  top: 560px;
+  /* border:3px solid red; */
+}
+
+.prosess-1 > .section-8 {
+  position: relative;
+}
+.prosess-1 > .section-8 .color-box {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 500px;
+  background-color: #DC2400;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .prosess-1 > .section-8 .inner {
+    width: 1200px;
+    height: 980px;
+    margin: 0 auto;
+    padding-left: 20px;
+    position: relative;
+    /* border:3px solid blue; */
+    }
+
+  .prosess-1 > .section-8 .inner > .img-box {
+    margin-top: 12px;
+  }
+  .prosess-1 > .section-8 .apporder .title-txt {
+  padding-top: 36px;
+  padding-left: 24px;
+  padding-bottom: 12px;
+  font-size: 32px;
+  font-weight: 600;
+  color:var(--sub2-color);
+  /* border:3px solid blue; */
+  }
+  .prosess-1 > .section-8  .right-txt {
+    position: absolute;
+    top:112px;
+    right:16px;
+  }
+
+
+.prosess-1 > .section-10 {
+  position: relative;
+}
+.prosess-1 > .section-10 .color-box {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 32%;
+  height: 1100px;
+  background-color: #F17821;
+  border-radius:  36px 0 0 36px ;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .prosess-1 > .section-10 .inner {
+    position: relative;
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    /* border:3px solid blue; */
+    }
+  .prosess-1 > .section-10 .appOrderCheck .title-txt {
+    margin: 0 auto;
+    width: 1100px;
+    font-size: 32px;
+    font-weight: 600;
+    color:var(--sub2-color);
+  padding-top: 36px;
+  padding-bottom: 12px;
+  /* padding-left: 24px; */
+  text-align: end;
+  /* border:3px solid blue;  */
+  }
+
+.prosess-1 > .section-10  .inner > .img-box {
+  position:absolute;
+  top:8%;
+  right:2%;
+    /* border:3px solid red; */
+}
+.prosess-1 > .section-10  .left-txt {
+  position: absolute;
+  top:204px;
+  left:0;
+  z-index: 1;
+  /* border:3px solid red; */
 }
