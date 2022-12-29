@@ -1664,6 +1664,7 @@ width: 70px;
     /* 버거킹 프로세스 페이지 */
     /* 비주얼메인 */
 
+   
     .prosess-1 > .section-1 {
       width: 100%;
       background-color: #EF8D47;
@@ -1757,6 +1758,11 @@ width: 70px;
     }
     .prosess-1 > .section-2 .sub-txt span:nth-child(2) {
       color: #4B2618;
+    }
+    /* 너무 너비가 넓은거 같아서 임시로 조정 */
+    .prosess-1 > .section-2 .system-box {
+      width: 1000px;
+      margin: 0 auto;
     }
 
       /* 프로세스 페이지 */
