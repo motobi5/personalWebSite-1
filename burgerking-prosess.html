@@ -9,20 +9,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <script src="js/script prosess.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- 테일윈드 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
-
+<!-- IMAGELOADED 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+<!-- aos 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
   <title>BERGERKING PROSESS</title>
 </head>
 <body>
   <section class="prosess-1">
+    <div class="loading-1">
+      <i class="fa-solid fa-sync fa-spin"></i>
+    </div>
     <section class="section section-1">
       <div class="inner flex flex-col ">
-        <div class="txt-box ">
+        <div class="txt-box" >
           <div class="badge app">
             APP UX/UI REDESIGN
           </div>
@@ -36,7 +43,7 @@
         </div>
         <div class="flex flex-1"></div>
         <div class="bottom-box flex">
-          <div class="date-txt  ">
+          <div class="date-txt">
             <div class="flex">
               <div>작업기간</div><div>2022.11</div>
             </div>
@@ -55,11 +62,12 @@
      <section class="section section-2">
       <div class="inner">
         <div class="txt-box">
-          <div class="title-txt">
+          <div  class="title-txt">
             <div></div>
             <div>overview</div>
           </div>
-          <div class="sub-txt">
+          <div class="sub-txt" data-aos="fade-up"
+          data-aos-duration="1000">
             <span>이번 UX/UI 리디자인 프로젝트에서는 </span>
             <span><b>‘버거킹 스마트 오더 서비스를 좀 더 나은 방향으로 개선해 보자’</b></span>
             <span>는 목표를 설정한 후,</span>
@@ -76,6 +84,7 @@
      <section class="section section-3">
       <div class="inner">
         <div class="txt-box">
+          <div class="img-box">
           <div class="title-txt">
             <div></div>
             <div>output</div>
@@ -84,7 +93,7 @@
       </div>
      </section>
      <section class="section section-4">
-      <div class="color-box ">
+      <div class="color-box">
       </div> 
       <div class="inner">
         <div class="apphome">

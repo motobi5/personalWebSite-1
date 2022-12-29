@@ -1662,9 +1662,31 @@ width: 70px;
 
   /* 프로세스 페이지 */
     /* 버거킹 프로세스 페이지 */
-    /* 비주얼메인 */
+ 
 
-   
+
+
+    /* 비주얼메인 */
+.prosess-1 > .loading-1 {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color:#EF8D47;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 36px;
+  color:#F5EBDC;
+  z-index:999;
+  transition:opacity 0.3s, visibility 0.3s;
+}
+.prosess-1 > .loading-1.hide {
+  opacity:0;
+  visibility:hidden;
+}
+
     .prosess-1 > .section-1 {
       width: 100%;
       background-color: #EF8D47;
@@ -1678,7 +1700,33 @@ width: 70px;
       padding-right: 30px;
       /* border:3px solid blue; */
     }
-    
+
+    /* 비주얼페이지 애니메이션*/
+    .prosess-1 > .section-1 > .inner > .txt-box {
+      opacity: 0;
+      transition: 1s 3s;
+      transform:translatex(-60px);
+    }
+    .prosess-1 > .section-1 > .inner .date-txt {
+      opacity: 0;
+      transition: 1s 4s;
+      transform:translatex(-30px);
+    }
+    .prosess-1 > .section-1 > .inner > .txt-box.active,
+    .prosess-1 > .section-1 > .inner .date-txt.active {
+      opacity: 1;
+      transform:translatey(0);
+    }
+    .prosess-1 > .section-1 > .inner .bottom-box > .img-box {
+      opacity: 0;
+      transition: 1s 3s;
+      transform:translatey(60px);
+    }
+    .prosess-1 > .section-1 > .inner .bottom-box > .img-box.active {
+      opacity: 1;
+      transform:translatey(0);
+    }
+  
     .prosess-1 > .section-1 .txt-box .badge{
       background-color: #F5EBDC;
       display: inline-block;
@@ -1761,8 +1809,7 @@ width: 70px;
     }
     /* 너무 너비가 넓은거 같아서 임시로 조정 */
     .prosess-1 > .section-2 .system-box {
-      width: 1000px;
-      margin: 0 auto;
+     
     }
 
       /* 프로세스 페이지 */
@@ -1823,15 +1870,20 @@ width: 70px;
   margin-bottom: 120px;
   position: relative;
 }
+/* 컬러박스 애니메이션 */
 .prosess-1 > .section-4 .color-box {
   position: absolute;
   top:0;
   left:0;
   background-color: #DC2400;
-  width: 30%;
+  width: 0%;
   height: 2385px;
   border-radius: 0 36px 36px 0 ;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 2s;
+  }
+  .prosess-1 > .section-4 .color-box.active {
+    width: 30%;
   }
   .prosess-1 > .section-4 .inner {
     width: 1200px;
@@ -1850,16 +1902,42 @@ width: 70px;
   font-weight: 600;
   color:var(--sub2-color);
   /* border:3px solid blue; */
+  opacity: 0;
+  transition: 1s 1s;
+  }
+  .prosess-1 > .section-4 .apphome .title-txt.active {
+opacity: 1;
   }
 
+  .prosess-1 > .section-4 .inner > .img-box {
+    opacity: 1;
+    transform: translateX(-100px);
+    transition: 2s;
+  }
+  .prosess-1 > .section-4 .inner > .img-box.active {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 .prosess-1 > .section-4  .right-txt {
   position: absolute;
   top:256px;
   right:-2px;
+  opacity: 0;
+  transition: 1s 2s;
+  z-index: 1;
+}
+.prosess-1 > .section-4  .right-txt.active {
+  opacity: 1;
 }
 .prosess-1 > .section-4  .bottom-txt {
   position:absolute;
   bottom: 0;
+  opacity: 0;
+  transition: 1s 4s;
+  z-index: 1;
+}
+.prosess-1 > .section-4  .bottom-txt.active {
+  opacity: 1;
 }
 
 
