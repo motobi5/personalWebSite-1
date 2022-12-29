@@ -1766,7 +1766,8 @@ width: 70px;
     .prosess-1 > .section-5 .inner,
     .prosess-1 > .section-7 .inner,
     .prosess-1 > .section-9 .inner,
-    .prosess-1 > .section-11 .inner{
+    .prosess-1 > .section-11 .inner,
+    .prosess-1 > .section-13 .inner{
       margin: 0 auto;
       width: 1200px;
       padding-top:200px;
@@ -1777,7 +1778,8 @@ width: 70px;
     .prosess-1 > .section-5 .txt-box,
     .prosess-1 > .section-7 .txt-box,
     .prosess-1 > .section-9 .txt-box,
-    .prosess-1 > .section-11 .txt-box {
+    .prosess-1 > .section-11 .txt-box,
+    .prosess-1 > .section-13 .txt-box {
       text-align: center;
        /* border:3px solid blue; */
     }
@@ -1785,7 +1787,8 @@ width: 70px;
     .prosess-1 > .section-5 .title-txt div:first-child,
     .prosess-1 > .section-7 .title-txt div:first-child,
     .prosess-1 > .section-9 .title-txt div:first-child,
-    .prosess-1 > .section-11 .title-txt div:first-child {
+    .prosess-1 > .section-11 .title-txt div:first-child,
+    .prosess-1 > .section-13 .title-txt div:first-child {
       width: 34px;
       height: 6px;
       margin: 8px auto;
@@ -1996,3 +1999,101 @@ width: 70px;
   z-index: 1;
   /* border:3px solid red; */
 }
+
+.prosess-1 > .section-12 {
+  width: 100%;
+  position: relative;
+  /* border:3px solid gold; */
+}
+.prosess-1 > .section-12 .color-box {
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #DC2400;
+  width: 30%;
+  height: 100%;
+  border-radius: 0 36px 36px 0 ;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  .prosess-1 > .section-12 .inner {
+    width: 1200px;
+    height: 1800px;
+    margin: 0 auto;
+    padding-left: 20px;
+    position: relative;
+    /* border:3px solid blue; */
+    }
+    
+  .prosess-1 > .section-12 .appPayment .title-txt {
+  padding-top: 36px;
+  padding-left: 24px;
+  padding-bottom: 12px;
+  font-size: 32px;
+  font-weight: 600;
+  color:var(--sub2-color);
+  /* border:3px solid blue; */
+  }
+.prosess-1 > .section-12  .right-txt {
+  position: absolute;
+  top:150px;
+  right:-2px;
+  /* border: 3px solid red; */
+}
+
+.prosess-1 > .section-14 {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 2px;
+  /* border:3px solid red; */
+  background-image: url(/image/burgerking-prosess/thx-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.prosess-1 > .section-14 .inner {
+  position: relative;
+  width: 1200px;
+  height: 1100px;
+  margin: 0 auto;
+  /* border:3px solid blue; */
+}
+.prosess-1 > .section-14 .thx-txt {
+  position: absolute;
+  top:70%;
+  left:0;
+  transform: translateY(-70%);
+  font-size: 20px;
+  padding-left: 20px;
+  color: #4B2618;
+}
+
+
+/* 푸터 */
+.prosess-1 > .footer {
+  width: 100%;
+  height: 300px;
+  background-color: #4B2618;
+}
+.prosess-1 > .footer > .inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /* border:3px solid blue; */
+  }
+  .prosess-1 > .footer > .inner > div {
+    position: absolute;
+    top:40%;
+    left: 0;
+    transform: translateY(-40%);
+  padding-left: 18px;
+  }
+
+  .prosess-1 > .footer .footer-txt {
+    color: #F5EBDC;
+  }
+  .prosess-1 > .footer .footer-txt span {
+    margin-right: 4px;
+  }
+  
