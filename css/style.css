@@ -1994,8 +1994,8 @@ width: 70px;
 }
 .prosess-1 > .section-10  .left-txt {
   position: absolute;
-  top:204px;
-  left:0;
+  top:200px;
+  left:6px;
   z-index: 1;
   /* border:3px solid red; */
 }
