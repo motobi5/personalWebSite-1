@@ -1642,11 +1642,12 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 스와이퍼 메인 컨테이너는 반!드!시! 높이가 지정되어 있어야 한다. */
 .slider-box-3 .swiper {
   /* border:3px solid green; */
-  width: 70%;
-  height: 70vh;
+  width: 60%;
+  height: 72vh;
   /*  swiper 슬라이드의 넓이가 동일하도록 inline-block의 원리를 이용(넓이를 주지 않을 경우 최소한으로 줄어듦)  */
   /* display:inline-block; */
   margin-top: 20px;
+  margin-left: 60px;
   padding: 0 10px;
 }
 
