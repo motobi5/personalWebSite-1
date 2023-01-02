@@ -1767,13 +1767,13 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 박스 라운딩 */
 .other-work .right-box .work-1 {
   /* 현재는 커밍순이라 높이를 낮게 지정하지만 콘텐츠가 채워지면 높이지정을 철회한다. */
-  height: 210px;
+  height: 150px;
   border-radius: 24px 24px 0 0;
   overflow: hidden;
 }
 
 .other-work .right-box .work-3 {
-  height: 210px;
+  height: 150px;
   border-radius: 0 0 24px 24px;
   overflow: hidden;
 }
