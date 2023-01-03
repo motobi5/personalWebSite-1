@@ -2500,3 +2500,144 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .prosess-1 > .footer .footer-txt span {
   margin-right: 4px;
 }
+
+
+/* 이응노미술관 웹리뉴얼 프로세스페이지 */
+
+
+/* 비주얼메인 */
+.web_prosess_1 > .loading-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: var(--sub1-color);
+  z-index: 999;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.web_prosess_1 > .loading-1.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.web_prosess_1 > .section-1 {
+  width: 100%;
+  background-color: #eeeeee;
+  background-image: url(/image/webRenewal/mainCover2.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+
+}
+
+.web_prosess_1 > .section-1 .inner {
+  margin: 0 auto;
+  width: 1200px;
+  height: 1000px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 30px;
+  /* border:3px solid blue; */
+  position: relative;
+}
+
+/* 비주얼페이지 애니메이션*/
+.web_prosess_1 > .section-1 > .inner > .txt-box {
+  opacity: 0;
+  transition: 1s 3s;
+  transform: translatex(-60px);
+}
+
+.web_prosess_1 > .section-1 > .inner .date-txt {
+  opacity: 0;
+  transition: 1s 4s;
+  transform: translatex(-30px);
+}
+
+.web_prosess_1 > .section-1 > .inner > .txt-box.active,
+.web_prosess_1 > .section-1 > .inner .date-txt.active {
+  opacity: 1;
+  transform: translatey(0);
+}
+
+
+
+
+
+.web_prosess_1 > .section-1 .txt-box .badge {
+  background-color: #cf112b;
+  display: inline-block;
+  color:var(--sub2-color);
+  padding: 4px 16px;
+  border-radius: 8px;
+  margin-left: 2px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.web_prosess_1 > .section-1 .txt-box .en-title {
+  font-size: 64px;
+  font-family: "Roboto";
+  font-weight: 700;
+  letter-spacing:-2px;
+  color:var(--sub1-color);
+  line-height: 80px;
+}
+.web_prosess_1 > .section-1 .txt-box .en-title span:first-child {
+  font-weight: 100;
+}
+.web_prosess_1 > .section-1 .txt-box .en-title span:nth-child(3) {
+  color:#cf112b;
+}
+.web_prosess_1 > .section-1 .txt-box .ko-title {
+  font-size: 30px;
+  color:gray;
+  line-height: 40px;
+  margin-left: 4px;
+  letter-spacing: -0.6px;
+}
+/* 센터박스 안의 이미지들을 순차적으로 오른쪽에서 나타나게 하기 위해선 마크업부터 수정을 해야하나?
+ 현 상태 - 전체 위치 선정을 위해 적용시킨 포지션 효과의 트랜스레이트와 중첩되서 그런지는 몰라도 현재 구성으론 그 안의 선택자에 트랜스레이트가 먹히질 않는다. 그래서 일단 좌우 움직임 없이 오퍼시티만을 적용시켜 센터박스 전체에 엑티브를 줬다. */
+.web_prosess_1 > .section-1 .center-box {
+  position: absolute;
+  top:66%;
+  left:56%;
+  transform: translate(-56%, -66%);
+  opacity: 0;
+  transition: 1s 2.8s;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-1 .center-box.active {
+  opacity: 1;
+}
+.web_prosess_1 > .section-1 .center-box .img-box {
+  padding: 4px 0;
+
+}
+
+.web_prosess_1 > .section-1 .bottom-box {
+  justify-content: space-between;
+  /* padding-bottom: 100px; */
+  /* border:3px solid red; */
+  padding-left: 16px;
+  color:gray;
+}
+
+.web_prosess_1 > .section-1 .bottom-box .date-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: gray;
+  padding-bottom: 140px;
+  /* border:3px solid red; */
+}
+
+.web_prosess_1 > .section-1 .bottom-box .date-txt > div > div:first-child {
+  width: 70px;
+}

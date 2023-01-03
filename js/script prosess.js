@@ -7,6 +7,7 @@ AOS.init();
 $("body").imagesLoaded(function () {
   setTimeout(function () {
     $(".prosess-1 > .loading-1").addClass("hide");
+    $(".web_prosess_1 > .loading-1").addClass("hide");
   }, 3000);
 });
 
@@ -14,9 +15,10 @@ $("body").imagesLoaded(function () {
 window.onload = function () {
   $(".prosess-1 > .section-1 > .inner > .txt-box").addClass("active");
   $(".prosess-1 > .section-1 > .inner .date-txt").addClass("active");
-  $(".prosess-1 > .section-1 > .inner .bottom-box > .img-box").addClass(
-    "active"
-  );
+  $(".prosess-1 > .section-1 > .inner .bottom-box > .img-box").addClass("active");
+  $(".web_prosess_1 > .section-1 > .inner > .txt-box").addClass("active");
+  $(".web_prosess_1 > .section-1 > .inner .date-txt").addClass("active");
+  $(".web_prosess_1 > .section-1 > .inner .center-box").addClass("active");
 };
 
 // 섹션4,6,8,10,12,14 애니메이션
