@@ -2533,7 +2533,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center bottom;
-
+  box-shadow: 1px 0px 6px rgba(73, 73, 73, 0.8) ;
 }
 
 .web_prosess_1 > .section-1 .inner {
@@ -2565,10 +2565,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   opacity: 1;
   transform: translatey(0);
 }
-
-
-
-
 
 .web_prosess_1 > .section-1 .txt-box .badge {
   background-color: #cf112b;
@@ -2640,4 +2636,78 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 .web_prosess_1 > .section-1 .bottom-box .date-txt > div > div:first-child {
   width: 70px;
+}
+
+/* 오버뷰 */
+.web_prosess_1 > .section-2 {
+  height: 830px;
+  position: relative;
+}
+.web_prosess_1 > .section-2 > .inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /* border:3px solid red; */
+}
+
+.web_prosess_1 > .section-2 .txt-box {
+  margin-bottom: 150px;
+  font-family: "Roboto";
+  padding: 0 62px;
+
+}
+
+.web_prosess_1 > .section-2 .title-txt {
+  font-size: 90px;
+  font-weight: 100;
+  /* line-height: 30px; */
+  /* border:2px solid blue; */
+
+}
+.web_prosess_1 > .section-2 .title-txt span{
+  line-height: 140px;
+}
+.web_prosess_1 > .section-2 .title-txt span:first-child {
+  font-family: 'Noto Sans Kr';
+  font-size: 140px;
+  font-weight: 300;
+}
+.web_prosess_1 > .section-2 .sub-txt {
+  padding-left: 14px;
+}
+/* 세로선 */
+.web_prosess_1 > .section-2 .back-line-1  {
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  background-color: var(--sub1-color);
+  bottom: 0;
+  right:0;
+  /* transition: 2s; */
+}
+
+/* 아래의 코드가 반응을 안한다 왜 일까????
+ 다시 js함수를 적용해봐야겠다. */
+/* .web_prosess_1 > .section-2 .back-line-1.active {
+  height: 80%;
+  opacity: 1;
+} */
+
+/* 가로선 */
+.web_prosess_1 > .section-2 .back-line-2 {
+position: absolute;
+width: 60%;
+height: 1px;
+background-color: var(--sub1-color);
+top:70%;
+right:0;
+
+}
+
+.web_prosess_1 > .section-2 .bottom-line {
+  width: 100%;
+  height: 16px;
+  background-color: #eeeeee;
+  border-top: 1px solid rgb(207, 207, 207);
 }
