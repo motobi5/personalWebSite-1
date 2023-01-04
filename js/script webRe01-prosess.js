@@ -19,11 +19,11 @@ window.onload = function () {
 function Scroll02__init() {
   $(function () {
     $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 4000 && $(window).scrollTop() <= 5200) {
+      if ($(window).scrollTop() > 4000 && $(window).scrollTop() <= 5000) {
         $(".web_prosess_1 > .section-4 .sche-box .center-box img").addClass("active");
         $(".web_prosess_1 > .section-4 .sche-box .center-box li").addClass("active");
       } else if (
-        $(window).scrollTop() > 5200 && $(window).scrollTop() <= 7200
+        $(window).scrollTop() > 4000 && $(window).scrollTop() <= 5000
       ) {
 
       } else if (
