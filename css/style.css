@@ -2831,3 +2831,57 @@ padding-bottom: 56px;
 }
 
 /* 스케쥴 할 차례!!! */
+
+.web_prosess_1 > .section-4 .sche-box {
+  height: 840px;
+  background-color: #F5F5F5;
+}
+.web_prosess_1 > .section-4 .sche-box > .inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding:0 100px;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-4 .sche-box .title-txt {
+  font-size: 120px;
+  font-weight: 300;
+  font-family: 'Noto Sans Kr';
+  letter-spacing: -2px;
+  padding-bottom: 20px;
+  }
+  .web_prosess_1 > .section-4 .sche-box .title-txt span:last-child {
+    font-size: 80px;
+    font-weight: 100;
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box {
+    padding-left: 12px;
+    padding-bottom: 100px;
+    /* border:3px solid red; */
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box .img-box {
+    width: 98%;
+    height: 150px;
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box img {
+    transform: translateY(80px);
+    transition: 1s;
+    opacity: 0;
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box img.active {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box ul {
+    padding-left: 24px;
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box li {
+    list-style: circle;
+    padding: 24px 0;
+    transition: 0.3s 1.2s;
+    opacity: 0;
+    color: gray;
+  }
+  .web_prosess_1 > .section-4 .sche-box .center-box li.active {
+    opacity: 1;
+  }
