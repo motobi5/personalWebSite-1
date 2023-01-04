@@ -2680,34 +2680,154 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_prosess_1 > .section-2 .back-line-1  {
   position: absolute;
   width: 1px;
-  height: 80%;
+  height: 0;
   background-color: var(--sub1-color);
   bottom: 0;
   right:0;
-  /* transition: 2s; */
+  transition: 2s;
 }
-
-/* 아래의 코드가 반응을 안한다 왜 일까????
- 다시 js함수를 적용해봐야겠다. */
-/* .web_prosess_1 > .section-2 .back-line-1.active {
-  height: 80%;
-  opacity: 1;
-} */
-
 /* 가로선 */
 .web_prosess_1 > .section-2 .back-line-2 {
 position: absolute;
-width: 60%;
+width: 0;
 height: 1px;
 background-color: var(--sub1-color);
 top:70%;
 right:0;
-
+transition: 2s;
 }
+/* js함수인 스크롤감지 이벤트로 적용시키면 반응을 안한다 왜 일까????
+ 우선 css 상의 호버로 적용시켜놨다. 추후에 js함수를 적용해봐야겠다. */
+ .web_prosess_1 > .section-2:hover .back-line-1 {
+  height: 80%;
+}
+.web_prosess_1 > .section-2:hover .back-line-2 {
+  width: 60%;
+  }
 
 .web_prosess_1 > .section-2 .bottom-line {
+  position:absolute;
+  bottom: 0;
   width: 100%;
-  height: 16px;
+  height: 12px;
   background-color: #eeeeee;
-  border-top: 1px solid rgb(207, 207, 207);
+  border-top: 1px solid rgb(182, 182, 182);
 }
+
+/* 비포어 에프터 단락 */
+.web_prosess_1 > .section-3 {
+  height: 840px;
+  background-color: #C63939;
+}
+.web_prosess_1 > .section-3 > .inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-3 .left-box {
+  padding-left: 40px;
+    /* border:3px solid red; */
+}
+.web_prosess_1 > .section-3 .left-box img {
+  /* width: 94%; */
+}
+.web_prosess_1 > .section-3 .right-box {
+ /* max-width: 600px; */
+  /* border:3px solid red; */
+  padding-left: 40px;
+  color: var(--sub2-color);
+}
+.web_prosess_1 > .section-3 .right-box .title-txt {
+font-size: 120px;
+font-weight: 300;
+font-family: 'Noto Sans Kr';
+letter-spacing: -2px;
+padding-bottom: 40px;
+}
+.web_prosess_1 > .section-3 .right-box .title-txt span:last-child {
+  font-size: 80px;
+  font-weight: 100;
+}
+.web_prosess_1 > .section-3 .right-box .sub-txt > div {
+padding-left: 20px;
+padding-bottom: 24px;
+}
+.web_prosess_1 > .section-3 .right-box .sub-txt ul {
+  padding-left: 20px;
+}
+.web_prosess_1 > .section-3 .right-box .sub-txt li {
+  list-style:circle;
+  font-weight: 100;
+}
+
+/* 에프터단락 */
+.web_prosess_1 > .section-4 {
+
+}
+.web_prosess_1 > .section-4 .after-box {
+  height: 1766px;
+  background-color: var(--sub1-color);
+}
+.web_prosess_1 > .section-4 .after-box > .inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-4  .after-box .right-box {
+  margin-top: 140px;
+  padding-right: 100px;
+    /* border:3px solid red; */
+}
+.web_prosess_1 > .section-4 .after-box .right-box img {
+  /* width: 94%; */
+}
+.web_prosess_1 > .section-4 .after-box .left-box {
+ /* max-width: 600px; */
+  /* border:3px solid red; */
+  margin-top: 280px;
+  padding-left:100px;
+  color: var(--sub2-color);
+position: relative;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .title-txt {
+font-size: 120px;
+font-weight: 300;
+font-family: 'Noto Sans Kr';
+letter-spacing: -2px;
+padding-bottom: 40px;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .title-txt span:last-child {
+  font-size: 80px;
+  font-weight: 100;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .sub-txt > div:first-child {
+padding-left: 4px;
+padding-bottom: 56px;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .selec-line {
+  position: absolute;
+  top:18%;
+  width: 460px;
+}
+
+.web_prosess_1 > .section-4 .after-box .left-box .sub-txt ul {
+  padding-left: 4px;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .sub-txt li {
+  list-style:circle;
+  font-weight: 100;
+  padding-bottom: 16px;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .sub-txt li:nth-child(1) {
+  transition-delay: 0.3s;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .sub-txt li:nth-child(2) {
+  transition-delay: 0.5s;
+}
+.web_prosess_1 > .section-4 .after-box .left-box .sub-txt li:nth-child(3) {
+  transition-delay: 0.7s;
+}
+
+/* 스케쥴 할 차례!!! */
