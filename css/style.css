@@ -3143,35 +3143,34 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 타이포그라피 단락 */
 /* 타이포그라피 단락 */
 .web_prosess_1 > .section-7 {
-  height: 900px;
+  height: 840px;
   position: relative;
-
 }
 .web_prosess_1 > .section-7 > .inner {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
   position: relative;
-  border:3px solid red;
+  /* border:3px solid red; */
 }
 .web_prosess_1 > .section-7 .txt-box {
   font-family: "Roboto";
   padding: 0 62px;
-  border:3px solid gold;
+  /* border:3px solid gold; */
 }
 
 .web_prosess_1 > .section-7 .title-txt {
   font-size: 80px;
   font-weight: 100;
   line-height: 140px;
-  margin-top: 100px;
+  margin-top: 90px;
   margin-bottom: 30px;
   /* line-height: 30px; */
   /* border:2px solid blue; */
 }
 
 .web_prosess_1 > .section-7 .sub-txt {
-  padding-left: 14px;
+  padding-left: 6px; 
 }
 
 
@@ -3181,8 +3180,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 0;
   height: 1px;
   background-color: var(--sub1-color);
-  top: 238px;
+  top:16%;
   left: 0;
+  transform: translateY(-16%);
   transition: 2s;
 }
 /* js함수인 스크롤감지 이벤트로 적용시키면 반응을 안한다 왜 일까????
@@ -3191,4 +3191,75 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_prosess_1 > .section-7:hover .back-line-2 {
   width: 60%;
 }
+.web_prosess_1 > .section-7 .black-box {
+  background-color: var(--sub1-color);
+  height: 230px;
+  width: 100%;
+  position: absolute;
+  top:62%;
+  left: 50%;
+  transform: translate(-50%, -62%);
+}
+.web_prosess_1 > .section-7 .black-box > .inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 62px;
+  color: var(--sub2-color);
+  gap:60px;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-7 .black-box > .inner .black-txt {
+  padding-top: 32px;
+  padding-left: 6px;
+}
+/* 폰트명 커스텀 */
+.web_prosess_1 > .section-7 .black-box > .inner .black-txt > div {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
 
+.web_prosess_1 > .section-7 .black-box > .inner .txt-1 > div span:first-child {
+  font-family: 'Noto sans KR';
+}
+.web_prosess_1 > .section-7 .black-box > .inner .txt-1 > div span:last-child,
+.web_prosess_1 > .section-7 .black-box > .inner .txt-2 > div  {
+  font-family: 'Roboto'
+}
+/* 폰트 크기 커스텀 */
+.web_prosess_1 > .section-7 .black-box > .inner .black-txt li {
+  padding: 2px 0;
+}
+.web_prosess_1 > .section-7 .black-box > .inner .black-txt li:first-child {
+  font-size: 16px;
+}
+.web_prosess_1 > .section-7 .black-box > .inner .black-txt li:nth-child(2) {
+  font-size: 14px;
+}
+.web_prosess_1 > .section-7 .black-box > .inner .black-txt li:last-child {
+  font-size: 12px;
+}
+
+.web_prosess_1 > .section-7 .white-box {
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 0 0;
+  z-index: 1;
+  transition: 2s;
+}
+.web_prosess_1 > .section-7 .white-box.active {
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
+  height: 200px;
+  border-radius: 120px 0 0 120px;
+  width: 48%;
+}
+
+/* 상세 설명 파트 에필로그 시작 부분부터 할 차례!! */

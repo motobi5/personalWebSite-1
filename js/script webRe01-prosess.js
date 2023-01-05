@@ -23,29 +23,10 @@ function Scroll02__init() {
         $(".web_prosess_1 > .section-4 .sche-box .center-box img").addClass("active");
         $(".web_prosess_1 > .section-4 .sche-box .center-box li").addClass("active");
       } else if (
-        $(window).scrollTop() > 4000 && $(window).scrollTop() <= 5000
+        $(window).scrollTop() > 8300 && $(window).scrollTop() <= 9000
       ) {
-
-      } else if (
-        $(window).scrollTop() > 7200 && $(window).scrollTop() <= 8600
-      ) {
-        
-      }else if (
-        $(window).scrollTop() > 8600 && $(window).scrollTop() <= 10000
-      ) {
-        
-        
-      }else if (
-        $(window).scrollTop() > 10000 && $(window).scrollTop() <= 12500
-      ) {
-       
-        
-      }else if (
-        $(window).scrollTop() > 12500 && $(window).scrollTop() <= 14000
-      ) {
-        
-        
-      }
+        $(".web_prosess_1 > .section-7 .white-box").addClass("active");
+      } 
       // else if (
       //   $(window).scrollTop() > 13400 && $(window).scrollTop() <= 14000
       // ) {
@@ -55,29 +36,8 @@ function Scroll02__init() {
       else {
         $(".web_prosess_1 > .section-4 .sche-box .center-box img").removeClass("active");
         $(".web_prosess_1 > .section-4 .sche-box .center-box li").removeClass("active");
-        $(".prosess-1 > .section-4 .inner > .img-box").removeClass("active");
-        $(".prosess-1 > .section-4 .right-txt").removeClass("active");
-        $(".prosess-1 > .section-4 .bottom-txt").removeClass("active");
-        $(".prosess-1 > .section-6 .color-box").removeClass("active");
-        $(".prosess-1 > .section-6 .appsearch .title-txt").removeClass(
-          "active");
-        $(".prosess-1 > .section-6 .inner > .img-box").removeClass("active");
-        $(".prosess-1 > .section-6 .left-txt").removeClass("active");
-        $(".prosess-1 > .section-6 .right-txt").removeClass("active");
-        $(".prosess-1 > .section-8 .color-box").removeClass("active");
-        $(".prosess-1 > .section-8 .apporder .title-txt").removeClass("active");
-        $(".prosess-1 > .section-8 .inner > .img-box").removeClass("active");
-        $(".prosess-1 > .section-8 .right-txt").removeClass("active");
-        $(".prosess-1 > .section-10 .color-box").removeClass("active");
-        $(".prosess-1 > .section-10 .appOrderCheck .title-txt").removeClass("active");
-        $(".prosess-1 > .section-10 .inner > .img-box").removeClass("active");
-        $(".prosess-1 > .section-10 .left-txt").removeClass("active");
-        $(".prosess-1 > .section-12 .color-box").removeClass("active");
-        $(".prosess-1 > .section-12 .appPayment .title-txt").removeClass("active");
-        $(".prosess-1 > .section-12 .inner > .img-box").removeClass("active");
-        $(".prosess-1 > .section-12 .right-txt").removeClass("active");
-        $(".prosess-1 > .section-14").removeClass("active");
-        $(".prosess-1 > .section-14 .thx-txt").removeClass("active");
+        $(".web_prosess_1 > .section-7 .white-box").removeClass("active");
+        
         // $(".prosess-1 > .footer > .inner > div").removeClass("active");
       }
     });
