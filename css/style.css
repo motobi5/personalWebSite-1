@@ -2768,6 +2768,13 @@ padding-bottom: 24px;
 .web_prosess_1 > .section-4 .after-box {
   height: 1766px;
   background-color: var(--sub1-color);
+  position: relative;
+}
+.web_prosess_1 > .section-4 .after-box .selec-line {
+  position: absolute;
+  top:16%;
+  left:50px;
+  width: 560px;
 }
 .web_prosess_1 > .section-4 .after-box > .inner {
   width: 1200px;
@@ -2787,7 +2794,7 @@ padding-bottom: 24px;
  /* max-width: 600px; */
   /* border:3px solid red; */
   margin-top: 280px;
-  padding-left:62px;
+  padding-left:70px;
   color: var(--sub2-color);
 position: relative;
 }
@@ -2806,11 +2813,7 @@ padding-bottom: 40px;
 padding-left: 4px;
 padding-bottom: 56px;
 }
-.web_prosess_1 > .section-4 .after-box .left-box .selec-line {
-  position: absolute;
-  top:18%;
-  width: 460px;
-}
+
 
 .web_prosess_1 > .section-4 .after-box .left-box .sub-txt ul {
   padding-left: 4px;
@@ -2972,14 +2975,7 @@ transition: 2s;
   .web_prosess_1 > .section-5 .concept-1 .right-box {
     border:3px solid red;
     position: relative;
-    width: 755px;
-    height: 755px;
   }
-  .web_prosess_1 > .section-5 .concept-1 .right-box .img-box:first-child {
-    position: absolute;
-    top:20%;
-    right:30%;
-    tra
-  }
+  
 
   /* 콘셉트 내용 부분 다시 마크업부터 하기 에프터단락과 비슷한 형태로 해야 할듯... */
