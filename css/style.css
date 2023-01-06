@@ -3455,5 +3455,55 @@ padding-right: 8px;
   .web_prosess_1 > .section-10 .sample-2 img {
     width: 80%;
   }
-
+/* 섹션11 */
+  /*서브슬라이드  */
+  .web_prosess_1 > .section-11 {
+    height: 1000px;
+  }
  
+  .web_prosess_1 > .section-11 .top-box {
+    background-color: #EFEFEF;
+    height: 300px;
+  }
+  .web_prosess_1 > .section-11 .top-box .inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    font-weight: 100;
+    padding-top: 80px;
+    padding-left:120px;
+    color:var(--sub1-color);
+    /* border:3px solid red; */
+  }
+  .web_prosess_1 > .section-11 .top-box .txt-box {
+    padding: 0 120px;
+  }
+  .web_prosess_1 > .section-11 .sample-3 {
+    height: 500px;
+    border:3px solid red;
+  }
+  .web_prosess_1 > .section-11 .sample-3  > .inner {
+ 
+
+  }
+  .web_prosess_1 > .section-11 .sample-3 .img-box {
+    border: 3px solid gold;
+  }
+  .web_prosess_1 > .section-11 .sample-3 img {
+    width: 78%;
+    border:3px solid blue;
+  }
+  .web_prosess_1 > .section-11 .selec-line {
+    position: absolute;
+    bottom:-64%;
+    left:15%;
+    transform: translatex(-15%);
+  }
+  .web_prosess_1 > .section-11 .selec-line img {
+    height: 280px;
+  }
+  
+  .web_prosess_1 > .section-11 .main-txt {
+    font-size: 56px;
+    padding-bottom: 12px;
+  }
