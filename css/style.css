@@ -3358,7 +3358,13 @@ padding-right: 8px;
   background-color: rgb(142, 142, 142);
   transition-delay: 0.9s;
 }
-
+.web_prosess_1 > .section-8 .bottom-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12px;
+  background-color: var(--sub2-color);
+}
 
 /* 섹션9 */
   /* 단락별 디테일 설명 */
