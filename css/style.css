@@ -3358,3 +3358,96 @@ padding-right: 8px;
   background-color: rgb(142, 142, 142);
   transition-delay: 0.9s;
 }
+
+
+/* 섹션9 */
+  /* 단락별 디테일 설명 */
+  /* 메인슬라이드 단락 */
+  .web_prosess_1 > .section-9 {
+    height: 1000px;
+    position: relative;
+    background-color: var(--sub1-color);
+  }
+  .web_prosess_1 > .section-9 > .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 140px;
+    position: relative;
+    /* border:3px solid red; */
+  }
+  .web_prosess_1 > .section-9 .sample-1 img {
+    width: 80%;
+  }
+  .web_prosess_1 > .section-9 .selec-line {
+    position: absolute;
+    top:70%;
+    left:41%;
+    transform: translate(-41%, -70%);
+  }
+  .web_prosess_1 > .section-9 .selec-line img {
+    height: 280px;
+  }
+  .web_prosess_1 > .section-9 .txt-box {
+    font-weight: 100;
+    padding: 20px 0;
+    padding-left:180px;
+    color: var(--sub2-color);
+    /* border:3px solid red; */
+  }
+  .web_prosess_1 > .section-9 .main-txt {
+    font-size: 56px;
+    padding-bottom: 12px;
+  }
+
+  /* 섹션10 */
+  /* 단락별 디테일 설명 */
+  /* 메가메뉴 단락 */
+  .web_prosess_1 > .section-10 {
+    height: 860px;
+    position: relative;
+    background-color: var(--sub1-color);
+  }
+  .web_prosess_1 > .section-10 > .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* border:3px solid red; */
+  }
+  .web_prosess_1 > .section-10 .txt-box {
+    font-weight: 100;
+    padding: 20px 0;
+    padding-right:230px;
+    color: var(--sub2-color);
+    /* border:3px solid red; */
+  }
+  .web_prosess_1 > .section-10 .main-txt {
+    font-size: 56px;
+    padding-bottom: 12px;
+  }
+  .web_prosess_1 > .section-10 .main-txt,
+  .web_prosess_1 > .section-10 .sub-txt {
+    text-align: end;
+  }
+  .web_prosess_1 > .section-10 .sub-txt {
+    padding-bottom: 30px;
+  }
+  .web_prosess_1 > .section-10 .selec-line {
+    position: absolute;
+    top:14%;
+    left:86%;
+    transform: translate(-86%, -14%);
+  }
+  /*셀렉 라인 애니메이션 딜레이 */
+  .web_prosess_1 > .section-10 .selec-line .img-box {
+    transition-delay: 0.3s;
+  }
+  .web_prosess_1 > .section-10 .selec-line img {
+    height: 380px;
+  }
+  .web_prosess_1 > .section-10 .sample-2 img {
+    width: 80%;
+  }
+
+ 
