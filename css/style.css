@@ -3518,7 +3518,7 @@ padding-right: 8px;
  /* 상세설명 파트 */
 /* 카드배너단락 */
 .web_prosess_1 > .section-12 {
-  height: 750px;
+  height: 720px;
   /* border:3px solid red; */
 }
 .web_prosess_1 > .section-12 .top-box {
@@ -3589,5 +3589,82 @@ padding-right: 8px;
 }
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-12 .selec-line img {
+  height: 220px;
+}
+
+/* 상세설명 파트 */
+/* 아트숍단락 */
+.web_prosess_1 > .section-13 {
+  padding-bottom: 20px;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-13 .top-box {
+  background-color: #EFEFEF;
+  height: 300px;
+  /* 위에만 그림자 효과 */
+  box-shadow: inset 0px 6px 6px -6px rgba(73, 73, 73);
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-13 .top-box .inner {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  font-weight: 100;
+  padding-top: 80px;
+  padding-right:296px;
+  color:var(--sub1-color);
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-13 .top-box .txt-box {
+  /* padding: 0 178px; */
+  /* border:3px solid blue; */
+}
+.web_prosess_1 > .section-13 .main-txt {
+  font-size: 56px;
+  padding-bottom: 12px;
+  text-align: end;
+}
+.web_prosess_1 > .section-13 .sub-txt span{
+  text-align: end;
+
+}
+.web_prosess_1 > .section-13 .sample-5 {
+  padding: 66px 0;
+  /* border:3px solid red; */
+}
+.web_prosess_1 > .section-13 .sample-5  > .inner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  /* border:3px solid green; */
+
+}
+/* 영상 대체시 */
+.web_prosess_1 > .section-13 .sample-5  > .inner {
+  width: 62%;
+}
+.web_prosess_1 > .section-13 .sample-5  > .inner .img-box {
+  /* border:3px solid gold; */
+
+}
+/* 이미지 대체시 */
+.web_prosess_1 > .section-13 .sample-5 img {
+  width: 78%;
+  /* border:3px solid blue; */
+}
+
+.web_prosess_1 > .section-13 .selec-line-2 {
+  position: absolute;
+  bottom:-39%;
+  left:80.4%;
+  transform: translatex(-80.4%);
+  z-index: 1;
+}
+/*셀렉 라인 애니메이션 딜레이 */
+.web_prosess_1 > .section-13 .selec-line .img-box {
+  transition-delay: 0.9s;
+}
+/* 셀렉 라인 길이 */
+.web_prosess_1 > .section-13 .selec-line img {
   height: 220px;
 }
