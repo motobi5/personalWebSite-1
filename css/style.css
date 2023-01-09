@@ -344,7 +344,7 @@ ul {
   height: 100vh;
   width: 100vw;
   position: relative;
-  background-image: url("./image/home/00_main.svg");
+  background-image: url("../image/home/00_main.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
