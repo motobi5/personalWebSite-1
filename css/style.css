@@ -1993,6 +1993,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 프로세스 페이지 */
 /* 버거킹 프로세스 페이지 */
+
 /* 오버뷰/컬러/폰트 */
 .prosess-1 > .section-2 {
   width: 100%;
@@ -2033,6 +2034,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 프로세스 페이지 */
 /* 버거킹 프로세스 페이지 */
+
 /* 아웃풋 타이틀 + 섹션 단락 나누는 용 */
 .prosess-1 > .section-3 .inner,
 .prosess-1 > .section-5 .inner,
@@ -2082,12 +2084,17 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 프로세스 페이지 */
 /* 버거킹 프로세스 페이지 */
+
 /* 홈화면 상세 설명 */
 .prosess-1 > .section-4 {
   width: 100%;
   margin-bottom: 120px;
   position: relative;
 }
+
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+
 /* 컬러박스 애니메이션 */
 .prosess-1 > .section-4 .color-box {
   position: absolute;
@@ -2156,6 +2163,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .prosess-1 > .section-4 .bottom-txt.active {
   opacity: 1;
 }
+
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
 
 /* 매장서치 */
 .prosess-1 > .section-6 {
@@ -2234,6 +2244,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   opacity: 1;
 }
 
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+
 /* 사이드 오더 */
 .prosess-1 > .section-8 {
   position: relative;
@@ -2291,6 +2304,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .prosess-1 > .section-8 .right-txt.active {
   opacity: 1;
 }
+
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
 
 /* 오더체크 단락 */
 .prosess-1 > .section-10 {
@@ -2361,6 +2377,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   opacity: 1;
 }
 
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+
 /* 최종 결제 단락 */
 .prosess-1 > .section-12 {
   width: 100%;
@@ -2424,6 +2443,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   opacity: 1;
 }
 
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+
 /* 끝맺음 이미지 (모든 화면 보여주기) */
 .prosess-1 > .section-14 {
   width: 100%;
@@ -2463,6 +2485,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transform: translatey(-120%);
 }
 
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+
 /* 푸터 */
 .prosess-1 > .footer {
   width: 100%;
@@ -2490,8 +2515,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   margin-right: 4px;
 }
 
-/* 이응노미술관 웹리뉴얼 프로세스페이지 */
-
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션01 */
 /* 비주얼메인 */
 .web_prosess_1 > .loading-1 {
   position: fixed;
@@ -2624,6 +2650,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 70px;
 }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 프로세스페이지 */
+/* 섹션02 */
 /* 오버뷰 */
 .web_prosess_1 > .section-2 {
   height: 830px;
@@ -2698,6 +2727,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   border-top: 1px solid rgb(182, 182, 182);
 }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션03 */
 /* 비포어 에프터 단락 */
 .web_prosess_1 > .section-3 {
   height: 840px;
@@ -2745,6 +2777,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   font-weight: 100;
 }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션04-1 */
 /* 에프터단락 */
 .web_prosess_1 > .section-4 {
 }
@@ -2815,8 +2850,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transition-delay: 0.7s;
 }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션04-2 */
 /* 스케쥴 단락*/
-
 .web_prosess_1 > .section-4 .sche-box {
   height: 840px;
   background-color: #f5f5f5;
@@ -2871,9 +2908,11 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_prosess_1 > .section-4 .sche-box .center-box li.active {
   opacity: 1;
 }
-
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션05 */
 /* 콘셉트 단락 */
-/* 타이틀 부분 */
+  /* 타이틀 부분 */
 .web_prosess_1 > .section-5 {
   height: 2400px;
   position: relative;
@@ -2943,7 +2982,11 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 60%;
 }
 
-/* 콘셉 내용 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션05 */
+/* 콘셉트 단락 */
+  /* 콘셉트-1 내용 */
 .web_prosess_1 > .section-5 .concept-1 {
   padding: 0 62px;
   margin-bottom: 110px;
@@ -2992,10 +3035,13 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transition-delay: 1.9s;
 }
 
-/* 콘셉트-2 자동영상 있는 부분 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션05 */
+/* 콘셉트 단락 */
+  /* 콘셉트-2 자동영상 있는 부분 */
 .web_prosess_1 > .section-5 .concept-2 {
   padding: 0 62px;
-
   /* margin-top: -60px; */
   /* border:3px solid red; */
 }
@@ -3029,7 +3075,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 54%;
 }
 
-
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션06 */
 /* 컬러 */
 .web_prosess_1 > .section-6 {
   height: 900px;
@@ -3140,7 +3188,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 54%;
 }
 
-/* 타이포그라피 단락 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션07 */
 /* 타이포그라피 단락 */
 .web_prosess_1 > .section-7 {
   height: 840px;
@@ -3158,7 +3208,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   padding: 0 62px;
   /* border:3px solid gold; */
 }
-
 .web_prosess_1 > .section-7 .title-txt {
   font-size: 80px;
   font-weight: 100;
@@ -3168,11 +3217,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   /* line-height: 30px; */
   /* border:2px solid blue; */
 }
-
 .web_prosess_1 > .section-7 .sub-txt {
   padding-left: 6px; 
 }
-
 
 /* 가로선 */
 .web_prosess_1 > .section-7 .back-line-2 {
@@ -3262,9 +3309,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 48%;
 }
 
-/* 섹션8 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션08 */
   /* 에필로그 단락 */
-
 .web_prosess_1 > .section-8 {
   height: 940px;
   position: relative;
@@ -3280,7 +3328,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   position: relative;
   /* border:3px solid red; */
 }
-/* 섹션8 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션08 */
   /* 에필로그 단락 */
   /* 타이틀부분 */
 .web_prosess_1 > .section-8 > .inner .top-box  {
@@ -3292,8 +3342,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   font-weight: 100;
   /* border:3px solid red; */
 }
-/* 섹션8 */
-  /* 에필로그 단락 */
+
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션08 */
   /* 타이틀 왼쪽 부분 */
 .web_prosess_1 > .section-8 > .inner .top-box .title-txt-1 > div {
   font-size: 28px;
@@ -3307,8 +3359,10 @@ padding-right: 8px;
 .web_prosess_1 > .section-8 > .inner .top-box .title-txt-1 > div:last-child {
   letter-spacing: 2px;
 }
-/* 섹션8 */
-  /* 에필로그 단락 */
+
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션08 */
   /* 타이틀 오른쪽 부분 */
 .web_prosess_1 > .section-8 > .inner .top-box .title-txt-2 {
   text-align: left;
@@ -3323,8 +3377,10 @@ padding-right: 8px;
 .web_prosess_1 > .section-8 > .inner .top-box .title-txt-2 span:last-child {
   letter-spacing: -4px;
 }
-/* 섹션8 */
-  /* 에필로그 단락 */
+
+/* 프로세스 페이지 */
+/* 이응노미술관 프로세스페이지 */
+/* 섹션08 */
   /* 내용부분 */
 .web_prosess_1 > .section-8 > .inner .center-box {
   /* border:3px solid blue; */
@@ -3335,8 +3391,10 @@ padding-right: 8px;
 .web_prosess_1 > .section-8 > .inner .center-box .txt-box {
   margin-bottom: 24px;
 }
-/* 섹션8 */
-  /* 에필로그 단락 */
+
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션08 */
   /* 내용부분 애니메이션*/
   .web_prosess_1 > .section-8 > .inner .center-box .txt-2{
     transition-delay: 0.3s;
@@ -3344,8 +3402,9 @@ padding-right: 8px;
   .web_prosess_1 > .section-8 > .inner .center-box .txt-3{
     transition-delay: 0.6s;
   }
-
-/* 섹션8 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션08 */
   /* 에필로그 단락 */
   /* 바텀 라인 부분 */
 .web_prosess_1 > .section-8 > .inner .bottom-box {
@@ -3365,8 +3424,9 @@ padding-right: 8px;
   height: 12px;
   background-color: var(--sub2-color);
 }
-
-/* 섹션9 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션09 */
   /* 단락별 디테일 설명 */
   /* 메인슬라이드 단락 */
   .web_prosess_1 > .section-9 {
@@ -3406,7 +3466,9 @@ padding-right: 8px;
     padding-bottom: 12px;
   }
 
-  /* 섹션10 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션10 */
   /* 단락별 디테일 설명 */
   /* 메가메뉴 단락 */
   .web_prosess_1 > .section-10 {
@@ -3456,6 +3518,8 @@ padding-right: 8px;
     width: 80%;
   }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
 /* 섹션11 */
   /*서브슬라이드  */
   .web_prosess_1 > .section-11 {
@@ -3515,7 +3579,9 @@ padding-right: 8px;
     height: 300px;
   }
 
-
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션12 */
  /* 상세설명 파트 */
 /* 카드배너단락 */
 .web_prosess_1 > .section-12 {
@@ -3593,6 +3659,9 @@ padding-right: 8px;
   height: 220px;
 }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션13 */
 /* 상세설명 파트 */
 /* 아트숍단락 */
 .web_prosess_1 > .section-13 {
@@ -3670,7 +3739,8 @@ padding-right: 8px;
   height: 220px;
 }
 
-
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
 /* 섹션14 */
   /*서브슬라이드  */
   .web_prosess_1 > .section-14 {
@@ -3731,6 +3801,9 @@ padding-right: 8px;
     height: 190px;
   }
 
+  /* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션15 */
 /* 상세설명 파트 */
 /* 홍보 이벤트 단락 */
 .web_prosess_1 > .section-15 {
@@ -3808,6 +3881,8 @@ padding-right: 8px;
 }
 
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
 /* 섹션16 */
   /*서브슬라이드2  */
   .web_prosess_1 > .section-16 {
@@ -3867,7 +3942,9 @@ padding-right: 8px;
     height: 280px;
   }
 
- /* 섹션17 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션17 */
   /* 단락별 디테일 설명 */
   /* 메인 슬라이드 2*/
   .web_prosess_1 > .section-17 {
@@ -3918,7 +3995,9 @@ padding-right: 8px;
     width: 80%;
   }
 
-  /* 섹션18 */
+ /* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션18 */
   /* 단락별 디테일 설명 */
   /* 백그라운드 이미지 + 푸터*/
   .web_prosess_1 > .section-18 {
@@ -3978,7 +4057,9 @@ padding-right: 8px;
     width: 80%;
   }
 
-  /* 섹션19 */
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
+/* 섹션19 */
 /* 끝맺음 이미지 (모든 화면 보여주기) */
 .web_prosess_1 > .section-19 {
   width: 100%;
@@ -4016,6 +4097,8 @@ padding-right: 8px;
   transform: translate(-50%, -150%);
 }
 
+/* 프로세스 페이지 */
+/* 이응노미술관 웹 리뉴얼 */
 /* 푸터 */
 .web_prosess_1  > .footer {
   width: 100%;
