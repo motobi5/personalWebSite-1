@@ -26,19 +26,25 @@ function Scroll02__init() {
         $(window).scrollTop() > 8300 && $(window).scrollTop() <= 9000
       ) {
         $(".web_prosess_1 > .section-7 .white-box").addClass("active");
+      } else if (
+        $(window).scrollTop() > 17900 && $(window).scrollTop() <= 20000
+      ) {
+        $(".web_prosess_1 > .section-19").addClass("active");
+        $(".web_prosess_1 > .section-19 .thx-txt").addClass("active");
       } 
       // else if (
-      //   $(window).scrollTop() > 13400 && $(window).scrollTop() <= 14000
+      //   $(window).scrollTop() > 20000 
       // ) {
       //   // alert("여기는 푸터");
-      //   $(".prosess-1 > .footer > .inner > div").addClass("active");
+      //   $(".web_prosess_1 > .footer > .inner > div").addClass("active");
       // }
       else {
         $(".web_prosess_1 > .section-4 .sche-box .center-box img").removeClass("active");
         $(".web_prosess_1 > .section-4 .sche-box .center-box li").removeClass("active");
         $(".web_prosess_1 > .section-7 .white-box").removeClass("active");
-        
-        // $(".prosess-1 > .footer > .inner > div").removeClass("active");
+        $(".web_prosess_1 > .section-19").removeClass("active");
+        $(".web_prosess_1 > .section-19 .thx-txt").removeClass("active");
+        // $(".web_prosess_1 > .footer > .inner > div").removeClass("active");
       }
     });
     // $(".top").click(function(){
