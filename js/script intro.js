@@ -1,5 +1,6 @@
 console.clear();
 
+AOS.init();
 
 // 홈 로딩페이지
 
