@@ -127,16 +127,73 @@ img {
 }
 
 .top-bar .inner {
-  display: flex;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+
 /* 탑바 */
 /* 로고 */
-.logo {
+.logo-box {
   display: flex;
   align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.top-bar .inner .logo-box > .logo {
+  width: 68px;
+  height: 68px;
+    /* background-color:rgba(105, 105, 105, 0.25); */
+    opacity: 1;
+    border-radius: 40px 40px 40px 40px;
+    transition: 0.6s;
+    margin: 12px 20px;
+}
+
+.top-bar .inner .logo-box > .logo.about {
+  /* background-color:var(--main-color); */
+  background-color: transparent;
+}
+.top-bar .inner .logo-box > .logo.web {
+  /* background-color: #cf112b; */
+  background-color: transparent;
+
+}
+.top-bar .inner .logo-box > .logo.app {
+/* background-color: #ef8d47; */
+background-color: transparent;
+}
+.top-bar .inner .logo-box > .logo.clone {
+    /* background-color:#3660ea;  */
+    background-color: transparent;
+}
+.top-bar .inner .logo-box > .logo.other {
+  /* background-color:#9449df; */
+  background-color: white;
+}
+
+.top-bar .inner .logo-box > .logo.about img,
+.top-bar .inner .logo-box > .logo.web img,
+.top-bar .inner .logo-box > .logo.app img,
+.top-bar .inner .logo-box > .logo.clone img,
+.top-bar .inner .logo-box > .logo.other img {
+  /* filter: brightness(0) invert(1); */
+  transition: 0.3s;
+}
+.top-bar .inner .logo-box > .logo:hover img {
+  filter: none;
+}
+.top-bar .inner .logo-box > .logo:hover {
+  background-color:#f2f2f2;
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: inset 6px 6px 12px #bababa,
+            inset -6px -6px 12px #ffffff;
+}
+.top-bar .inner .logo-box > .logo.start:hover {
+  background-color:transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 /* 탑바 */
@@ -146,7 +203,7 @@ img {
   justify-content: end;
   align-items: center;
   height: 80px;
-  width: 100%;
+  /* border:3px solid orange; */
 }
 
 .menu-box > ul > li {
@@ -355,11 +412,12 @@ ul {
 .main-page_top,
 .home_top {
   position: relative;
-  height: calc(100% / 5);
+  height: 220px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   z-index: 15;
+  /* border:3px solid red; */
 }
 
 .main-page_top div {
@@ -377,18 +435,18 @@ ul {
   height: 40%;
 }
 
-.home_top div {
+.home_top a {
   position: absolute;
   width: calc(100% / 4);
-  height: 0%;
+  height: 40%;
   background-color: var(--main-color);
-  opacity: 0;
+  opacity: 1;
   transition: 2s;
 }
 
-.home_top div.active {
+.home_top a.active {
   opacity: 1;
-  height: 40%;
+  border:3px solid red;
 }
 .main-page_top > div span,
 .home_top > div span {
@@ -1528,10 +1586,11 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .slider-box-1 .link-box a,
 .slider-box-2 .link-box a,
 .slider-box-3 .link-box a {
-  margin-right: 16px;
-  display: inline-block;
+  /* margin-right: 16px; */
+  margin-bottom: 8px;
   border-bottom: 1px solid transparent;
   transition: 0.3s;
+  align-self:baseline;
 }
 
 .slider-box-1 .link-box a span,
@@ -1550,7 +1609,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .slider-box-1 .link-box a:hover,
 .slider-box-2 .link-box a:hover,
 .slider-box-3 .link-box a:hover {
-  border-bottom: 1px solid #303030;
+  border-bottom: 1px solid white;
 }
 
 .slider-box-1 .swiper-button-box,

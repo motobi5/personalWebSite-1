@@ -1,5 +1,5 @@
 console.clear();
-// AOS.init();
+AOS.init();
 
 // 홈 (리턴)
 // window.onload = function () {

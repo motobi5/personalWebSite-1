@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script home.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   
   <!-- tsparticles 불러오기 -->
@@ -15,17 +15,24 @@
   <!-- 테일윈드 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
 
+      <!-- aos 불러오기 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      />
+
   <title>home</title>
 </head>
 <body>
 
   <header class="top-bar">
-    <div class="inner">
-      <div class="logo">
-        <a href='./home.html'>
+    <div class="inner flex justify-between">
+      <a href='./home.html' class="logo-box">
+        <div class="logo flex items-center">
           <img src='../image/logo.png' alt='logo'>
+        </div>
       </a>
-      </div>
       <nav class="menu-box">
          <ul class="flex">
            <li class="menu-item menu-item-1">
@@ -60,14 +67,22 @@
 
   <div class="main-page">
       <div class="home_top">
-        <div class="flex items-center justify-center"><span class="hidden">KIMEUNBI</span></div>
+        <a href="./home.html" class="hidden">
+          <div class="logo-box flex items-center justify-center">
+            <span class="hidden">KIMEUNBI</span></div>
+        </a>
+        
       </div>
       <div class="main-page_center">
         <div class="inner flex">
           <div class="text-box">
-            <div class="title-text">Kim eunbi</div>
-            <div class="sub-text">personal website</div>
-            <div class="flex justify-end"><span>e-mail : kimeunbitec@gmail.com</span></div>
+            <div class="title-text" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="linear">Kim eunbi</div>
+            <div class="sub-text" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="linear">personal website</div>
+            <div class="flex justify-end" data-aos="fade-in" data-aos-offset="300"
+            data-aos-easing="linear"><span>e-mail : kimeunbitec@gmail.com</span></div>
           </div>
           <div></div>
         </div>
@@ -78,9 +93,6 @@
         </div>
         <div></div>
       </div>
-   
-   
   </div>
-  
 </body>
 </html>
