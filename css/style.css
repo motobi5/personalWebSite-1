@@ -131,7 +131,6 @@ img {
   margin: 0 auto;
 }
 
-
 /* 탑바 */
 /* 로고 */
 .logo-box {
@@ -144,11 +143,11 @@ img {
 .top-bar .inner .logo-box > .logo {
   width: 68px;
   height: 68px;
-    /* background-color:rgba(105, 105, 105, 0.25); */
-    opacity: 1;
-    border-radius: 40px 40px 40px 40px;
-    transition: 0.6s;
-    margin: 12px 20px;
+  /* background-color:rgba(105, 105, 105, 0.25); */
+  opacity: 1;
+  border-radius: 40px 40px 40px 40px;
+  transition: 0.6s;
+  margin: 12px 20px;
 }
 
 .top-bar .inner .logo-box > .logo.about {
@@ -158,15 +157,14 @@ img {
 .top-bar .inner .logo-box > .logo.web {
   /* background-color: #cf112b; */
   background-color: transparent;
-
 }
 .top-bar .inner .logo-box > .logo.app {
-/* background-color: #ef8d47; */
-background-color: transparent;
+  /* background-color: #ef8d47; */
+  background-color: transparent;
 }
 .top-bar .inner .logo-box > .logo.clone {
-    /* background-color:#3660ea;  */
-    background-color: transparent;
+  /* background-color:#3660ea;  */
+  background-color: transparent;
 }
 .top-bar .inner .logo-box > .logo.other {
   /* background-color:#9449df; */
@@ -185,13 +183,12 @@ background-color: transparent;
   filter: none;
 }
 .top-bar .inner .logo-box > .logo:hover {
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   border-radius: 40px 40px 40px 40px;
-  box-shadow: inset 6px 6px 12px #bababa,
-            inset -6px -6px 12px #ffffff;
+  box-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
 }
 .top-bar .inner .logo-box > .logo.start:hover {
-  background-color:transparent;
+  background-color: transparent;
   border-radius: 0;
   box-shadow: none;
 }
@@ -446,12 +443,12 @@ ul {
 
 .home_top a.active {
   opacity: 1;
-  border:3px solid red;
+  border: 3px solid red;
 }
 .main-page_top > div span,
 .home_top > div span {
   padding-right: 28px;
-  color:var(--sub1-color);
+  color: var(--sub1-color);
   font-weight: 500;
 }
 
@@ -528,7 +525,6 @@ ul {
   font-size: 1.1vw;
   padding: 24px 24px;
   color: var(--sub3-color);
-  
 }
 
 .main-page_bottom > div:last-child {
@@ -1116,6 +1112,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 .aboutme-5 .aboutme-5-slide-3 {
   background-image: url(../image/aboutMe/sec-5-3.png);
+  scale: 1.1;
 }
 
 /* 섹션5 - 프로미스 */
@@ -1201,18 +1198,21 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 섹션6 - 푸터 */
 /* 퀵메뉴 */
 .aboutme-6 .left-box {
+  width: 100%;
   height: 300px;
   margin-left: 16px;
+  /* border: 3px solid gold; */
 }
 
 .aboutme-6 .top {
   position: fixed;
   height: 60px;
   width: 36px;
-  bottom: 80px;
+  bottom: 302px;
+  left: 91.2%;
   opacity: 0;
   transition: bottom 0.3s, visibility 0.3s, opacity 0.3s;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.7);
   transition: 2s;
   opacity: 0;
   z-index: 1550;
@@ -1230,7 +1230,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transition: 0.3s;
 }
 
-.right-box .top__icon:hover {
+.right-box .top:hover .top__icon {
   bottom: 12px;
   opacity: 1;
 }
@@ -1245,80 +1245,27 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 
 /* 섹션6 - 푸터 */
-/* 오른쪽 박스 */
-.aboutme-6 .color-box {
-  background-color: var(--main-color);
-  width: 300px;
-  height: 4px;
-  margin-bottom: 4px;
-}
-
-.aboutme-6 .color-box-2 {
-  height: 6px;
-}
-
-.aboutme-6 .color-box-3 {
-  height: 8px;
-}
-
-.aboutme-6 .color-box-4 {
-  background-color: var(--main-color);
-  width: 300px;
-  height: 200px;
-}
-
-/* 섹션6 - 푸터 */
 /* 텍스트 */
 .aboutme-6 .txt-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
   position: absolute;
+  top: 40%;
+  left: 0;
+  transform: translateY(-40%);
+  padding-left: 18px;
+  line-height: 1.3;
   font-family: "SBAggroL";
   font-size: 36px;
-  letter-spacing: -5%;
-  padding: 48px 16px;
-  color: transparent;
-  transition: 2s;
-  z-index: 1;
-}
-
-.aboutme-6 .txt-box .full-name {
-  font-family: "SBAggroM";
-  font-size: 40px;
-  line-height: 0.6;
-}
-
-.aboutme-6 .txt-box .full-name span:first-child {
-  font-size: 48px;
-}
-
-/* 섹션6 - 푸터 */
-/* 이벤트 */
-.aboutme-6 .txt-box.active {
   color: white;
+  z-index: 1;
+  /* border:3px solid red; */
 }
-
-.aboutme-6 .txt-box div:first-child {
-  transform: translatex(-100px);
-  opacity: 0;
-  transition: 1s;
+.aboutme-6 .txt-box .footer-txt > span {
+  margin-right: 6px;
+  letter-spacing: 0px;
 }
-
-.aboutme-6 .txt-box.active div:first-child {
-  transform: translatex(0px);
-  opacity: 1;
-}
-
-.aboutme-6 .txt-box div:last-child {
-  transform: translatex(100px);
-  opacity: 0;
-  transition: 1s;
-}
-
-.aboutme-6 .txt-box.active div:last-child {
-  transform: translatex(0px);
-  opacity: 1;
+.aboutme-6 .txt-box > div:last-child {
+  font-family: "Roboto";
+  font-size: 16px;
 }
 
 /* 웹리뉴얼 */
@@ -1579,7 +1526,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   font-weight: 400;
   padding-top: 18px;
   padding-left: 2px;
-  color:var(--sub2-color);
+  color: var(--sub2-color);
   /* border:3px solid pink; */
 }
 
@@ -1590,7 +1537,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   margin-bottom: 8px;
   border-bottom: 1px solid transparent;
   transition: 0.3s;
-  align-self:baseline;
+  align-self: baseline;
 }
 
 .slider-box-1 .link-box a span,
@@ -1688,7 +1635,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   align-items: flex-end;
   position: absolute;
   width: 100%;
-  height:35%;
+  height: 35%;
   bottom: 0;
   background-color: #cf112b;
   /* padding-bottom: 24px; */

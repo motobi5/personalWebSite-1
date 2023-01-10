@@ -1,304 +1,367 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- 제이쿼리 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- 풀페이지 불러오기 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <!-- 풀페이지 불러오기 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
 
-<!-- circle-progress 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <!-- circle-progress 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
-<!-- tsparticles 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
+    <!-- tsparticles 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.5.3/tsparticles.bundle.min.js"></script>
 
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/script aboutme.js" defer></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script aboutme.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-  <!-- 테일윈드 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+    <!-- 테일윈드 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
 
-  <title>about me</title>
-</head>
-<body>
+    <title>about me</title>
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="inner flex justify-between">
+        <a href="./home.html" class="logo-box">
+          <div class="logo flex items-center about">
+            <img src="image/logo.png" alt="logo" />
+          </div>
+        </a>
+        <nav class="menu-box">
+          <ul class="flex">
+            <li class="menu-item menu-item-1 active">
+              <a href="./aboutme.html">
+                <span>about me</span>
+              </a>
+            </li>
+            <li class="menu-item menu-item-2">
+              <a href="./webRenewal.html">
+                <span>web renewal</span>
+              </a>
+            </li>
+            <li class="menu-item menu-item-3">
+              <a href="./appRedesign.html">
+                <span>app redesign</span>
+              </a>
+            </li>
+            <li class="menu-item menu-item-4">
+              <a href="./cloneCoding.html">
+                <span>clone coding</span>
+              </a>
+            </li>
+            <li class="menu-item menu-item-5">
+              <a href="./otherWork.html">
+                <span>other work</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <header class="top-bar">
-    <div class="inner flex justify-between">
-      <a href='./home.html' class="logo-box">
-        <div class="logo flex items-center about">
-          <img src='image/logo.png' alt='logo'>
-        </div>
-      </a>
-      <nav class="menu-box">
-         <ul class="flex">
-           <li class="menu-item menu-item-1 active">
-             <a href="./aboutme.html">
-              <span>about me</span>
-            </a>
-           </li>
-           <li class="menu-item menu-item-2">
-             <a href="./webRenewal.html">
-              <span>web renewal</span>
-            </a>
-           </li>
-           <li class="menu-item menu-item-3">
-             <a href="./appRedesign.html">
-              <span>app redesign</span>
-            </a>
-           </li>
-           <li class="menu-item menu-item-4">
-             <a href="./cloneCoding.html">
-              <span>clone coding</span>
-            </a>
-           </li>
-           <li class="menu-item menu-item-5">
-             <a href="./otherWork.html">
-              <span>other work</span>
-            </a>
-           </li>
-     </ul>
-      </nav>
+    <div class="line">
+      <div class="line-tab line-tab-1" data-menuanchor="section-1">
+        <a href="#section-1">about me</a>
+      </div>
+      <div class="line-tab line-tab-2" data-menuanchor="section-2">
+        <a href="#section-2">it's me</a>
+      </div>
+      <div class="line-tab line-tab-3" data-menuanchor="section-3">
+        <a href="#section-3">special</a>
+      </div>
+      <div class="line-tab line-tab-4" data-menuanchor="section-4">
+        <a href="#section-4">work skill</a>
+      </div>
+      <div class="line-tab line-tab-5" data-menuanchor="section-5">
+        <a href="#section-5">Promise</a>
+      </div>
+      <div class="line-tab line-tab-6" data-menuanchor="section-6">
+        <a href="#section-6">footer</a>
+      </div>
     </div>
-  </header>
-  
-<div class="line">
-  <div class="line-tab line-tab-1" data-menuanchor="section-1">
-    <a href="#section-1">about me</a>
-  </div>
-  <div class="line-tab line-tab-2" data-menuanchor="section-2">
-    <a href="#section-2">it's me</a>
-  </div>
-  <div class="line-tab line-tab-3" data-menuanchor="section-3">
-    <a href="#section-3">special</a>
-  </div>
-  <div class="line-tab line-tab-4" data-menuanchor="section-4">
-    <a href="#section-4">work skill</a>
-  </div>
-  <div class="line-tab line-tab-5" data-menuanchor="section-5">
-    <a href="#section-5">Promise</a>
-  </div>
-  <div class="line-tab line-tab-6" data-menuanchor="section-6">
-    <a href="#section-6">footer</a>
-  </div>
-</div>
 
-<!-- 어바웃미 페이지 -->
-<div class="site-wrap">
-  <div id="fullpage">
-    <section class="section aboutme-1" data-anchor="section-1">
-      <div class="title-txt">
-        <div>About me</div>
-      </div>
-      <div class="sub-txt">
-        <div class="inner">
-          <div class="img-box"><img src="image/aboutMe/aboutME.png" alt=""></div>
-          <div class="cen-text">
-            <div>우리에게 주어진 시간은 제한적입니다.</div>
-            <div>
-              <span>그렇기 때문에 저는 항상 무엇이 더 효율적인지에 대해 고민하고</span>
-              <br>
-              <span>결과에 있어서는 주어진 조건 내에서 최대치를 발현하기 위해 노력합니다. </span>
-            </div>
-            <div>
-              <span>그리고 이러한 과정들은</span> 
-              <br>
-              <span>저의 커리어가 되는 동시에, 제 삶을 이끄는 원동력이 됩니다.</span>
-            </div>
+    <!-- 어바웃미 페이지 -->
+    <div class="site-wrap">
+      <div id="fullpage">
+        <section class="section aboutme-1" data-anchor="section-1">
+          <div class="title-txt">
+            <div>About me</div>
           </div>
-        </div>
-       
-      </div>
-      <div class="my_bottom">
-        <div class="flex">
-          <div class="flex">
-            <span><img src="image/aboutMe/bi_mouse.svg" alt=""></span>
-            <span>SCROLL</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section aboutme-2" data-anchor="section-2">
-      <div class="inner flex justify-center">
-        <div class="left-box">
-          <div class="img-box"><img src="image/aboutMe/sec-2_01.png" alt=""></div>
-        </div>
-        <div class="right-box">
-          <div class="flex">
-            <div class="img-box"><img src="image/aboutMe/sec-2_02.png" alt=""></div>
-            <div class="sec-2_text txt-box flex flex-col">
-              <span class="title-txt">It's me</span>
-              <span class="sub-txt">
-                초심을 읽지 않는 자세
-                <br>
-                배움에 유연한 태도
-                <br>
-                도중에 포기하지 않는 끈기
-                <br>
-                습관화된 시각적인 탐색
-                <br>
-                주도적 / 직관적 / 분석적
-              </span>
+          <div class="sub-txt">
+            <div class="inner">
+              <div class="img-box">
+                <img src="image/aboutMe/aboutME.png" alt="" />
+              </div>
+              <div class="cen-text">
+                <div>우리에게 주어진 시간은 제한적입니다.</div>
+                <div>
+                  <span
+                    >그렇기 때문에 저는 항상 무엇이 더 효율적인지에 대해
+                    고민하고</span
+                  >
+                  <br />
+                  <span
+                    >결과에 있어서는 주어진 조건 내에서 최대치를 발현하기 위해
+                    노력합니다.
+                  </span>
+                </div>
+                <div>
+                  <span>그리고 이러한 과정들은</span>
+                  <br />
+                  <span
+                    >저의 커리어가 되는 동시에, 제 삶을 이끄는 원동력이
+                    됩니다.</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="img-box"><img src="image/aboutMe/sec-2_03.png" alt=""></div>
-        </div>
-      </div>
-    </section>
-    <section class="section aboutme-3" data-anchor="section-3">
-      <div class="inner flex flex-col">
-        <div class="spe-box flex flex-col">
-          <div class="spe-top"></div>
-          <div class="spe-txt flex-grow flex flex-col justify-center">
-            <div class="txt-box">
-              <div class="title-txt flex">도전정신
+          <div class="my_bottom">
+            <div class="flex">
+              <div class="flex">
+                <span><img src="image/aboutMe/bi_mouse.svg" alt="" /></span>
+                <span>SCROLL</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section aboutme-2" data-anchor="section-2">
+          <div class="inner flex justify-center">
+            <div class="left-box">
+              <div class="img-box">
+                <img src="image/aboutMe/sec-2_01.png" alt="" />
+              </div>
+            </div>
+            <div class="right-box">
+              <div class="flex">
                 <div class="img-box">
-                  <img src="image/aboutMe/material-symbols_change-circle.svg" alt="">
+                  <img src="image/aboutMe/sec-2_02.png" alt="" />
+                </div>
+                <div class="sec-2_text txt-box flex flex-col">
+                  <span class="title-txt">It's me</span>
+                  <span class="sub-txt">
+                    초심을 읽지 않는 자세
+                    <br />
+                    배움에 유연한 태도
+                    <br />
+                    도중에 포기하지 않는 끈기
+                    <br />
+                    습관화된 시각적인 탐색
+                    <br />
+                    주도적 / 직관적 / 분석적
+                  </span>
                 </div>
               </div>
-              <div class="sub-txt">저는 제게 주어진 환경을 더 나은 방향으로 변화시키기 위해 많은 도전을 해왔습니다. <br>
-                새로운 것에 도전한다는 것은 저를 다시 열정적으로 만들어주며 초심을 잃지 않게 해줍니다.</div>
-            </div>
-            <div class="txt-box">
-              <div class="title-txt flex">커뮤니케이션 능력
-                <div class="img-box">
-                  <img src="image/aboutMe/mdi_wechat.svg" alt="">
-                </div>
-              </div>
-              <div class="sub-txt">프로젝트는 나 혼자만으로 돌아가지 않습니다. <br>
-                다년간의 회사생활을 통해 다양한 직급의 상사와 동료들을 만나면서 커뮤니케이션이 얼마나 중요한지 배웠습니다.</div>
-            </div>
-            <div class="txt-box">
-              <div class="title-txt flex">실무역량
-                <div class="img-box">
-                  <img src="image/aboutMe/mdi_chart-box.svg" alt="">
-                </div>
-              </div>
-              <div class="sub-txt">업무를 하는데 있어서 기획력이 있고 없고의 차이는 그 결과의 퀄리티를 달라지게 한다고 생각합니다. <br>
-                잘 만드는 작업자를 넘어서 기획력까지 갖춘 인재가 되겠습니다.</div>
-            </div>
-          </div>
-        </div>
-        <div class="flex-grow"></div>
-        <div class="spe-bottom"></div>
-      </div>
-    </section>
-    <section class="section aboutme-4" data-anchor="section-4">
-      <div class="inner">
-        <div class="work-box">
-          <div class="work-inner">
-            <div class="top-box">
-              <div class="skill skill-1 flex">
-                <div class="circle">
-                  <div class="percent"></div>
-                </div>
-                <div class="txt-box flex flex-col justify-center">
-                  <div class="title-txt">Photoshop</div>
-                  <div class="sub-txt">펜툴을 활용한 이미지 리터칭과 합성 및 편집이 가능하며 <br>
-                    필터 및 효과를 응용하여 원하는 결과물을 도출할 수 있습니다.</div>
-                </div>
-              </div>
-              <div class="skill-2-box flex">
-                <div class="skill skill-2 flex">
-                  <div class="circle">
-                    <div class="percent"></div>
-                  </div>
-                  <div class="txt-box flex flex-col justify-center">
-                    <div class="title-txt">Figma</div>
-                    <div class="sub-txt">
-                      컴포넌트와 베리언트를 적용시킨 디자인을 할  수 있으며 <br>
-                      피그마내에서의 프로토타입 구현도 가능합니다.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-box">
-              <div class="skill-3-box flex">
-                <div class="skill skill-3 flex">
-                  <div class="circle">
-                    <div class="percent"></div>
-                  </div>
-                  <div class="txt-box flex flex-col justify-center">
-                    <div class="title-txt">Illustrator</div>
-                    <div class="sub-txt">간단한 아이콘 제작 및
-                      레이어를 활용한 홍보물 디자인 작업을 할 수 있습니다.</div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-4-box flex">
-                <div class="skill skill-4 flex">
-                  <div class="circle">
-                    <div class="percent"></div>
-                  </div>
-                  <div class="txt-box flex flex-col justify-center">
-                    <div class="title-txt">Visual Studio Code</div>
-                    <div class="sub-txt">HTML와 CSS의 구조를 이해하고  있으며<br>
-                      jQuery를 통해 동적구현 효과를 적용시킬 수 있습니다.</div>
-                  </div>
-                </div>
+              <div class="img-box">
+                <img src="image/aboutMe/sec-2_03.png" alt="" />
               </div>
             </div>
           </div>
-        </div>
-        <div id="tsparticles"></div>
-      </div>
-    </section>
-    <section class="section aboutme-5" data-anchor="section-5">
-      <div class="slide aboutme-5-slide-1">
-        <div class="inner flex flex-col">
-          <div class="txt-box">
-            <div class="title-txt">
-              <h3>Promise 01.</h3>
-              <h1>활발한 소통을 약속합니다.</h1>
+        </section>
+        <section class="section aboutme-3" data-anchor="section-3">
+          <div class="inner flex flex-col">
+            <div class="spe-box flex flex-col">
+              <div class="spe-top"></div>
+              <div class="spe-txt flex-grow flex flex-col justify-center">
+                <div class="txt-box">
+                  <div class="title-txt flex">
+                    도전정신
+                    <div class="img-box">
+                      <img
+                        src="image/aboutMe/material-symbols_change-circle.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="sub-txt">
+                    저는 제게 주어진 환경을 더 나은 방향으로 변화시키기 위해
+                    많은 도전을 해왔습니다. <br />
+                    새로운 것에 도전한다는 것은 저를 다시 열정적으로 만들어주며
+                    초심을 잃지 않게 해줍니다.
+                  </div>
+                </div>
+                <div class="txt-box">
+                  <div class="title-txt flex">
+                    커뮤니케이션 능력
+                    <div class="img-box">
+                      <img src="image/aboutMe/mdi_wechat.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="sub-txt">
+                    프로젝트는 나 혼자만으로 돌아가지 않습니다. <br />
+                    다년간의 회사생활을 통해 다양한 직급의 상사와 동료들을
+                    만나면서 커뮤니케이션이 얼마나 중요한지 배웠습니다.
+                  </div>
+                </div>
+                <div class="txt-box">
+                  <div class="title-txt flex">
+                    실무역량
+                    <div class="img-box">
+                      <img src="image/aboutMe/mdi_chart-box.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="sub-txt">
+                    업무를 하는데 있어서 기획력이 있고 없고의 차이는 그 결과의
+                    퀄리티를 달라지게 한다고 생각합니다. <br />
+                    잘 만드는 작업자를 넘어서 기획력까지 갖춘 인재가 되겠습니다.
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="sub-txt">
-              열려있는 마인드로 의견을 수렴하며, 최선의 선택을 하기 위해 노력할 것입니다.<br>
-피드백을 통해, 보다 나은 결과물이 될 수 있도록 최선을 다하겠습니다.
-            </div>
+            <div class="flex-grow"></div>
+            <div class="spe-bottom"></div>
           </div>
-        </div>
-        <div class="bg-image"></div>
-      </div>
-      <div class="slide aboutme-5-slide-2">
-        <div class="inner flex flex-col">
-          <div class="txt-box">
-            <div class="title-txt">
-              <h3>Promise 02.</h3>
-              <h1>새로운 도전을 두려워하지 않겠습니다.</h1>
+        </section>
+        <section class="section aboutme-4" data-anchor="section-4">
+          <div class="inner">
+            <div class="work-box">
+              <div class="work-inner">
+                <div class="top-box">
+                  <div class="skill skill-1 flex">
+                    <div class="circle">
+                      <div class="percent"></div>
+                    </div>
+                    <div class="txt-box flex flex-col justify-center">
+                      <div class="title-txt">Photoshop</div>
+                      <div class="sub-txt">
+                        펜툴을 활용한 이미지 리터칭과 합성 및 편집이 가능하며
+                        <br />
+                        필터 및 효과를 응용하여 원하는 결과물을 도출할 수
+                        있습니다.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-2-box flex">
+                    <div class="skill skill-2 flex">
+                      <div class="circle">
+                        <div class="percent"></div>
+                      </div>
+                      <div class="txt-box flex flex-col justify-center">
+                        <div class="title-txt">Figma</div>
+                        <div class="sub-txt">
+                          컴포넌트와 베리언트를 적용시킨 디자인을 할 수 있으며
+                          <br />
+                          피그마내에서의 프로토타입 구현도 가능합니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-box">
+                  <div class="skill-3-box flex">
+                    <div class="skill skill-3 flex">
+                      <div class="circle">
+                        <div class="percent"></div>
+                      </div>
+                      <div class="txt-box flex flex-col justify-center">
+                        <div class="title-txt">Illustrator</div>
+                        <div class="sub-txt">
+                          간단한 아이콘 제작 및 레이어를 활용한 홍보물 디자인
+                          작업을 할 수 있습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-4-box flex">
+                    <div class="skill skill-4 flex">
+                      <div class="circle">
+                        <div class="percent"></div>
+                      </div>
+                      <div class="txt-box flex flex-col justify-center">
+                        <div class="title-txt">Visual Studio Code</div>
+                        <div class="sub-txt">
+                          HTML와 CSS의 구조를 이해하고 있으며<br />
+                          jQuery를 통해 동적구현 효과를 적용시킬 수 있습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="sub-txt">
-              현재의 모습에 안주하지 않고, 끊임없이 배우며 발전하겠습니다.
-            </div>
+            <div id="tsparticles"></div>
           </div>
-        </div>
-        <div class="bg-image"></div>
-      </div>
-      <div class="slide aboutme-5-slide-3">
-        <div class="inner flex flex-col">
-          <div class="txt-box">
-            <div class="title-txt">
-              <h3>Promise 03.</h3>
-              <h1>초심을 잃지 않겠습니다.</h1>
+        </section>
+        <section class="section aboutme-5" data-anchor="section-5">
+          <div class="slide aboutme-5-slide-1">
+            <div class="inner flex flex-col">
+              <div class="txt-box">
+                <div class="title-txt">
+                  <h3>Promise 01.</h3>
+                  <h1>활발한 소통을 약속합니다.</h1>
+                </div>
+                <div class="sub-txt">
+                  열려있는 마인드로 의견을 수렴하며, 최선의 선택을 하기 위해
+                  노력할 것입니다.<br />
+                  피드백을 통해, 보다 나은 결과물이 될 수 있도록 최선을
+                  다하겠습니다.
+                </div>
+              </div>
             </div>
-            <div class="sub-txt">
-              시작하는 사람의 마음에는 많은 가능성이 있지만, <br>
-숙련된 사람의 마음에는 가능성이 아주 조금 밖에 없다고 합니다. <br> 
-처음 시작할 때의 마음가짐을 항상 잊지 않겠습니다.
-            </div>
+            <div class="bg-image"></div>
           </div>
-        </div>
-        <div class="bg-image"></div>
-      </div>
-    </section>
-    <section class="section aboutme-6 fp-auto-height" data-anchor="section-6">
-      <div class="inner flex ">
-        <div class="left-box flex flex-col justify-end">
-          <div class="color-box color-box-1 "></div>
+          <div class="slide aboutme-5-slide-2">
+            <div class="inner flex flex-col">
+              <div class="txt-box">
+                <div class="title-txt">
+                  <h3>Promise 02.</h3>
+                  <h1>새로운 도전을 두려워하지 않겠습니다.</h1>
+                </div>
+                <div class="sub-txt">
+                  현재의 모습에 안주하지 않고, 끊임없이 배우며 발전하겠습니다.
+                </div>
+              </div>
+            </div>
+            <div class="bg-image"></div>
+          </div>
+          <div class="slide aboutme-5-slide-3">
+            <div class="inner flex flex-col">
+              <div class="txt-box">
+                <div class="title-txt">
+                  <h3>Promise 03.</h3>
+                  <h1>초심을 잃지 않겠습니다.</h1>
+                </div>
+                <div class="sub-txt">
+                  시작하는 사람의 마음에는 많은 가능성이 있지만, <br />
+                  숙련된 사람의 마음에는 가능성이 아주 조금 밖에 없다고 합니다.
+                  <br />
+                  처음 시작할 때의 마음가짐을 항상 잊지 않겠습니다.
+                </div>
+              </div>
+            </div>
+            <div class="bg-image"></div>
+          </div>
+        </section>
+        <section
+          class="section aboutme-6 fp-auto-height"
+          data-anchor="section-6"
+        >
+          <div class="inner flex">
+            <div class="left-box flex flex-col">
+              <div class="txt-box">
+                <div>About me</div>
+                <div class="footer-txt">
+                  <span>Page design & web publishing </span>
+                  <span>by kimeunbi</span>
+                </div>
+              </div>
+              <!-- <div class="color-box color-box-1 "></div>
           <div class="color-box color-box-2 "></div>
           <div class="color-box color-box-3 "></div>
           <div class="color-box-4">
@@ -306,17 +369,29 @@
               <div class="full-name"><span>K</span><span>im eunbi</span></div>
               <div>personal website</div>
             </div>
+          </div> -->
+            </div>
+            <div class="right-box flex flex-col justify-end">
+              <a href="#section-1" class="top show .__footer-bottom">
+                <i class="fa-solid fa-circle-arrow-up top__icon"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="footer">
+      <div class="inner">
+        <div>
+          <div class="logo img-box">
+            <img src="image/burgerking-prosess/footer-applogo.png" alt="" />
+          </div>
+          <div class="footer-txt">
+            <span>Smart order service App </span>
+            <span>UX/UI Redesign by kimeunbi</span>
           </div>
         </div>
-        <div class="right-box flex flex-col justify-end">
-          <a href="#section-1" class="top show .__footer-bottom">
-            <i class="fa-solid fa-circle-arrow-up top__icon"></i>
-          </a>
-        </div>
-        </div>
+      </div>
     </section>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>

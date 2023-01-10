@@ -58,7 +58,6 @@ $("#fullpage").fullpage({
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
-        $(".aboutme-6 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
       }  else if (destination.index == 1) {
         $(".aboutme-1 .title-txt").removeClass("active");
@@ -67,7 +66,6 @@ $("#fullpage").fullpage({
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
-        $(".aboutme-6 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
       } else if (destination.index == 2) {
         $(".aboutme-1 .title-txt").removeClass("active");
