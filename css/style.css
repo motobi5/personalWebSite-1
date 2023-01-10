@@ -221,7 +221,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("/image/intro/00_intro2.png");
+  background-image: url("../image/intro/00_intro2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -1046,18 +1046,18 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 섹션5 - 프로미스 */
 /* 슬라이드별 배경 이미지 */
 .aboutme-5 .slide {
-  background-image: url(/image/aboutMe/sec-5-1.png);
+  background-image: url(../image/aboutMe/sec-5-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
 .aboutme-5 .aboutme-5-slide-2 {
-  background-image: url(/image/aboutMe/sec-5-2.png);
+  background-image: url(../image/aboutMe/sec-5-2.png);
 }
 
 .aboutme-5 .aboutme-5-slide-3 {
-  background-image: url(/image/aboutMe/sec-5-3.png);
+  background-image: url(../image/aboutMe/sec-5-3.png);
 }
 
 /* 섹션5 - 프로미스 */
@@ -2470,7 +2470,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   margin-top: 100px;
   margin-bottom: 2px;
   /* border:3px solid red; */
-  background-image: url(/image/burgerking-prosess/thx-img.png);
+  background-image: url(../image/burgerking-prosess/thx-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -2560,7 +2560,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_prosess_1 > .section-1 {
   width: 100%;
   background-color: #eeeeee;
-  background-image: url(/image/webRenewal/mainCover2.png);
+  background-image: url(../image/webRenewal/mainCover2.png);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center bottom;
@@ -4073,7 +4073,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 100%;
   margin-bottom: 2px;
   /* border:3px solid red; */
-  background-image: url(/image/webRe01-prosess/web-thx-img.png);
+  background-image: url(../image/webRe01-prosess/web-thx-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
