@@ -144,14 +144,14 @@ img {
   width: 68px;
   height: 68px;
   /* background-color: rgba(190, 190, 190, 0.25); */
-  border: 4px dashed  rgba(190, 190, 190, 0.25);
+  border: 4px dashed  rgba(190, 190, 190, 0.4);
   opacity: 1;
   border-radius: 40px 40px 40px 40px;
   transition: 0.6s;
   margin: 12px 20px;
 }
 .top-bar .inner .logo-box > .logo.hide {
-  border: 4px dashed  rgba(9, 9, 9, 0.25);
+  border: 4px dashed  rgba(22, 22, 22, 0.4);
 }
 
 .top-bar .inner .logo-box > .logo.about {
