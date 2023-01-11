@@ -59,6 +59,7 @@ $("#fullpage").fullpage({
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
+         $(".top-bar .inner .logo-box > .logo").removeClass("hide");
       }  else if (destination.index == 1) {
         $(".aboutme-1 .title-txt").removeClass("active");
         $(".aboutme-1 .cen-text").removeClass("active");
@@ -67,6 +68,7 @@ $("#fullpage").fullpage({
         $(".aboutme-4 .txt-box").removeClass("active");
         $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
+         $(".top-bar .inner .logo-box > .logo").addClass("hide");
       } else if (destination.index == 2) {
         $(".aboutme-1 .title-txt").removeClass("active");
         $(".aboutme-1 .cen-text").removeClass("active");
@@ -76,6 +78,7 @@ $("#fullpage").fullpage({
         $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
+         $(".top-bar .inner .logo-box > .logo").removeClass("hide");
       }else if (destination.index == 3) {
         $(".aboutme-1 .title-txt").removeClass("active");
         $(".aboutme-1 .cen-text").removeClass("active");
@@ -85,6 +88,7 @@ $("#fullpage").fullpage({
         $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
+         $(".top-bar .inner .logo-box > .logo").removeClass("hide");
       }else if (destination.index == 4) {
         $(".aboutme-1 .title-txt").removeClass("active");
         $(".aboutme-1 .cen-text").removeClass("active");
@@ -94,6 +98,8 @@ $("#fullpage").fullpage({
         $(".aboutme-5 .txt-box").addClass("active");
         $(".aboutme-6 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
+        $(".top-bar .inner .logo-box > .logo").addClass("hide");
+         
       }else if (destination.index == 5) {
         $(".aboutme-1 .title-txt").removeClass("active");
         $(".aboutme-1 .cen-text").removeClass("active");
@@ -103,6 +109,8 @@ $("#fullpage").fullpage({
         $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .txt-box").addClass("active");
         $(".aboutme-6 .top").addClass("show");
+        $(".top-bar .inner .logo-box > .logo").addClass("hide");
+
       } else {
         $(".aboutme-1 .title-txt").removeClass("active");
         $(".aboutme-1 .cen-text").removeClass("active");
@@ -112,6 +120,7 @@ $("#fullpage").fullpage({
         $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .txt-box").removeClass("active");
         $(".aboutme-6 .top").removeClass("show");
+        $(".top-bar .inner .logo-box > .logo").removeClass("hide");
       }
     }
   
