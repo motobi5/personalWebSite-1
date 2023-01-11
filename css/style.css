@@ -143,7 +143,8 @@ img {
 .top-bar .inner .logo-box > .logo {
   width: 68px;
   height: 68px;
-  /* background-color:rgba(105, 105, 105, 0.25); */
+  /* background-color: rgba(190, 190, 190, 0.25); */
+  border: 4px dashed  rgba(190, 190, 190, 0.25);
   opacity: 1;
   border-radius: 40px 40px 40px 40px;
   transition: 0.6s;
@@ -153,6 +154,7 @@ img {
 .top-bar .inner .logo-box > .logo.about {
   /* background-color:var(--main-color); */
   background-color: transparent;
+ 
 }
 .top-bar .inner .logo-box > .logo.web {
   /* background-color: #cf112b; */
@@ -167,8 +169,8 @@ img {
   background-color: transparent;
 }
 .top-bar .inner .logo-box > .logo.other {
-  /* background-color:#9449df; */
-  background-color: white;
+  /* background-color:#9449df; */ 
+  background-color: transparent;
 }
 
 .top-bar .inner .logo-box > .logo.about img,
@@ -186,6 +188,7 @@ img {
   background-color: #f2f2f2;
   border-radius: 40px 40px 40px 40px;
   box-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
+  border: 0 dashed  transparent;
 }
 .top-bar .inner .logo-box > .logo.start:hover {
   background-color: transparent;
@@ -427,10 +430,10 @@ ul {
   transition: 2s;
 }
 
-.main-page_top div.active {
+/* .main-page_top div.active {
   opacity: 1;
   height: 40%;
-}
+} */
 
 .home_top a {
   position: absolute;
