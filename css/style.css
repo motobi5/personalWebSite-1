@@ -1207,7 +1207,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 섹션6 - 푸터 */
 
 .aboutme-6 {
-  height: 300px;
   background-color: #143142;
 }
 
@@ -1216,13 +1215,14 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   max-width: 1200px;
   position: relative;
   justify-content: space-between;
+  
 }
 
 /* 섹션6 - 푸터 */
 /* 퀵메뉴 */
 .aboutme-6 .left-box {
   width: 100%;
-  height: 300px;
+  height: 240px;
   margin-left: 16px;
   /* border: 3px solid gold; */
 }
@@ -1231,7 +1231,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   position: fixed;
   height: 60px;
   width: 36px;
-  bottom: 302px;
+  bottom: 242px;
   left: 91.2%;
   opacity: 0;
   transition: bottom 0.3s, visibility 0.3s, opacity 0.3s;
@@ -2538,7 +2538,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 푸터 */
 .prosess-1 > .footer {
   width: 100%;
-  height: 300px;
+  height: 240px;
   background-color: #4b2618;
 }
 .prosess-1 > .footer > .inner {
@@ -4099,7 +4099,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 섹션19 */
 /* 끝맺음 이미지 (모든 화면 보여주기) */
 .web_prosess_1 > .section-19 {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 2px;
   /* border:3px solid red; */
   background-image: url(../image/webRe01-prosess/web-thx-img.png);
@@ -4114,20 +4114,20 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 .web_prosess_1 > .section-19 .inner {
   position: relative;
-  height: 1100px;
+  height: 1600px;
   margin: 0 auto;
   /* border:3px solid blue; */
 }
 .web_prosess_1 > .section-19 .thx-txt {
   position: absolute;
-  top: 38%;
+  top: 36%;
   left: 50%;
-  transform: translate(-50%, -38%);
+  transform: translate(-50%, -36%);
   font-size: 20px;
-  padding-left: 20px;
   color: var(--sub1-color);
   opacity: 0;
   transition: 1s 1.8s;
+  /* border:3px solid red; */
 }
 .web_prosess_1 > .section-19 .thx-txt.active {
   opacity: 1;
@@ -4139,7 +4139,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 푸터 */
 .web_prosess_1 > .footer {
   width: 100%;
-  height: 300px;
+  height: 240px;
   background-color: var(--sub1-color);
 }
 .web_prosess_1 > .footer > .inner {

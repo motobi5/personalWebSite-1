@@ -27,7 +27,7 @@ function Scroll02__init() {
       ) {
         $(".web_prosess_1 > .section-7 .white-box").addClass("active");
       } else if (
-        $(window).scrollTop() > 17900 && $(window).scrollTop() <= 20000
+        $(window).scrollTop() > 18000 && $(window).scrollTop() <= 20700
       ) {
         $(".web_prosess_1 > .section-19").addClass("active");
         $(".web_prosess_1 > .section-19 .thx-txt").addClass("active");
