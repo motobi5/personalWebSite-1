@@ -2984,8 +2984,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_prosess_1 > .section-4 .sche-box .center-box li {
   list-style: circle;
   padding: 36px 0;
-  transition: 0.4s 1.2s;
-  opacity: 0;
+  transition-delay: 0.3s;
+  /* transition: 0.3s 1.2s;
+  opacity: 0; */
   color: gray;
 }
 .web_prosess_1 > .section-4 .sche-box .center-box li.active {
@@ -3103,10 +3104,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   right: 0;
   width: 640px;
   transform: rotate(180deg);
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
 .web_prosess_1 > .section-5 .concept-1 .right-box .sub-2 {
-  transition-delay: 1.3s;
+  transition-delay: 0.6s;
 }
 .web_prosess_1 > .section-5 .concept-1 .right-box .selec-line-2 {
   position: absolute;
@@ -3114,7 +3115,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   right: 110px;
   width: 680px;
   transform: rotate(180deg);
-  transition-delay: 1.9s;
+  transition-delay: 0.6s;
 }
 
 /* 프로세스 페이지 */
@@ -3257,7 +3258,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-color: var(--sub1-color);
   top: 25%;
   right: 0;
-  transition: 2s 0.3s;
+  transition: 2s;
 }
 /* js함수인 스크롤감지 이벤트로 적용시키면 반응을 안한다 왜 일까????
  우선 css 상의 호버로 적용시켜놨다. 추후에 js함수를 적용해봐야겠다. */
@@ -3655,8 +3656,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 /*셀렉 라인 애니메이션 딜레이 */
 .web_prosess_1 > .section-11 .selec-line .img-box {
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
+
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-11 .selec-line img {
   height: 300px;
@@ -3732,7 +3734,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 /*셀렉 라인 애니메이션 딜레이 */
 .web_prosess_1 > .section-12 .selec-line .img-box {
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-12 .selec-line img {
@@ -3809,7 +3811,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 /*셀렉 라인 애니메이션 딜레이 */
 .web_prosess_1 > .section-13 .selec-line .img-box {
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-13 .selec-line img {
@@ -3871,7 +3873,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 /*셀렉 라인 애니메이션 딜레이 */
 .web_prosess_1 > .section-14 .selec-line .img-box {
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-14 .selec-line img {
@@ -3948,7 +3950,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 /*셀렉 라인 애니메이션 딜레이 */
 .web_prosess_1 > .section-15 .selec-line .img-box {
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-15 .selec-line img {
@@ -4009,7 +4011,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 /*셀렉 라인 애니메이션 딜레이 */
 .web_prosess_1 > .section-16 .selec-line .img-box {
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
 }
 /* 셀렉 라인 길이 */
 .web_prosess_1 > .section-16 .selec-line img {
