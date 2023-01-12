@@ -112,4 +112,33 @@ function Scroll01__init() {
     // });
   });
 }
+
 Scroll01__init();
+
+function QuickMenuScroll__init() {
+  $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 400) {
+            $(".prosess-1 > .footer .top").addClass("show");
+         
+        } else {
+           $(".prosess-1 > .footer .top").removeClass("show");
+        }
+    });
+    $(".prosess-1 > .footer .top").click(function(){
+      $("html, body").animate({scrollTop:0}, 800);
+      return false;
+    });
+    // 스크롤 맨 아래라고 감지했을 때 버튼 위치 이동
+    $(window).scroll(function() {
+     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $(".prosess-1 > .footer .top.__footer-bottom").css("bottom", "248px");
+      }
+      else {
+        $(".prosess-1 > .footer .top.__footer-bottom").css("bottom", "60px");
+      }
+    });
+    });
+    }
+
+QuickMenuScroll__init();

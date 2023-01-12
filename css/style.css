@@ -144,20 +144,19 @@ img {
   width: 68px;
   height: 68px;
   /* background-color: rgba(190, 190, 190, 0.25); */
-  border: 4px dashed  rgba(190, 190, 190, 0.4);
+  border: 4px dashed rgba(190, 190, 190, 0.4);
   opacity: 1;
   border-radius: 40px 40px 40px 40px;
   transition: 0.6s;
   margin: 12px 20px;
 }
 .top-bar .inner .logo-box > .logo.hide {
-  border: 4px dashed  rgba(22, 22, 22, 0.4);
+  border: 4px dashed rgba(22, 22, 22, 0.4);
 }
 
 .top-bar .inner .logo-box > .logo.about {
   /* background-color:var(--main-color); */
   background-color: transparent;
- 
 }
 .top-bar .inner .logo-box > .logo.web {
   /* background-color: #cf112b; */
@@ -172,7 +171,7 @@ img {
   background-color: transparent;
 }
 .top-bar .inner .logo-box > .logo.other {
-  /* background-color:#9449df; */ 
+  /* background-color:#9449df; */
   background-color: transparent;
 }
 
@@ -191,7 +190,7 @@ img {
   background-color: #f2f2f2;
   border-radius: 40px 40px 40px 40px;
   box-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
-  border: 0 dashed  transparent;
+  border: 0 dashed transparent;
 }
 .top-bar .inner .logo-box > .logo.start:hover {
   background-color: transparent;
@@ -749,7 +748,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   bottom: 0;
   padding-bottom: 24px;
   background-color: #5c89a1;
-  color:#8a8a8a;
+  color: #8a8a8a;
 }
 
 .my_bottom > div span:nth-child(2) {
@@ -1127,6 +1126,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  background-color: black;
 }
 
 .aboutme-5 .aboutme-5-slide-2 {
@@ -1135,6 +1135,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 .aboutme-5 .aboutme-5-slide-3 {
   background-image: url(../image/aboutMe/sec-5-3.png);
+  background-position: 50% 50%;
   /* scale: 1.1; */
 }
 
@@ -1215,7 +1216,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   max-width: 1200px;
   position: relative;
   justify-content: space-between;
-  
 }
 
 /* 섹션6 - 푸터 */
@@ -1227,44 +1227,41 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   /* border: 3px solid gold; */
 }
 
-.aboutme-6 .top {
-  position: fixed;
-  height: 60px;
-  width: 36px;
-  bottom: 242px;
-  left: 91.2%;
-  opacity: 0;
-  transition: bottom 0.3s, visibility 0.3s, opacity 0.3s;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.7);
-  transition: 2s;
-  opacity: 0;
-  z-index: 1550;
-  /* border: 3px solid red; */
-}
-
-.right-box .top__icon {
-  font-size: 38px;
-  position: absolute;
-  bottom: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var(--sub2-color);
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
-.right-box .top:hover .top__icon {
-  bottom: 12px;
-  opacity: 1;
-}
-
-.aboutme-6 .right-box {
-  padding-right: 32px;
-}
-
 .aboutme-6 .top.show {
   visibility: visible;
   opacity: 1;
+}
+
+.aboutme-6 .top {
+  position: fixed;
+  bottom: 248px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.8);
+  z-index: 1550;
+  transition: all 0.6s;
+}
+.aboutme-6 .top:hover {
+  background-color: #f2f2f2;
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: inset 6px 6px 6px #bababa, inset -6px -6px 6px #ffffff;
+}
+
+.aboutme-6 .top__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  color: var(--sub1-color);
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
 
 /* 섹션6 - 푸터 */
@@ -1349,16 +1346,15 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   width: 60%;
   height: 70vh;
   /* border:3px solid green; */
-
 }
 
 /* 앱 리디자인 이미지 위치 */
-.slider-box-2 .swiper .swiper-slide img{
+.slider-box-2 .swiper .swiper-slide img {
   position: absolute;
   height: 100%;
-  top:0;
+  top: 0;
   left: 50%;
-  padding-top:24px;
+  padding-top: 24px;
   transform: translateX(-50%);
   /* border:3px solid red; */
 }
@@ -1701,7 +1697,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   /* 넘쳐난 사이즈가 잘리지 않도록 위 아래에 여백을 줌 */
   margin: 60px 0;
   /* margin-top: 60px; */
-  border:3px solid blue;
+  border: 3px solid blue;
 }
 
 .slider-box-3 .swiper .swiper-slide {
@@ -1723,15 +1719,11 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 클론코딩 페이지네이션 위치 */
 .slider-box-3 .swiper-pagination {
-  position:absolute;
-  bottom:0px;
+  position: absolute;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
- 
 }
-
-
-
 
 .slider-box-3 .swiper .swiper-slide.swiper-slide-active {
   transform: scale(1.2);
@@ -2570,6 +2562,45 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 .prosess-1 > .footer .footer-txt span {
   margin-right: 4px;
+}
+
+/* 퀵버튼 */
+
+.prosess-1 > .footer .top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.prosess-1 > .footer .top {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.8);
+  z-index: 1550;
+  transition: 0.6s;
+}
+.prosess-1 > .footer .top:hover {
+  background-color: #f2f2f2;
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
+}
+
+.prosess-1 > .footer .top__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  color: var(--sub1-color);
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
 
 /* 프로세스 페이지 */
@@ -4174,4 +4205,44 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 .web_prosess_1 > .footer .footer-txt span {
   margin-right: 4px;
+}
+
+/* 이응노미술관 웹 리뉴얼 프로세스 페이지 */
+/* 퀵버튼 */
+
+.web_prosess_1 > .footer .top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.web_prosess_1 > .footer .top {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.8);
+  z-index: 1550;
+  transition: 0.6s;
+}
+.web_prosess_1 > .footer .top:hover {
+  background-color: #f2f2f2;
+  border-radius: 40px 40px 40px 40px;
+  box-shadow: inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
+}
+
+.web_prosess_1 > .footer .top__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  color: var(--sub1-color);
+  text-indent: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
