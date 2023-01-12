@@ -16,6 +16,10 @@ function QuickMenuScroll__init() {
     });
     // 스크롤 맨 아래라고 감지했을 때 버튼 위치 이동
     $(window).scroll(function () {
+      console.log('로그');
+      console.log($(window).scrollTop());
+        console.log($(window).height());
+        console.log($(document).height());
       if ($(window).scrollTop() + $(window).height() == $(document).height()) {
         $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "248px");
       } else {
