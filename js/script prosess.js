@@ -130,15 +130,14 @@ function QuickMenuScroll__init() {
       return false;
     });
     // 스크롤 맨 아래라고 감지했을 때 버튼 위치 이동
-    $(window).scroll(function() {
-     if($(window).scrollTop() + $(window).height() == $(document).height()) {
-       $(".prosess-1 > .footer .top.__footer-bottom").css("bottom", "248px");
-      }
-      else {
-        $(".prosess-1 > .footer .top.__footer-bottom").css("bottom", "60px");
+    $(window).scroll(function () {
+      if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $(".prosess-1 > .footer .top.__footer-bottom").css("bottom", "248px");
+      } else {
+        $(".prosess-1  > .footer .top.__footer-bottom").css("bottom", "60px");
       }
     });
-    });
+  });
     }
 
 QuickMenuScroll__init();
