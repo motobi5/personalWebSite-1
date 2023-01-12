@@ -1941,7 +1941,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   align-items: center;
   font-size: 36px;
   color: #f5ebdc;
-  z-index: 999;
+  z-index: 9999;
   transition: opacity 0.3s, visibility 0.3s;
 }
 
@@ -2619,7 +2619,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   align-items: center;
   font-size: 36px;
   color: var(--sub1-color);
-  z-index: 999;
+  z-index: 9999;
   transition: opacity 0.3s, visibility 0.3s;
 }
 .web_prosess_1 > .loading-1.hide {
