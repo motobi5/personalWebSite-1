@@ -1543,7 +1543,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .slider-box-3 .link-box {
   height: 35%;
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   padding-top: 18px;
   padding-left: 2px;
@@ -1559,12 +1559,14 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   border-bottom: 1px solid transparent;
   transition: 0.3s;
   align-self: baseline;
+  height: 30px;
 }
 
 .slider-box-1 .link-box a span,
 .slider-box-2 .link-box a span,
 .slider-box-3 .link-box a span {
   line-height: 1.6;
+  /* border:3px solid pink; */
 }
 
 .slider-box-1 .link-box img,
@@ -1572,6 +1574,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .slider-box-3 .link-box img {
   padding-right: 2px;
   padding-bottom: 4px;
+  scale: 1.2;
 }
 
 .slider-box-1 .link-box a:hover,
@@ -1734,16 +1737,17 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 그외작업 개별 커스텀 */
 
 .other-work .right-box {
-  padding-top: 20px;
+  width: 60%;
+  height: 70vh;
+  padding-top: 24px;
   /* border:3px solid red; */
-  width: 600px;
 }
 
 /* 그외작업 개별 커스텀 */
 /* 박스 높이 */
 .other-work .right-box .work-box {
-  height: 260px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  width: 580px;
   /* border:3px solid blue; */
 }
 
@@ -1759,7 +1763,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 
 .other-work .right-box .work-2 .work-txt {
-  background-color: rgba(38, 38, 38, 0.9);
+  background-color: rgba(38, 38, 38, 0.84);
 }
 
 .other-work .right-box .work-3 .work-txt {
@@ -1771,7 +1775,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .other-work .right-box .work-box .work-txt div {
   color: var(--sub2-color);
 }
-.other-work .right-box .work-1 .work-txt div {
+.other-work .right-box .work-2 .work-txt div {
   color: rgba(190, 190, 190);
 }
 
@@ -1810,15 +1814,14 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 그외작업 개별 커스텀 */
 /* 박스 라운딩 */
+.other-work .right-box .work-box {
+  height: calc(100% / 3);
+}
 .other-work .right-box .work-1 {
-  /* 현재는 커밍순이라 높이를 낮게 지정하지만 콘텐츠가 채워지면 높이지정을 철회한다. */
-  height: 150px;
   border-radius: 24px 24px 0 0;
   overflow: hidden;
 }
-
 .other-work .right-box .work-3 {
-  height: 150px;
   border-radius: 0 0 24px 24px;
   overflow: hidden;
 }
@@ -1826,21 +1829,22 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 그외작업 개별 커스텀 */
 /* 박스 간 간격 */
 .other-work .right-box .work-2 {
-  margin: 8px 0;
+  padding: 6px 0;
 }
 
 /* 그외작업 개별 커스텀 */
 /* 이미지 높이 및 오브젝트 핏 */
 .other-work .right-box img {
-  height: 260px;
+  height: 330px;
   width: 400px;
   object-fit: cover;
-  object-position: 100% 50%;
+  object-position: 80% 100%;
   transition: 0.3s;
 }
 
 .other-work .right-box .work-3 img {
-  height: 200px;
+  height: 300px;
+  object-position: 10% 50%;
 }
 
 /* 그외작업 개별 커스텀 */
@@ -1850,7 +1854,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   position: relative;
 }
 
-.other-work .right-box .work-2 .work-img-box:hover .img-box img {
+.other-work .right-box .work-1 .work-img-box:hover .img-box img {
   scale: 1.2;
   /* transform: rotate(1deg); */
 }
@@ -1871,6 +1875,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 .other-work .right-box .work-3 .work-img-box .bg-b {
   background-color: rgba(38, 38, 38, 0.9);
+  /* 해당 범위 바텀의 면적이 살짝 모라자서 높이 101%로 임의 지정 */
+  height: 101%;
 }
 
 .other-work .right-box .work-img-box:hover .bg-b,
@@ -1878,7 +1884,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   opacity: 0.8;
 }
 /* 커밍순 파트는 처음부터 어둡게 처리하기 */
-.other-work .right-box .work-1.active .work-img-box .bg-b,
+.other-work .right-box .work-2.active .work-img-box .bg-b,
 .other-work .right-box .work-3.active .work-img-box .bg-b {
   opacity: 0.8;
 }
@@ -1899,7 +1905,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   left: 50%;
   transform: translate(-50%, -60%);
 }
-.other-work .right-box .work-1 .work-img-box .bg-b .txt-box {
+.other-work .right-box .work-2 .work-img-box .bg-b .txt-box {
   top: 70%;
   transform: translate(-50%, -70%);
 }
