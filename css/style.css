@@ -2653,13 +2653,13 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 비주얼페이지 애니메이션*/
 .web_process_1 > .section-1 > .inner > .txt-box {
   opacity: 0;
-  transition: 1s 3s;
+  transition: -webkit- 1s 3s;
   transform: translatex(-60px);
 }
 
 .web_process_1 > .section-1 > .inner .date-txt {
   opacity: 0;
-  transition: 1s 4s;
+  transition: -webkit- 1s 4s;
   transform: translatex(-30px);
 }
 
