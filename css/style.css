@@ -4215,8 +4215,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 .web_prosess_1 > .footer .top {
   position: fixed;
-  bottom: 6%;
-  right: 3%;
+  bottom: 60px;
+  right: 60px;
   width: 60px;
   height: 60px;
   overflow: hidden;

@@ -20,9 +20,9 @@ function QuickMenuScroll__init() {
       console.log($(window).height());
       console.log($(document).height());
       if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "25%");
+        $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "248px");
       } else {
-        $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "6%");
+        $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "60px");
       }
     });
   });
