@@ -6,55 +6,55 @@ AOS.init();
 // 페이지 인트로
 $("body").imagesLoaded(function () {
   setTimeout(function () {
-    $(".web_prosess_1 > .loading-1").addClass("hide");
+    $(".web_process_1 > .loading-1").addClass("hide");
   }, 3000);
 });
 
 // 비주얼페이지 애니메이션
 window.onload = function () {
-  $(".web_prosess_1 > .section-1 > .inner > .txt-box").addClass("active");
-  $(".web_prosess_1 > .section-1 > .inner .date-txt").addClass("active");
-  $(".web_prosess_1 > .section-1 > .inner .center-box").addClass("active");
+  $(".web_process_1 > .section-1 > .inner > .txt-box").addClass("active");
+  $(".web_process_1 > .section-1 > .inner .date-txt").addClass("active");
+  $(".web_process_1 > .section-1 > .inner .center-box").addClass("active");
 };
 function Scroll02__init() {
   $(function () {
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 4000 && $(window).scrollTop() <= 5000) {
-        $(".web_prosess_1 > .section-4 .sche-box .center-box img").addClass(
+        $(".web_process_1 > .section-4 .sche-box .center-box img").addClass(
           "active"
         );
-        $(".web_prosess_1 > .section-4 .sche-box .center-box li").addClass(
+        $(".web_process_1 > .section-4 .sche-box .center-box li").addClass(
           "active"
         );
       } else if (
         $(window).scrollTop() > 8300 &&
         $(window).scrollTop() <= 9400
       ) {
-        $(".web_prosess_1 > .section-7 .white-box").addClass("active");
+        $(".web_process_1 > .section-7 .white-box").addClass("active");
       } else if (
         $(window).scrollTop() > 18000 &&
         $(window).scrollTop() <= 20700
       ) {
-        $(".web_prosess_1 > .section-19").addClass("active");
-        $(".web_prosess_1 > .section-19 .thx-txt").addClass("active");
+        $(".web_process_1 > .section-19").addClass("active");
+        $(".web_process_1 > .section-19 .thx-txt").addClass("active");
       }
       // else if (
       //   $(window).scrollTop() > 20000
       // ) {
       //   // alert("여기는 푸터");
-      //   $(".web_prosess_1 > .footer > .inner > div").addClass("active");
+      //   $(".web_process_1 > .footer > .inner > div").addClass("active");
       // }
       else {
-        $(".web_prosess_1 > .section-4 .sche-box .center-box img").removeClass(
+        $(".web_process_1 > .section-4 .sche-box .center-box img").removeClass(
           "active"
         );
-        $(".web_prosess_1 > .section-4 .sche-box .center-box li").removeClass(
+        $(".web_process_1 > .section-4 .sche-box .center-box li").removeClass(
           "active"
         );
-        $(".web_prosess_1 > .section-7 .white-box").removeClass("active");
-        $(".web_prosess_1 > .section-19").removeClass("active");
-        $(".web_prosess_1 > .section-19 .thx-txt").removeClass("active");
-        // $(".web_prosess_1 > .footer > .inner > div").removeClass("active");
+        $(".web_process_1 > .section-7 .white-box").removeClass("active");
+        $(".web_process_1 > .section-19").removeClass("active");
+        $(".web_process_1 > .section-19 .thx-txt").removeClass("active");
+        // $(".web_process_1 > .footer > .inner > div").removeClass("active");
       }
     });
     // $(".top").click(function(){
