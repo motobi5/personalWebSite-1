@@ -27,7 +27,7 @@ function Scroll02__init() {
           "active"
         );
       } else if (
-        $(window).scrollTop() > 8300 &&
+        $(window).scrollTop() > 8000 &&
         $(window).scrollTop() <= 9400
       ) {
         $(".web_process_1 > .section-7 .white-box").addClass("active");
