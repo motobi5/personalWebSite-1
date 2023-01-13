@@ -22,7 +22,7 @@ function QuickMenuScroll__init() {
       if ($(window).scrollTop() + $(window).height() == $(document).height()) {
         $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "25%");
       } else {
-        $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "60px");
+        $(".web_prosess_1  > .footer .top.__footer-bottom").css("bottom", "6%");
       }
     });
   });
