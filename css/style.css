@@ -526,6 +526,49 @@ ul {
   color: gray;
   transition-delay: 1.6s;
 }
+/* 반응형-미디어쿼리 */
+/* 풀화면일때 홈 타이틀 텍스트 크기 */
+@media (max-width: 991px)  {
+ 
+  .main-page_center .text-box .title-text {
+    font-size: 10vw;
+    padding-left: 16px;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 9vw;
+    padding-left: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+  .main-page_center .text-box .title-text {
+    font-size: 10vw;
+    padding-left: 36px;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 9vw;
+    padding-left: 36px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1999px) {
+  .main-page_center .text-box .title-text {
+    font-size: 8vw;
+    background-color: gold;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 7vw;
+  }
+}
+@media (min-width: 2000px) {
+  .main-page_center .text-box .title-text {
+    font-size: 6vw;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 4.8vw;
+  }
+}
+
+
 
 /* 홈 화면 */
 /* 메인바텀 */
