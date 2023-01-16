@@ -106,7 +106,8 @@ $("#fullpage").fullpage({
         $(".aboutme-2 .txt-box").removeClass("active");
         $(".aboutme-3 .txt-box").removeClass("active");
         $(".aboutme-4 .txt-box").removeClass("active");
-        $(".aboutme-5 .txt-box").removeClass("active");
+        // 푸터넘어갈때 슬라이드 텍스트 가리기
+        // $(".aboutme-5 .txt-box").removeClass("active");
         $(".aboutme-6 .txt-box").addClass("active");
         $(".aboutme-6 .top").addClass("show");
         $(".top-bar .inner .logo-box > .logo").addClass("hide");
