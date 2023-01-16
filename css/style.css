@@ -1,24 +1,44 @@
 /* 구글 로보토 폰트 */
-@font-face {  font-family: "Roboto";  font-style: normal;  font-weight: 100;
-  src: url(../font/Roboto-Thin.woff2) format('woff2'),
-       url(../font/Roboto-Thin.woff) format('woff'),
-       url(../font/Roboto-Thin.otf) format('opentype');}
-@font-face {  font-family: "Roboto";  font-style: normal;  font-weight: 300;
-  src: url(../font/Roboto-Light.woff2) format('woff2'),
-       url(../font/Roboto-Light.woff) format('woff'),
-       url(../font/Roboto-Light.otf) format('opentype');}
-@font-face {   font-family: "Roboto";   font-style: normal;   font-weight: 400;
-   src: url(../font/Roboto-Regular.woff2) format('woff2'),
-        url(../font/Roboto-Regular.woff) format('woff'),
-        url(../font/Roboto-Regular.otf) format('opentype'); }
-@font-face {   font-family: "Roboto";   font-style: normal;   font-weight: 500;
-   src: url(../font/Roboto-Medium.woff2) format('woff2'),
-        url(../font/Roboto-Medium.woff) format('woff'),
-        url(../font/Roboto-Medium.otf) format('opentype'); }
-@font-face {   font-family: "Roboto";   font-style: normal;   font-weight: 700;
-   src: url(../font/Roboto-Bold.woff2) format('woff2'),
-        url(../font/Roboto-Bold.woff) format('woff'),
-        url(../font/Roboto-Bold.otf) format('opentype'); }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url(../font/Roboto-Thin.woff2) format("woff2"),
+    url(../font/Roboto-Thin.woff) format("woff"),
+    url(../font/Roboto-Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../font/Roboto-Light.woff2) format("woff2"),
+    url(../font/Roboto-Light.woff) format("woff"),
+    url(../font/Roboto-Light.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Roboto-Regular.woff2) format("woff2"),
+    url(../font/Roboto-Regular.woff) format("woff"),
+    url(../font/Roboto-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../font/Roboto-Medium.woff2) format("woff2"),
+    url(../font/Roboto-Medium.woff) format("woff"),
+    url(../font/Roboto-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../font/Roboto-Bold.woff2) format("woff2"),
+    url(../font/Roboto-Bold.woff) format("woff"),
+    url(../font/Roboto-Bold.otf) format("opentype");
+}
 /* 메인폰트 샌드박스폰트 */
 @font-face {
   font-family: "SBAggroB";
@@ -155,7 +175,6 @@ img {
   margin: 0 auto;
 }
 
-
 /* 탑바 */
 /* 로고 */
 .logo-box {
@@ -253,7 +272,7 @@ img {
   width: 0;
   left: 50%;
   bottom: 0;
-  transform:  translatex(-50%);
+  transform: translatex(-50%);
   transition: 0.3s;
   background-color: var(--sub1-color);
 }
@@ -280,7 +299,6 @@ img {
   line-height: 5;
   /* border:3px solid red; */
 }
-
 
 /* 탑바 반응형 */
 @media (max-width: 991px) {
@@ -313,7 +331,7 @@ img {
     font-size: 24px;
     /* border:3px solid blue; */
   }
-  
+
   /* 탑바 */
   /* 메뉴아이템 밑줄 애니메이션 */
   .menu-box > ul > li > a::after {
@@ -325,19 +343,18 @@ img {
     position: absolute;
     width: 110px;
     padding: 8px;
-    top:44px;
+    top: 44px;
     left: -44px;
-    color:var(--sub1-color);
+    color: var(--sub1-color);
     font-size: 14px;
     transition: 0.6s;
     text-align: center;
   }
-  
-  .menu-box > ul > li:hover  p.arrow_box {
+
+  .menu-box > ul > li:hover p.arrow_box {
     opacity: 1;
   }
 }
-
 
 /* 개별 */
 
@@ -590,8 +607,7 @@ ul {
 }
 /* 반응형-미디어쿼리 */
 /* 풀화면일때 홈 타이틀 텍스트 크기 */
-@media (max-width: 991px)  {
- 
+@media (max-width: 991px) {
   .main-page_center .text-box .title-text {
     font-size: 10vw;
     padding-left: 16px;
@@ -602,7 +618,7 @@ ul {
   }
 }
 
-@media (min-width: 992px) and (max-width:1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .main-page_center .text-box .title-text {
     font-size: 10vw;
     padding-left: 36px;
@@ -628,7 +644,6 @@ ul {
     font-size: 4.6vw;
   }
 }
-
 
 /* 홈 화면 */
 /* 메인바텀 */
@@ -1035,7 +1050,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 텍스트 타이틀 */
 .aboutme-3 .spe-box > .spe-txt .title-txt {
-  font-family: "noto sans KR","Apple SD Gothic Neo",Sans-serif;
+  font-family: "noto sans KR", "Apple SD Gothic Neo", Sans-serif;
   font-weight: bold;
   align-items: center;
   margin-bottom: 10px;
@@ -1123,7 +1138,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   letter-spacing: -2%;
   line-height: 1.3;
   color: var(--main-color);
-  font-family: "Roboto", "Noto Sans KR","Apple SD Gothic Neo",Sans-serif;
+  font-family: "Roboto", "Noto Sans KR", "Apple SD Gothic Neo", Sans-serif;
 }
 
 .aboutme-4 .inner .skill .txt-box .title-txt {
@@ -1374,7 +1389,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .aboutme-6 .top:hover {
   background-color: #f2f2f2;
   border-radius: 40px 40px 40px 40px;
-  box-shadow:1px 1px 2px rgba(73, 73, 73, 0.8), inset 6px 6px 6px #bababa, inset -6px -6px 6px #ffffff;
+  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.8), inset 6px 6px 6px #bababa,
+    inset -6px -6px 6px #ffffff;
 }
 
 .aboutme-6 .top__icon {
@@ -1641,7 +1657,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /*  클론코딩 센터 내용 */
 .slider-box-3 .content-box .cen-text {
   margin-top: 24px;
-  font-family: "Noto sans KR", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto sans KR", "Apple SD Gothic Neo", Sans-serif;
   font-size: 14px;
 }
 
@@ -2172,8 +2188,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 /* 프로세스 페이지 */
 /* 버거킹 프로세스 페이지 */
-
-/* 오버뷰/컬러/폰트 */
+/* 오버뷰 */
 .process-1 > .section-2 {
   width: 100%;
   background-color: #f5ebdc;
@@ -2181,7 +2196,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .process-1 > .section-2 .inner {
   margin: 0 auto;
   width: 1200px;
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 340px;
   /* border:3px solid blue; */
 }
 .process-1 > .section-2 .txt-box {
@@ -2209,6 +2225,65 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 .process-1 > .section-2 .sub-txt span:nth-child(2) {
   color: #4b2618;
+}
+
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+/* 컬러, 타이포그라피 부분 */
+.process-1 > .section-2 .system-box {
+  width: 840px;
+  height: 1460px;
+  margin: 0 auto;
+  border-radius: 24px;
+  padding-top: 200px;
+  background-color: var(--sub2-color);
+  /* border:3px solid; */
+}
+.process-1 > .section-2 .system-box .color-sample > div:first-child {
+  width: 80px;
+  height: 80px;
+  margin: 0 16px;
+  margin-bottom: 8px;
+  box-shadow: inset 1px 1px 4px rgb(32, 32, 32, 0.8);
+  border-radius: 40px;
+}
+.process-1 > .section-2 .system-box .color-sample > div:last-child {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+/* 컬러, 타이포그라피 부분 */
+/* 컬러샘플색상 */
+.process-1 > .section-2 .system-box .color-1 div:first-child {
+  background-color: #c6381e;
+}
+.process-1 > .section-2 .system-box .color-2 div:first-child {
+  background-color: #ef8d47;
+}
+.process-1 > .section-2 .system-box .color-3 div:first-child {
+  background-color: #4b2618;
+}
+.process-1 > .section-2 .system-box .color-4 div:first-child {
+  background-color: #408441;
+}
+
+/* 프로세스 페이지 */
+/* 버거킹 프로세스 페이지 */
+/* 컬러, 타이포그라피 부분 */
+/* 폰트부분 */
+.process-1 > .section-2 .system-box .font-box .sub-txt span:first-child {
+  color: rgb(151, 151, 151);
+}
+.process-1 > .section-2 .system-box .font-box .img-box {
+  margin: 80px 0;
+  /* border:3px solid blue; */
+}
+.process-1 > .section-2 .system-box .font-box img {
+  width: 66%;
+  /* border:3px solid red; */
 }
 
 /* 프로세스 페이지 */
@@ -2716,7 +2791,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .process-1 > .footer .top:hover {
   background-color: #f2f2f2;
   border-radius: 40px 40px 40px 40px;
-  box-shadow:1px 1px 2px rgba(73, 73, 73, 0.8), inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
+  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.8), inset 6px 6px 12px #bababa,
+    inset -6px -6px 12px #ffffff;
 }
 
 .process-1 > .footer .top__icon {
@@ -2899,7 +2975,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   line-height: 140px;
 }
 .web_process_1 > .section-2 .title-txt span:first-child {
-  font-family: "Noto Sans Kr", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto Sans Kr", "Apple SD Gothic Neo", Sans-serif;
   font-size: 140px;
   font-weight: 200;
 }
@@ -2974,7 +3050,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_process_1 > .section-3 .right-box .title-txt {
   font-size: 120px;
   font-weight: 200;
-  font-family: "Noto Sans Kr", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto Sans Kr", "Apple SD Gothic Neo", Sans-serif;
   letter-spacing: -2px;
   padding-bottom: 40px;
 }
@@ -3036,7 +3112,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_process_1 > .section-4 .after-box .left-box .title-txt {
   font-size: 120px;
   font-weight: 200;
-  font-family: "Noto Sans Kr", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto Sans Kr", "Apple SD Gothic Neo", Sans-serif;
   letter-spacing: -2px;
   padding-bottom: 40px;
 }
@@ -3086,7 +3162,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_process_1 > .section-4 .sche-box .title-txt {
   font-size: 120px;
   font-weight: 200;
-  font-family: "Noto Sans Kr", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto Sans Kr", "Apple SD Gothic Neo", Sans-serif;
   letter-spacing: -2px;
   padding-bottom: 20px;
 }
@@ -3161,7 +3237,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   line-height: 140px;
 }
 .web_process_1 > .section-5 .inner > .title .title-txt span:first-child {
-  font-family: "Noto Sans Kr", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto Sans Kr", "Apple SD Gothic Neo", Sans-serif;
   font-size: 140px;
   font-weight: 200;
   letter-spacing: -5px;
@@ -3479,7 +3555,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 
 .web_process_1 > .section-7 .black-box > .inner .txt-1 > div span:first-child {
-  font-family: "Noto sans KR", "Apple SD Gothic Neo",Sans-serif;
+  font-family: "Noto sans KR", "Apple SD Gothic Neo", Sans-serif;
 }
 .web_process_1 > .section-7 .black-box > .inner .txt-1 > div span:last-child,
 .web_process_1 > .section-7 .black-box > .inner .txt-2 > div {
@@ -3559,7 +3635,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 이응노미술관 웹 리뉴얼 */
 /* 섹션08 */
 /* 타이틀 왼쪽 부분 */
-.web_process_1 > .section-8 > .inner .top-box .title-txt-1  {
+.web_process_1 > .section-8 > .inner .top-box .title-txt-1 {
   padding-top: 4px;
   /* border:3px solid red; */
 }
@@ -4369,7 +4445,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .web_process_1 > .footer .top:hover {
   background-color: #f2f2f2;
   border-radius: 40px 40px 40px 40px;
-  box-shadow:1px 1px 2px rgba(73, 73, 73, 0.8), inset 6px 6px 12px #bababa, inset -6px -6px 12px #ffffff;
+  box-shadow: 1px 1px 2px rgba(73, 73, 73, 0.8), inset 6px 6px 12px #bababa,
+    inset -6px -6px 12px #ffffff;
 }
 
 .web_process_1 > .footer .top__icon {
