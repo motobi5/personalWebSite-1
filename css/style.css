@@ -2282,10 +2282,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   height: 2385px;
   border-radius: 0 36px 36px 0;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 2s;
+  transition: 1.3s;
 }
 .process-1 > .section-4 .color-box.active {
-  width: 30%;
+  width: 36%;
 }
 .process-1 > .section-4 .inner {
   width: 1200px;
@@ -2295,6 +2295,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   position: relative;
   /* border:3px solid blue; */
 }
+
 .process-1 > .section-4 .apphome .title-txt {
   padding-top: 36px;
   padding-left: 24px;
@@ -2356,7 +2357,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-color: #f17821;
   border-radius: 36px 0 0 36px;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 2s;
+  transition: 1.3s;
 }
 .process-1 > .section-6 .color-box.active {
   width: 50%;
@@ -2496,10 +2497,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-color: #f17821;
   border-radius: 36px 0 0 36px;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 2s;
+  transition: 1.3s;
 }
 .process-1 > .section-10 .color-box.active {
-  width: 32%;
+  width: 38%;
 }
 .process-1 > .section-10 .inner {
   position: relative;
@@ -2569,10 +2570,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   height: 100%;
   border-radius: 0 36px 36px 0;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 2s;
+  transition: 1.3s;
 }
 .process-1 > .section-12 .color-box.active {
-  width: 30%;
+  width: 36%;
 }
 .process-1 > .section-12 .inner {
   width: 1200px;
