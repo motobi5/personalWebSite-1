@@ -1667,7 +1667,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .slider-box-3 .link-box {
   height: 35%;
   font-family: "Roboto";
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   padding-top: 18px;
   padding-left: 2px;
@@ -1697,8 +1697,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .slider-box-2 .link-box img,
 .slider-box-3 .link-box img {
   padding-right: 2px;
-  padding-bottom: 4px;
-  scale: 1.2;
+  padding-bottom: 2px;
+  scale: 1.1;
 }
 
 .slider-box-1 .link-box a:hover,
