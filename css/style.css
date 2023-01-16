@@ -641,7 +641,7 @@ ul {
     font-size: 6vw;
   }
   .main-page_center .text-box .sub-text {
-    font-size: 4.6vw;
+    font-size: 4.2vw;
   }
 }
 
@@ -2359,8 +2359,16 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: 1.3s;
 }
+
+
 .process-1 > .section-4 .color-box.active {
   width: 36%;
+}
+@media (max-width: 1800px) {
+  .process-1 > .section-4 .color-box.active {
+    width: 32%;
+  }
+
 }
 .process-1 > .section-4 .inner {
   width: 1200px;
@@ -2577,6 +2585,12 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .process-1 > .section-10 .color-box.active {
   width: 38%;
 }
+@media (max-width: 1800px) {
+  .process-1 > .section-10 .color-box.active {
+    width: 33.2%;
+  }
+
+}
 .process-1 > .section-10 .inner {
   position: relative;
   width: 1200px;
@@ -2649,6 +2663,12 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 .process-1 > .section-12 .color-box.active {
   width: 36%;
+}
+@media (max-width: 1800px) {
+  .process-1 > .section-12 .color-box.active {
+    width: 32%;
+  }
+
 }
 .process-1 > .section-12 .inner {
   width: 1200px;
