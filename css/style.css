@@ -220,6 +220,7 @@ img {
   background-color: transparent;
 }
 
+.top-bar .inner .logo-box > .logo.index img,
 .top-bar .inner .logo-box > .logo.about img,
 .top-bar .inner .logo-box > .logo.web img,
 .top-bar .inner .logo-box > .logo.app img,
