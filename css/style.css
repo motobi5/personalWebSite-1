@@ -221,6 +221,7 @@ img {
 }
 
 .top-bar .inner .logo-box > .logo.index img,
+.top-bar .inner .logo-box > .logo.home img,
 .top-bar .inner .logo-box > .logo.about img,
 .top-bar .inner .logo-box > .logo.web img,
 .top-bar .inner .logo-box > .logo.app img,
@@ -665,7 +666,7 @@ ul {
     font-size: 5.4vw;
   }
 }
-@media (min-width: 2200px) and (max-width: 2399px){
+@media (min-width: 2200px) and (max-width: 2399px) {
   .main-page_center .text-box .title-text {
     font-size: 6.5vw;
   }
@@ -1045,6 +1046,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-repeat: no-repeat;
   background-image: url(../image/aboutMe/sec-3.png);
   word-break: break-word;
+  z-index: -1;
 }
 
 /* 이너의 커스텀이 적용 안되는거 같음... -> 어바웃미와 이너사이에 div가 또 있었음. 라이브러리를 활용할때는 기존 html코드도 확인해보자! */
@@ -1441,7 +1443,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transition: 0.3s;
 } */
 
-
 /* 임시퀵메뉴  */
 
 .aboutme-quick_btn .top.show {
@@ -1484,7 +1485,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transform: translate(-50%, -50%);
   transition: 0.3s;
 }
-
 
 /* 섹션6 - 푸터 */
 /* 텍스트 */
@@ -2449,7 +2449,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   transition: 1.3s;
 }
 
-
 .process-1 > .section-4 .color-box.active {
   width: 36%;
 }
@@ -2457,7 +2456,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   .process-1 > .section-4 .color-box.active {
     width: 32%;
   }
-
 }
 .process-1 > .section-4 .inner {
   width: 1200px;
@@ -2678,7 +2676,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   .process-1 > .section-10 .color-box.active {
     width: 33.2%;
   }
-
 }
 .process-1 > .section-10 .inner {
   position: relative;
@@ -2757,7 +2754,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   .process-1 > .section-12 .color-box.active {
     width: 32%;
   }
-
 }
 .process-1 > .section-12 .inner {
   width: 1200px;
