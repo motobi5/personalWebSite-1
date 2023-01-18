@@ -1046,7 +1046,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-repeat: no-repeat;
   background-image: url(../image/aboutMe/sec-3.jpg);
   word-break: break-word;
-
 }
 
 /* 이너의 커스텀이 적용 안되는거 같음... -> 어바웃미와 이너사이에 div가 또 있었음. 라이브러리를 활용할때는 기존 html코드도 확인해보자! */
@@ -1055,7 +1054,6 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   position: relative;
   /* border:3px solid red; */
 }
-
 
 /* 섹션3 - 스페셜 */
 /* 배경이미지를 제외한 배경 커스텀 */
