@@ -1044,9 +1044,8 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-position: 0px 220px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../image/aboutMe/sec-3.png);
+  background-image: url(../image/aboutMe/sec-3.jpg);
   word-break: break-word;
-  z-index: -1;
 }
 
 /* 이너의 커스텀이 적용 안되는거 같음... -> 어바웃미와 이너사이에 div가 또 있었음. 라이브러리를 활용할때는 기존 html코드도 확인해보자! */
@@ -1072,6 +1071,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 
 .aboutme-3 .inner .spe-bottom {
   height: 14px;
+}
+.aboutme-3 .my_bottom > div > div img {
+  position: relative;
+  z-index: 100;
 }
 
 /* 섹션3 - 스페셜 */
