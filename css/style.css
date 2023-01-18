@@ -628,20 +628,54 @@ ul {
     padding-left: 36px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1999px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
   .main-page_center .text-box .title-text {
-    font-size: 8vw;
+    font-size: 8.6vw;
+    padding-left: 36px;
   }
   .main-page_center .text-box .sub-text {
-    font-size: 7vw;
+    font-size: 7.6vw;
+    padding-left: 36px;
   }
 }
-@media (min-width: 2000px) {
+@media (min-width: 1500px) and (max-width: 1799px) {
+  .main-page_center .text-box .title-text {
+    font-size: 7.2vw;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 6.4vw;
+  }
+}
+@media (min-width: 1800px) and (max-width: 1999px) {
+  .main-page_center .text-box .title-text {
+    font-size: 6.8vw;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 5.8vw;
+  }
+}
+@media (min-width: 2000px) and (max-width: 2199px) {
+  .main-page_center .text-box .title-text {
+    font-size: 7vw;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 5.4vw;
+  }
+}
+@media (min-width: 2200px) and (max-width: 2399px){
+  .main-page_center .text-box .title-text {
+    font-size: 6.5vw;
+  }
+  .main-page_center .text-box .sub-text {
+    font-size: 5vw;
+  }
+}
+@media (min-width: 2400px) {
   .main-page_center .text-box .title-text {
     font-size: 6vw;
   }
   .main-page_center .text-box .sub-text {
-    font-size: 4.2vw;
+    font-size: 4.6vw;
   }
 }
 
