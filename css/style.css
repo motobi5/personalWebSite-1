@@ -2766,9 +2766,9 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-image: url(../image/burgerking-process/thx-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 0% 0%;
   opacity: 0;
-  transition: 2s s;
+  transition: 1.6s;
 }
 .process-1 > .section-14.active {
   opacity: 1;
@@ -2776,7 +2776,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 .process-1 > .section-14 .inner {
   position: relative;
   width: 1200px;
-  height: 1100px;
+  height: 1400px;
   margin: 0 auto;
   /* border:3px solid blue; */
 }
@@ -4423,7 +4423,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   background-size: cover;
   background-position: 50% 50%;
   opacity: 0;
-  transition: 2s 1s;
+  transition: 1.6s;
 }
 .web_process_1 > .section-19.active {
   opacity: 1;
@@ -4442,7 +4442,7 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
   font-size: 20px;
   color: var(--sub1-color);
   opacity: 0;
-  transition: 1s 1.8s;
+  transition: 1s 1s;
   /* border:3px solid red; */
 }
 .web_process_1 > .section-19 .thx-txt.active {
