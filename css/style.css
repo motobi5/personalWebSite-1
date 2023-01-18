@@ -1315,24 +1315,24 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 /* 섹션5 - 프로미스 */
 /* 슬라이드 텍스트 공통*/
 .aboutme-5 .slide .inner {
-  height: 360px;
+  height: 40%;
   margin: 0 auto;
 }
 
 .aboutme-5 .slide .inner .txt-box {
-  /* border:3px solid red ; */
   height: 100%;
   color: var(--sub1-color);
+  /* border:3px solid red ; */
 }
 
 .aboutme-5 .slide .inner .title-txt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 36px;
-  /* border:3px solid blue; */
+  padding-top: 56px;
   font-size: 4vh;
   font-weight: 400;
+  /* border:3px solid blue; */
 }
 
 .aboutme-5 .slide .inner .title-txt h3 {
@@ -1342,10 +1342,10 @@ js함수를 이것만 다르게 적용시켜야 하나??? 우선 비활성화 */
 }
 
 .aboutme-5 .slide .inner .sub-txt {
-  font-size: 2.6vh;
-  font-weight: 300;
+  font-size: 2.4vh;
+  font-weight: 100;
   line-height: 1.4;
-  margin-top: 20px;
+  margin-top: 26px;
   color: var(--sub1-color);
 }
 

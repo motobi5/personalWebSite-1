@@ -3,13 +3,13 @@ console.clear();
 function QuickMenuScroll__init() {
   $(function () {
     $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 400) {
-        $(".web_process_1  > .footer .top").addClass("show");
+      if ($(window).scrollTop() > 0) {
+        $(".aboutme-quick_btn .top").addClass("show");
       } else {
-        $(".web_process_1  > .footer .top").addClass("show");
+        $(".aboutme-quick_btn .top").addClass("show");
       }
     });
-    $(".web_process_1  > .footer .top").click(function () {
+    $(".aboutme-quick_btn .top").click(function () {
       $("html, body").animate({ scrollTop: 0 }, 800);
       return false;
     });
@@ -20,9 +20,9 @@ function QuickMenuScroll__init() {
       console.log($(window).height());
       console.log($(document).height());
       if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        $(".web_process_1  > .footer .top.__footer-bottom").css("bottom", "248px");
+        $(".aboutme-quick_btn .top .__footer-bottom").css("bottom", "248px");
       } else {
-        $(".web_process_1  > .footer .top.__footer-bottom").css("bottom", "60px");
+        $(".aboutme-quick_btn .top .__footer-bottom").css("bottom", "60px");
       }
     });
   });
