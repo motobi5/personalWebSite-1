@@ -715,7 +715,11 @@ ul {
   height: 100%;
   background-color: var(--main-color);
 }
-
+/*  */
+.main-page > a {
+  position: absolute;
+  bottom: 0;
+} 
 /* 개별 */
 
 /* 어바웃미 */
