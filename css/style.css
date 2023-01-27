@@ -715,7 +715,7 @@ ul {
   height: 100%;
   background-color: var(--main-color);
 }
-/*  */
+/* 인덱스 히트 추가 */
 .main-page > a {
   position: absolute;
   bottom: 0;
